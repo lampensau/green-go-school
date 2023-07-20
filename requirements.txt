@@ -1,0 +1,4 @@
+git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+mkdocs-minify-plugin>=0.5
+mkdocs-git-authors-plugin>=0.7
+mkdocs-git-committers-plugin-2>=1.1

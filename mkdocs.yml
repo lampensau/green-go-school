@@ -1,0 +1,163 @@
+site_name: 'Green-GO School'
+site_author: Timo Toups
+site_url: https://school.greengo.digital
+site_description: >-
+  Materialien zur Green-GO School von Timo Toups
+
+copyright: Copyright &copy; 2018 - 2023 Timo Toups
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: de
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.path
+    - navigation.prune
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: '(prefers-color-scheme)'
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  icon:
+    logo: logo
+
+extra_css:
+  - assets/styles/extra.css
+extra_javascript:
+  - assets/javascript/svg-load.js
+
+plugins:
+  - meta
+  - typeset
+  - privacy:
+      assets: true
+      assets_fetch: true
+      assets_fetch_dir: assets/external
+  - optimize:
+      enabled: !ENV [CI, false]
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  # - social:
+  #     cards_layout: default/variant
+  - minify:
+      minify_html: true
+  - git-authors
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.keys:
+      key_map:
+        {
+          'setup': 'Setup',
+          'shift': 'Shift',
+          'red-btn': 'Knopf',
+          'bpx-btn': 'Knopf',
+          'bpx-btns': 'Knöpfe',
+          'bpx-btn1': 'Knopf 1',
+          'bpx-btn2': 'Knopf 2',
+          'bpx-btn3': 'Knopf 3',
+          'bpx-btn4': 'Knopf 4',
+          'bpx-enc1': 'linker Enkoder',
+          'bpx-enc2': 'rechter Enkoder',
+          'button': 'Knopf',
+          'buttons': 'Knöpfe',
+          'encoder': 'Enkoder',
+          'touchscreen': 'Touchscreen',
+        }
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home:
+      - index.md
+  - Green-GO ist ...?:
+      - green-go/index.md
+  - Geräte Übersicht:
+      - devices/index.md
+      - Interfaces: devices/interfaces.md
+      - Zubehör: devices/others.md
+  - Sprechstellen Bedienung:
+      - operation/index.md
+  - Netzwerk Setup:
+      - network/index.md
+      - Troubleshooting: network/troubleshoot.md
+  - Wireless Setup:
+      - wireless/index.md
+      - Troubleshooting: wireless/troubleshoot.md
+  - Software:
+      - software/index.md
+      - User Konfiguration: software/user.md
+      - Interface Konfiguration: software/interface.md
+      - Troubleshooting: software/troubleshoot.md
+  - Firmware Updates:
+      - firmware/index.md
+      - Troubleshooting: firmware/troubleshoot.md
+  - Downloads:
+      - downloads/index.md
