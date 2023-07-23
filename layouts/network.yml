@@ -1,0 +1,80 @@
+size: { width: 1200, height: 630 }
+layers:
+  - background:
+      offset: { x: 0, y: -50 }
+      image: "{{ layout.background_image or 'layouts/network.jpg' }}"
+      color: "{{ layout.background_color or '#37814c98'}}"
+
+  # Banner Background
+  - size: { width: 1200, height: 514 }
+    offset: { x: 0, y: 0 }
+    background:
+      color: '#00000056'
+
+  # Page icon
+  - size: { width: 500, height: 500 }
+    offset: { x: 856, y: -6 }
+    icon:
+      value: "{{ page.meta.get('icon', 'material/ip-network') }}"
+      color: '#d1d1d1d2'
+
+  # Banner Background
+  - size: { width: 1200, height: 116 }
+    offset: { x: 0, y: 514 }
+    background:
+      color: '#f1f1f1f1'
+
+  # Site Logo
+  - size: { width: 96, height: 96 }
+    offset: { x: 56, y: 524 }
+    icon:
+      value: '{{ config.theme.icon.logo or "logo" }}'
+      color: '#0e8630'
+
+    # Site Title
+  - size: { width: 820, height: 42 }
+    offset: { x: 168, y: 535 }
+    typography:
+      content: '{{ config.site_name }}'
+      color: 'hsl(137, 81%, 29%)'
+      font:
+        family: Roboto
+        style: Bold
+
+    # Site Description
+  - size: { width: 820, height: 30 }
+    offset: { x: 168, y: 577 }
+    typography:
+      content: '{{ config.site_description }}'
+      color: 'hsl(137, 84%, 15%)'
+      font:
+        family: Roboto
+        style: Regular
+
+  # Page title
+  - size: { width: 850, height: 187 }
+    offset: { x: 60, y: 112 }
+    typography:
+      content: '{{ page.meta.get("title", page.title) }}'
+      align: start bottom
+      color: white
+      line:
+        amount: 2
+        height: 1.25
+      font:
+        family: Roboto
+        style: Bold
+
+  # Page description
+  - size: { width: 800, height: 112 }
+    offset: { x: 60, y: 312 }
+    typography:
+      content: '{{ page.meta.description }}'
+      align: start top
+      color: white
+      line:
+        amount: 4
+        height: 1.25
+      font:
+        family: Roboto
+        style: Medium

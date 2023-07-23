@@ -3,6 +3,9 @@
   --md-primary-fg-color: hsl(137, 81%, 29%);
   --md-primary-fg-color--light: hsla(137, 81%, 34%, 1);
   --md-primary-fg-color--dark: hsla(120, 100%, 17%, 1);
+  --md-accent-fg-color: hsl(120, 68%, 40%);
+  --md-accent-fg-color--light: hsla(137, 81%, 34%, 1);
+  --md-accent-fg-color--dark: hsla(120, 100%, 17%, 1);
 
   /* Green-GO state colors */
   --gg-status-black: var(--md-primary-bg-color);

@@ -1,8 +1,10 @@
 size: { width: 1200, height: 630 }
 layers:
   - background:
-      image: layouts/background.jpg
-      color: '#109d3869'
+      offset: { x: 0, y: -50 }
+      image: >-
+        {{ layout.background_image or "layouts/training.png" }}
+      color: "{{ layout.background_color or '#2a5e38b6'}}"
 
   # Banner Background
   - size: { width: 1200, height: 514 }
@@ -12,47 +14,47 @@ layers:
 
   # Page icon
   - size: { width: 550, height: 550 }
-    offset: { x: 850, y: -18 }
+    offset: { x: 856, y: -13 }
     icon:
-      value: "{{ page.meta.get('social-icon', 'material/library') }}"
-      color: '#ffffffc0'
+      value: "{{ page.meta.get('icon', 'logo') }}"
+      color: '#d1d1d1d2'
 
   # Banner Background
   - size: { width: 1200, height: 116 }
     offset: { x: 0, y: 514 }
     background:
-      color: '#0e86308e'
+      color: '#f1f1f1f1'
 
   # Site Logo
   - size: { width: 96, height: 96 }
     offset: { x: 56, y: 524 }
     icon:
-      value: ggo/logo-plain
-      color: '#ffffff'
+      value: '{{ config.theme.icon.logo or "logo" }}'
+      color: '#0e8630'
 
     # Site Title
   - size: { width: 820, height: 42 }
     offset: { x: 168, y: 535 }
     typography:
       content: '{{ config.site_name }}'
-      color: '#ececec'
+      color: 'hsl(137, 81%, 29%)'
       font:
         family: Roboto
         style: Bold
 
     # Site Description
-  - size: { width: 820, height: 25 }
+  - size: { width: 820, height: 30 }
     offset: { x: 168, y: 577 }
     typography:
       content: '{{ config.site_description }}'
-      color: '#FFFFFF'
+      color: 'hsl(137, 84%, 15%)'
       font:
         family: Roboto
         style: Regular
 
   # Page title
-  - size: { width: 800, height: 187 }
-    offset: { x: 56, y: 112 }
+  - size: { width: 840, height: 187 }
+    offset: { x: 60, y: 112 }
     typography:
       content: '{{ page.meta.get("title", page.title) }}'
       align: start bottom
@@ -64,9 +66,9 @@ layers:
         family: Roboto
         style: Bold
 
-  # Page title
-  - size: { width: 800, height: 112 }
-    offset: { x: 56, y: 304 }
+  # Page description
+  - size: { width: 840, height: 112 }
+    offset: { x: 60, y: 312 }
     typography:
       content: '{{ page.meta.description }}'
       align: start top
@@ -76,4 +78,4 @@ layers:
         height: 1.25
       font:
         family: Roboto
-        style: Regular
+        style: Medium

@@ -2,7 +2,7 @@ site_name: 'Green-GO School'
 site_author: Timo Toups
 site_url: https://school.greengo.digital
 site_description: >-
-  Materialien zur Green-GO School von Timo Toups
+  Handreichungen und Materialien zur Green-GO School mit Timo Toups
 
 copyright: Copyright &copy; 2018 - 2023 Timo Toups
 
@@ -19,8 +19,6 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
-    - navigation.path
-    - navigation.prune
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -69,11 +67,20 @@ plugins:
       enabled: !ENV [CI, false]
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  # - social:
-  #     cards_layout: default/variant
+  - social:
+      enabled: !ENV [CI, false]
+      cards_layout_dir: layouts
+      cards_layout: default
   - minify:
       minify_html: true
-  - git-authors
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      type: timeago
+      timezone: Europe/Berlin
+      locale: de
+  - git-committers:
+      repository: lampensau/green-go-school
+      branch: main
 
 extra:
   generator: false
@@ -104,17 +111,17 @@ markdown_extensions:
         {
           'setup': 'Setup',
           'shift': 'Shift',
-          'red-btn': 'Knopf',
-          'bpx-btn': 'Knopf',
-          'bpx-btns': 'Knöpfe',
-          'bpx-btn1': 'Knopf 1',
-          'bpx-btn2': 'Knopf 2',
-          'bpx-btn3': 'Knopf 3',
-          'bpx-btn4': 'Knopf 4',
+          'red-btn': 'Taste',
+          'bpx-btn': 'Taste',
+          'bpx-btns': 'Tasten',
+          'bpx-btn1': 'Taste 1',
+          'bpx-btn2': 'Taste 2',
+          'bpx-btn3': 'Taste 3',
+          'bpx-btn4': 'Taste 4',
           'bpx-enc1': 'linker Enkoder',
           'bpx-enc2': 'rechter Enkoder',
-          'button': 'Knopf',
-          'buttons': 'Knöpfe',
+          'button': 'Taste',
+          'buttons': 'Tasten',
           'encoder': 'Enkoder',
           'touchscreen': 'Touchscreen',
         }
@@ -137,7 +144,7 @@ markdown_extensions:
 nav:
   - Home:
       - index.md
-  - Green-GO ist ...?:
+  - Green-GO Featureübersicht:
       - green-go/index.md
   - Geräte Übersicht:
       - devices/index.md
@@ -154,7 +161,7 @@ nav:
   - Software:
       - software/index.md
       - User Konfiguration: software/user.md
-      - Interface Konfiguration: software/interface.md
+      - Audio Interface Setup: software/interface.md
       - Troubleshooting: software/troubleshoot.md
   - Firmware Updates:
       - firmware/index.md
