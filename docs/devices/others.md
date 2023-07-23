@@ -1,3 +1,9 @@
+---
+title: Green-GO Zubehör
+description: Ein Übersicht über alles aktuelle Green-GO Zubehör
+social:
+  cards_layout: devices
+---
 # Green-GO Zubehör
 
 ## Netzwerk Switches

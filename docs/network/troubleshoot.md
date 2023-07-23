@@ -1,3 +1,8 @@
+---
+description: Tips und generelle Hilfestellungen zu Netzwerkproblemen
+social:
+    cards_layout: network
+---
 # Netzwerk Troubleshooting
 
 ## Grundlegende Checkliste
@@ -20,10 +25,10 @@ Sollten Green-GO Geräte nicht automatisch in der Connection View der Software e
 
 Tauchen die Geräte nach diesem Scan mit dem Status <span class="status-dot purple"></span> `Boot Mode` oder <span class="status-dot orange"></span> `Unreachable` auf, sollte folgendes überprüft werden:
 
+- [x] Die betroffenen Green-GO Geräte benutzen eine [v5 Firmware](https://manual.greengoconnect.com/en/getting-started/upgrade/#upgrade-your-devices).
 - [x] Netzwerkkonfiguration aller Geräte und Computer ist untereinander kompatibel und ermöglicht eine _lokale_ Kommunikation.
 - [x] Der Rechner ermpfängt Multicast Traffic auf UDP Port `5810`.<br>
 Dies kann u.a. mit Tools wie [Wireshark](#wireshark), dem [Multicast Tester](http://www.dqnetworks.ie/toolsinfo/mcasttest/) von DQ Networks, oder der Python Terminal Applikation [GGO-MTA](#green-go-mta) überprüft werden.
-- [x] Die betroffenen Green-GO Geräte benutzen eine [v5 Firmware](https://manual.greengoconnect.com/en/getting-started/upgrade/#upgrade-your-devices).
 
 ??? warning "Wichtiger Hinweis für Firewalls"
     Die Applikation welche für die Netzwerkkommunikation verantwortlich ist trägt den Namen `Core(.exe)`. Diese Applikation versucht über die Ports `2001`, `2002` (TCP) und `5810`, `6464` (UDP) zu kommunizieren:
@@ -36,8 +41,8 @@ Dies kann u.a. mit Tools wie [Wireshark](#wireshark), dem [Multicast Tester](htt
 Dies ist in der Regel nur der Fall wenn überhaupt keine Kommunikation mit dem Netzwerk möglich ist.
 
 - [x] Es gibt keine Firewall welche die Verbindung der Software blockiert.
-- [x] Die Ports 6464 und 5810 werden sind nicht blockiert.
 - [x] Die Konfiguration der Netzwerkschnittstelle ist korrekt und erlaubt eine Kommunikation mit dem Green-GO System.
+- [x] Die Ports 6464 und 5810 sind nicht blockiert.
 
 ??? warning "Wichtiger Hinweis für Firewalls"
     Die Applikation welche für die Netzwerkkommunikation verantwortlich ist trägt den Namen `Core(.exe)`. Diese Applikation versucht über die Ports `2001`, `2002` (TCP) und `5810`, `6464` (UDP) zu kommunizieren:
@@ -87,9 +92,22 @@ Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-
 
 Da Green-GO UDP Multicast für die Kommunikation benutzt muss der Netzwerkverkehr "non-blocking" ohne zusätzliches Processing von der Netzwerk-Infrastruktur durchgeleitet werden.
 
-Unterbrochenes bzw. veränderte Audiosignale werden in der Regel dann produziert, wenn die Paketreihenfolge zu stark abweicht, oder der Jitter einer Verbindung zu hoch ist. In einem solchen Falle produziert das Green-GO Audio-Codec Artefakte.
+Unterbrochenes bzw. veränderte Audiosignale werden in der Regel dann produziert, wenn die Paketreihenfolge zu stark abweicht, oder der [Jitter](index.md#jitter-und-latenzen) einer Verbindung zu hoch ist. In einem solchen Falle produziert das Green-GO Audio-Codec Artefakte.
 
-## Wireshark
+Eine weitere Ursache für dieses Problem kann auch ein (zu hoher) Paketverlust bei der Kommunikation mit der _Multicast-Adresse_ der Systemkonfiguration sein.
+
+Für eine weiterführende Analyse kann u.a. das Programm [Wireshark](#wireshark) benutzt werden.
+
+## Netzwerk Analyse
+
+Für eine vollständige Analyse kann es erforderlich sein den Paketfluss eines spezifischen Switchports zu überwachen. Dies ermöglicht eine direkte Sicht auf den Datenverkehr eines problembehafteten Gerät.
+
+Ein solcher Mittschnitt kann zum Beispiel mit Hilfe einer sogenannten [Network TAP](https://www.dualcomm.com/products/usb-powered-10-100-1000base-t-network-tap) erzeugt werden.
+
+<div class="svg-container svg-center width-80" data-filename="../../assets/images/network-tap"></div>
+
+Alternativ kann auch der Datenverkehr eines bestimten Switchports auf einen mit dem Rechner verbundenen Switchport dupliziert werden. Diese Funktionalität ist abhängig vom Switchmodel und erfordert eine Anpassung der Switchkonfiguration.
+### Wireshark
 
 - **Link:** [wireshark.org](https://www.wireshark.org/download.html)
 - **Einfärbungsregeln**: [Download](../assets/files/Green-GO_ColoringRules)
@@ -100,15 +118,11 @@ Wireshark kann hilfreich sein um Netzwerkprobleme in einem System zu analysieren
 ![Wireshark Capture](../assets/images/wireshark.png)
 </figure>
 
-Für eine vollständige Analyse kann es erforderlich sein den Paketfluss eines spezifischen Switchports zu überwachen, hier kann entweder eine sogenante [Network TAP](https://www.dualcomm.com/products/usb-powered-10-100-1000base-t-network-tap) zwischen die physikalische Verkabelung geschaltet werden.
-
-Alternativ kann der Datenverkehr eines Switchports auf einen mit dem Computer verbundenen Switchport dupliziert werden, hierfür muss die Konfiguration des Netzwerkswitches entsprechend angepasst werden. 
-
-### Konfiguration
+#### Konfiguration
 
 Damit Wireshark optimal funktioniert sollten ein paar Einstellungen überprüft und vorgenommen werden:
 
-#### Promiskuitiver Modus
+##### Promiskuitiver Modus
 
 Diese Einstellung ist abhängig vom Treiber des Netzwerk Interfaces und ist möglicherweise nicht immer verfügbar.
 
@@ -119,15 +133,15 @@ Sofern dieser Modus verfügbar ist, sollte dieser aktiviert sein. Wenn aktiv, wi
 <figcaption>Bearbeiten --> Einstellungen --> Mitschnitt</figcaption>
 </figure>
 
-#### Anzeige und Spalten
+##### Anzeige und Spalten
 
 Wireshark ist ein mächtiges Werkzeug welches umfangreich konfiguriert werden kann. Für den Anfang kann es aber hilfreich sein folgende Einstellungen vorzunehmen:
 
-##### Zeitanzeige
+###### Zeitanzeige
 
 Um Ereignisse besser identifizieren zu können, kann es hilfreich sein die Zeitanzeige auf `Uhrzeit (01:02:03.123456)` zu stellen (Ansicht --> Zeitanzeige --> Uhrzeit).
 
-##### Delta Timing Spalte
+###### Delta Timing Spalte
 
 Um die Latenz zwischen angezeigten (gefilterten) Paketen besser im Überblick behalten zu können, kann es helfen eine zusätzliche Spalte für diese Berechnung anzulegen:
 
@@ -138,7 +152,7 @@ Um die Latenz zwischen angezeigten (gefilterten) Paketen besser im Überblick be
 
 Wichtig ist hier, dass als Spaltentyp `Delta time displayed` ausgewählt wird.
 
-#### Green-GO Pakete Einfärben
+##### Green-GO Pakete Einfärben
 
 Es kann hilfreich sein die Green-GO Pakete mit Hilfe von Farbfiltern einzufärben um Probleme besser zu visualisieren. Die zum Download stehenden Einfärbungsregeln können einfach importiert und verwendet werden:
 
@@ -147,7 +161,7 @@ Es kann hilfreich sein die Green-GO Pakete mit Hilfe von Farbfiltern einzufärbe
 <figcaption>Ansicht --> Einfärbungsregeln</figcaption>
 </figure>
 
-### Datenverkehr Filtern
+#### Datenverkehr Filtern
 
 Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paketen zu begrenzen und für eine bessere Übersicht zu sorgen.
 
@@ -194,7 +208,7 @@ Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paket
     : Dieser Filter überprüft die ersten zwei Bytes eines Pakets auf für Green-GO relevante Kommunikation.
 
 
-## Green-GO MTA
+### Green-GO MTA
 
 **Link:** [github.com/lampensau/ggo-mta](https://github.com/lampensau/ggo-mta)
 
@@ -202,7 +216,55 @@ Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paket
 
 Eine Python (3.x) Terminal Applikation welche Verbindungsstatistiken zu Green-GO Konfigurations Subscribern (Geräte) aufführt.
 
-Damit diese Applikation optimal funktionieren kann, muss Python 3 und der Paketmanager pip lokal installiert sein.
+#### Installation der Vorraussetzungen
+
+Damit diese Applikation funktionieren kann, müssen `Python 3` und der Paketmanager `pip` _lokal_ installiert sein.
+
+##### Python 3
+
+Eine existierende Installation kann wie folgt über ein Terminalfenster verifiziert werden:
+
+```{title="Terminal Fenster"}
+$ python3 --version
+Python 3.11.4
+```
+
+=== ":simple-linux: Linux (Debian/Ubuntu)"
+
+    Um Python 3 zu installieren muss folgender Befehl ausgeführt werden:
+
+    ```{.bash title="Linux Shell"}
+    sudo apt update && sudo apt install python3
+    ```
+
+=== ":material-apple: MacOS"
+
+=== ":material-microsoft-windows: Windows"
+
+##### pip
+
+Eine existierende Installation kann wie folgt über ein Terminalfenster verifiziert werden:
+
+```{title="Terminal Fenster"}
+$ pip3 --version
+pip 23.2.1 from /path/to/python-pip/executable
+```
+
+=== ":simple-linux: Linux (Debian/Ubuntu)"
+
+    Um den Paketmanager `pip` zu installieren muss folgender Befehl ausgeführt werden:
+
+    ```{.bash title="Linux Shell"}
+    sudo apt update && sudo apt install python3-pip
+    ```
+
+=== ":material-apple: MacOS"
+
+=== ":material-microsoft-windows: Windows"
+
+##### Andere Vorraussetzungen
+
+=== ":simple-linux: Linux (Debian/Ubuntu)"
 
 === ":material-apple: MacOS"
 

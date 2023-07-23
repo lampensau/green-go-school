@@ -1,4 +1,5 @@
 ---
+description: Ein Überblick über alle geplanten Termine und Kontaktmöglichkeiten für eine Green-GO School in Ihrem Hause
 icon: material/home
 hide:
     - toc

@@ -1,5 +1,11 @@
 ---
-icon: material/crosshairs-question
+title: Eine Green-GO Featureübersicht
+description: Ein Überblick über die wichtigsten Eigenschaften und Features eines digitalen Green-GO Interkom Systems
+icon: material/clipboard-list
+social:
+  cards_layout_options:
+    background_color: '#105723be'
+    background_image: layouts/features.png
 ---
 # Green-GO Eigenschaften und Featureübersicht
 

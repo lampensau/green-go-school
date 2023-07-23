@@ -1,5 +1,9 @@
 ---
-icon: ggo/device-line
+title: Alle Green-GO Sprechstellen
+description: Ein Übersicht über alle aktuellen Green-GO Sprechstellen
+icon: ggo/device-solid
+social:
+  cards_layout: devices
 ---
 # Green-GO Sprechstellen
 

@@ -1,5 +1,8 @@
 ---
-icon: ggo/4wire-line
+title: Green-GO Interfaces
+description: Ein Übersicht über alle aktuellen Green-GO Audio- und Netzwerkinterfaces
+social:
+  cards_layout: devices
 ---
 # Green-GO Interfaces
 

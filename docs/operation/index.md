@@ -1,5 +1,11 @@
 ---
+title: Green-GO Bedienung
+description: Eine Einführung in die grundlegende Bedienung von Green-GO Sprechstellen
 icon: material/gesture-double-tap
+social:
+  cards_layout_options:
+    background_color: '#105723be'
+    background_image: layouts/features.png
 ---
 # Benutzung einer Green-GO Station
 
@@ -62,7 +68,9 @@ Channel Volume
 
 ### Kanal Ansprechen (Talk)
 
-To talk to a channel, the user must _press_ the corresponding ++button++ on the device. Pressing the button enables the [talk function](../glossary.md#talk) and changes the channel's status color to <span class="status-dot green"></span> green, indicating the channel is ready to transmit audio to its target(s).
+Um einen Kanal anzusprechen, muss die entsprechende ++button++ gedrückt werden. Dies aktiviert das Mikrofon für den Kanal und ändert den Kanalstatus auf Talk.
+
+Ein _offener_ Kanal wird von der Status-LED durch ein <span class="status-dot green"></span> grünes leuchten signalisiert.
 
 === "BPX & WBPX belt packs"
 
@@ -72,7 +80,7 @@ To talk to a channel, the user must _press_ the corresponding ++button++ on the 
 
     <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-talk"></div>
 
-With the _factory default_ settings active, the button will have two _talk actions_ linked (`Latch/Mom`):
+Mit den _werkseitigen Standardeinstellungen_, sind zwei [Funktionen] (`Latch/Momentary`) mit einer ++button++ verknüpft:
 
 1. **Press and hold:** Will act as _push-to-talk_ and will close the channel on button release. ([`Momentary`](../glossary.md#momentary))
 2. **Short button press:** Will _latch_ the channel to open on the first press. The second button press will close the channel. ([`Latch`](../glossary.md#latch))

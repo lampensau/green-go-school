@@ -1,7 +1,10 @@
 ---
+description: Empfehlungen und Tips zur Netzwerkinfrastruktur und -setup
 icon: material/ip-network
+social:
+    cards_layout: network
 ---
-# Das Netzwerk
+# Das Netzwerk Setup
 
 **Handbuch:** [Link](https://manual.greengoconnect.com/en/guides/network/)
 
@@ -18,16 +21,16 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 
 ### Unmanaged
 
-- Nicht kompatibel zu Switches mit IGMP Konfiguration.
-- Energy Efficient Ethernet ([IEEE 802.3az](https://de.wikipedia.org/wiki/Energy_Efficient_Ethernet)) muss deaktivierbar sein.
-- [PoE](https://de.wikipedia.org/wiki/Power_over_Ethernet) Support (min. IEEE 802.3af, 48 V)
+- Green-GO ist standardmäßig **nicht kompatibel** mit _unmanaged_ Switches welche eine IGMP Konfiguration verwenden. Ein solcher Switch erfodert zusätzliche Hardware welche als IGMP-Querier oder -Router fungiert.
+- [Energy Efficient Ethernet](https://de.wikipedia.org/wiki/Energy_Efficient_Ethernet) ([IEEE 802.3az](https://standards.ieee.org/ieee/802.3az/4270/)) sollte deaktivierbar sein.
+- [PoE](https://de.wikipedia.org/wiki/Power_over_Ethernet) Support (min. [IEEE 802.3af](https://standards.ieee.org/ieee/802.3af/1090/), 48 V)
 
 ### Managed
 
-- Support für QoS via [DSCP](https://de.wikipedia.org/wiki/DiffServ)
-- Support für VLANs ([IEEE 802.1q](https://standards.ieee.org/ieee/802.1Q/6844/))
+- Support für QoS via [CoS](https://de.wikipedia.org/wiki/IEEE_802.1p) / [DSCP](https://de.wikipedia.org/wiki/DiffServ)
+- Support für VLANs ([IEEE 802.1Q](https://standards.ieee.org/ieee/802.1Q/6844/))
 - Support für IGMP Snooping
-- [PoE](https://de.wikipedia.org/wiki/Power_over_Ethernet) Support (min. IEEE 802.3af, 48 V)
+- [PoE](https://de.wikipedia.org/wiki/Power_over_Ethernet) Support (min. [IEEE 802.3af](https://standards.ieee.org/ieee/802.3af/1090/), 48 V)
 
 ## Spannungsversorgung
 
@@ -37,17 +40,18 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 
 ## IP Addressierung
 
-- Es müssen _lokale_ IP-Adressbereiche benutzt werden ([RFC1918](https://datatracker.ietf.org/doc/html/rfc1918))
+- Es müssen _lokale_ IP-Adressbereiche (z.B. `192.168.0.0/24`) bei einer _manuellen Netzwerkkonfiguration_ verwendet werden ([RFC1918](https://datatracker.ietf.org/doc/html/rfc1918)).
+- Die dynamische Netzwerkkonfiguration folgt [RFC3927](https://datatracker.ietf.org/doc/html/rfc3927) und benutzt den IP-Addressbereich `169.254.0.0/16`. Dieser Bereich wird gerne auch als _link-local_, _bonjour_, or _zeroconf_ bezeichnet. 
 - Green-GO Geräte sind kompatibel mit allen standard DHCPv4 Servern.
-- Dynamische Netzwerkkonfiguration folgt [RFC3927](https://datatracker.ietf.org/doc/html/rfc3927) und benutzt den IP-Addressbereich 169.254.0.0/16. Dieser Bereich wird auch gerne als _link-local_, _bonjour_, or _zeroconf_ bezeichnet. 
+- Es gibt derzeit **keinen** IPv6 Support für _alle_ Green-GO Geräte.
 
 ## Bandbreiten
 
-- Die meisten Green-GO Geräte verfügen über einen 10/100 Mbps Netzwerkanschluss.
-- Die Statuskommunikation zwischen den Green-GO Geräten beträgt ca. 500 Bit/s pro Gerät.
-- Die Statuskommunikation zwischen Green-GO Gerät und Software beträgt ca. 255 Bit/s pro Gerät
+- Die meisten Green-GO Geräte verfügen über einen `10/100 Mbps` Netzwerkanschluss.
+- Die Statuskommunikation zwischen den Green-GO Geräten beträgt ca. `500 Bit/s` pro Gerät.
+- Die Statuskommunikation zwischen Green-GO Gerät und Software beträgt ca. `255 Bit/s` pro Gerät
 
-| Sample Rate | Bandbreite | Aktive Streams (max) |
+| Sample Rate | Bandbreite ([Engine](https://manual.greengoconnect.com/en/glossary/#green-go-engine)) | Aktive Streams (max) |
 | :-- | :-- | :-- |
 | 16 kHz | 319 KBit/s | ~ 300 Streams/Gerät |
 | 32 kHz | 636 KBit/s | ~ 150 Streams/Gerät |
@@ -71,10 +75,10 @@ In der Regel wird es bei Green-GO bei einem Jitter von über 2 ms / 1 s problema
 
 ## VLAN Setups
 
-- VLANs werden nach IEEE 802.1Q unterstützt und werden für komplexe Netzwerken empfohlen.
+- VLANs werden nach IEEE 802.1Q unterstützt und werden für komplexe Netzwerkinfrastrukturen empfohlen.
 - Die Einrichtung und Konfiguration eines VLAN hängt vom Hersteller und Modell des Netzwerkswitches ab.
-- Ein Green-GO Gerät sollte an einem _untagged_ Switchport angeschlossen werden.
-- Die Green-GO Control Software derzeit nicht zuverlässig lauffähig mit _trunked_ bzw. _tagged_ Switchports.
+- Ein Green-GO Gerät sollte an einem _untagged_ Switchport angeschlossen sein.
+- Die Green-GO Control Software ist derzeit nicht zuverlässig lauffähig mit _trunked_ bzw. _tagged_ Switchports.
 
 ### IGMP Snooping Setup
 
