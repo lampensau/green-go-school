@@ -1,8 +1,11 @@
 ---
 title: Green-GO Interfaces
-description: Ein Übersicht über alle aktuellen Green-GO Audio- und Netzwerkinterfaces
+description: Ein Überblick über aktuelle Green-GO Audio- und Netzwerkinterfaces
 social:
   cards_layout: devices
+  cards_layout_options:
+    background_color: '#2a5e38b6'
+    background_image: layouts/interfaces.png
 ---
 # Green-GO Interfaces
 
