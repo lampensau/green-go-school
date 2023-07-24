@@ -72,7 +72,7 @@ Um einen Kanal anzusprechen, muss die entsprechende ++button++ gedrückt werden.
 
 Ein _offener_ Kanal wird von der Status-LED durch ein <span class="status-dot green"></span> grünes leuchten signalisiert.
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
     <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-talk"></div>
 
@@ -82,16 +82,16 @@ Ein _offener_ Kanal wird von der Status-LED durch ein <span class="status-dot gr
 
 Mit den _werkseitigen Standardeinstellungen_, sind zwei [Funktionen] (`Latch/Momentary`) mit einer ++button++ verknüpft:
 
-1. **Press and hold:** Will act as _push-to-talk_ and will close the channel on button release. ([`Momentary`](../glossary.md#momentary))
-2. **Short button press:** Will _latch_ the channel to open on the first press. The second button press will close the channel. ([`Latch`](../glossary.md#latch))
+1. **Drücken und halten:** Kanal ist für die Dauer des Knopfdrucks geöffnet und wird direkt nach dem Loslassen wieder geschlossen. ([`Momentary`](https://manual.greengoconnect.com/en/glossary/#momentary))
+2. **Kurzes Drücken:** Schaltet den Kanal zwischen _geöffnet_ und _geschlossen_, abhängig von aktuellen Status. ([`Latch`](https://manual.greengoconnect.com/en/glossary/#latch))
 
-The function of the button-press can be configured in the channel settings, either on the [device itself](devices.md#channel-assignments-configuration) or with the help of the [Green-GO Control](../software/tree/
+Die Kopffunktionalität kann einfach in den Einstellungen eines Kanals angepasst werden. Dies kann entweder [direkt am Gerät](https://manual.greengoconnect.com/en/getting-started/devices/#channel-assignments-configuration) oder mit Hilfe der [Green-GO Control Software](https://manual.greengoconnect.com/en/software/tree/users/#channels-tab) erfolgen.
 
 ### Audio Empfangen (VOX)
 
-If voice communication is received, the channel status will change to <span class="status-dot yellow"></span> yellow. The device will transmit audio with the set channel volume to the active audio output.
+Das Gerät überträgt Audio mit der eingestellten Kanallautstärke an den aktiven Audioausgang. Bei Empfang einer Sprachverbindung wechselt der entsprechende Kanalstatus auf <span class="status-dot yellow"></span> gelb um dies zu signalisieren.
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
     <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-listen">
       <noscript>
@@ -100,80 +100,100 @@ If voice communication is received, the channel status will change to <span clas
       </noscript>
     </div>
 
-=== "MCX, MCXD & WPX stations"
+=== "MCX & MCXD Sprechstellen"
 
     <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-listen"></div>
+    
 
-A channel will stay <span class="status-dot yellow"></span> active for 5 seconds after the last audio signal was received to give the user time to identify the receiving channel and use the [answer function](#answering-communications). This behavior can be configured by adjusting the property [`Active Time`](../devices/mcx.md#active-time) in the user's settings.
+=== "WPX Wandsprechstelle"
+    
+    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-listen"></div>
+
+Nach dem Empfang des letzten Audiosignals bleibt ein Kanal standardmäßig für 1 Sekunde länger <span class="status-dot yellow"></span> aktiv, um dem Benutzer Zeit zu geben, den Empfangskanal zu identifizieren und die Antwortfunktion zu nutzen. Dieses Verhalten kann in den Benutzereinstellungen über die Eigenschaft [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time) konfiguriert werden.
 
 <div class="svg-container svg-inline width-20" data-filename="../assets/images/bpx-popup-direct"></div>
 
-Should a user receive direct communication from another user that isn't configured on any of the 32 channels, the communication will be transmitted on an **extra 33rd channel**. A [configurable pop-up](../devices/mcx.md#popup) will inform the user about the sender's information.
+Sollte ein User eine direkte Kommunikation von einem anderen User erhalten, der nicht auf einem der 32 Kanäle konfiguriert ist, wird die Kommunikation auf einem zusätzlichen 33. Kanal ([`temp direct`](https://manual.greengoconnect.com/en/glossary/#direct-channel)) übertragen. In einem solchen Falle informiert ein [konfigurierbares Pop-up](https://manual.greengoconnect.com/en/devices/mcx/#popup) den Benutzer über die Informationen des Absenders.
 
 ### Gespräche Beantworten
 
-Green-GO allows the user to answer any incoming <span class="status-dot yellow"></span> voice communication with the press of one button. By default, the answer function will reply to the channel that received a communication **last**. However, the answer function can be configured to respond to **all currently active** incoming <span class="status-dot yellow"></span> voice communications.
+Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot yellow"></span> Sprachkommunikation mit nur einem Tastendruck zu beantworten. In den Standardeinstellungen reagiert die Antwortfunktion auf den Kanal, der **zuletzt** eine Kommunikation empfangen hat ([`Reply Mode: Last`](https://manual.greengoconnect.com/en/devices/bpx/?h=reply+mode#reply-mode)). Sie kann jedoch so konfiguriert werden, dass sie auf **alle** derzeit aktiven eingehenden Sprachkommunikationen antwortet.
 
 !!! tip ""
-    :material-lightbulb-outline: **Tip:** The property [`Active Time`](../devices/mcx.md#active-time) will influence the duration of a channel staying active and being available for the answer function after communication has been received.
+    :material-lightbulb-outline: **Tip:** Die Einstellung [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time) beeinflusst die Dauer, die ein Kanal weiterhin als <span class="status-dot yellow"></span> aktiv angezeigt wird.
+    
+    Diese Einstellung hat auch Einfluss darauf, wie lange ein Kanal für die Antwortfunktion zur Verfügung steht, nachdem eine Kommunikation empfangen wurde.
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
     <div class="svg-container svg-inline width-25" data-filename="../assets/images/bpx_click2"></div>
-    The _click action_ of the ++bpx-enc1++ and ++bpx-enc2++ is assigned to the answer/reply function. Pulling one of the encoders up towards the display while receiving any communication will reply to the last active channel.
+    Die Klickfunktion des ++bpx-enc1++ und des ++bpx-enc2++ ist immer mit der Antwortfunktion verknüpft. Wird einer der Enkoder in Richtung Display gezogen, während eine Kommunikation empfangen wird, antwortet das Gerät auf den zuletzt aktiven Kanal.
 
     <div class="svg-container svg-inline-right width-20" data-filename="../assets/images/bpx-status-answer"></div>
-    When one of the encoders is pulled, the [status screen](#) of the device displays the channel(s) that are currently activated by the answer function.
+    Wird einer der Enkoder nach oben gezogen, zeigt der [Statusbildschirm](https://manual.greengoconnect.com/en/devices/bpx/#status-screen) des Geräts in der mittleren Sektion die Kanäle an, welche gerade durch die Antwortfunktion aktiviert wurden.
 
-=== "MCX & MCXD stations"
+=== "MCX & MCXD Sprechstellen"
 
     <div class="svg-container svg-inline width-50" data-filename="../assets/images/mcx-functions-answerreply"></div>
-    The answer function must be [assigned](../devices/mcx.md#configuring-the-user-interface) to the user interface to be available. When available, the ++button++ of the answer function will allow a [reply](../glossary.md#reply) to the active channel(s), the ++touchscreen++ section will clear the current answer cue.
+    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar ist.
     
-    When the function is inactive, it will display the local user of the device.
+    Wenn verfügbar, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des `Reply Mode`. Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück.
 
-=== "WPX wall panels"
+    Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
+
+=== "WPX Wandsprechstelle"
 
     <div class="svg-container svg-inline width-50" data-filename="../assets/images/wpx-functions-answerreply_2"></div>
-    The answer function must be [assigned](../devices/mcx.md#configuring-the-user-interface) to the user interface to be available. When available, the ++button++ of the answer function will allow a [reply](../glossary.md#reply) to the active channel(s), the ++touchscreen++ section will clear the current answer cue.
+    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar ist.
     
-    When the function is inactive, it will display the local user of the device.
+    Wenn verfügbar, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des `Reply Mode`. Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück.
+
+    Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
 
 ### Kanal Lautstärke
 
-It's possible to adjust the volume for each channel, creating your perfect channel mix.
+Es ist möglich, die Lautstärke für jeden Kanal einzustellen und damit den idealen Kanalmix zu erstellen.
 
 !!! note ""
-    :material-chat-alert-outline: **Notice:** The visual level indicator of a channel's volume isn't linear. The lower parts of the available range will show no visual difference - this gives the user a better visual feedback in the level range that actually matters.
+    :material-chat-alert-outline: **Hinweis:** Die visuelle Pegelanzeige für die Kanallautstärke ist nicht linear. Der untere Teil des verfügbaren Bereichs zeigt keinen visuellen Unterschied um dem Benutzer ein besseres visuelles Feedback für den entscheidenden Pegelbereich zu geben.
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
-    A Green-GO belt pack provides direct access to the first 2 - 4 channels of the linked user, depending on the configured [UI mode](../devices/bpx.md#ui-modes).
-    
+    Ein Green-GO Beltpack ermöglicht den direkten Zugriff auf die ersten 2 - 4 Kanäle des verknüpften Users, je nach dem konfigurierten [UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#ui-modes).
+
     <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-volume-channel"></div>
-    The volume for these channels can be easily adjusted by pressing one of the channel ++bpx-btns++ together with rotating either the ++bpx-enc1++ or ++bpx-enc2++.
+    Die Kanallautstärke kann einfach mit Hilfe der Kanaltaste und der Drehbewegung eines Enkoders reguliert werden.
 
-    The volume meter below a channel's name will display the current volume setting.
+    Die Lautstärkeanzeige unter dem Kanalnamen zeigt die aktuelle Lautstärke an.
 
     !!! warning ""
-        :material-alert-outline: **Warning:** Adjusting the channel volume in direct access will always open the channel for voice communication.
+        :material-alert-outline: **Warunung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
 
     !!! tip ""
-        :material-lightbulb-outline: **Tip:** The rest of the channels can be accessed and adjusted through the [extended channel view](../devices/bpx.md#extended-channel-view)
+        :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) bedient und eingestellt werden.
 
-=== "MCX, MCXD & WPX stations"
+=== "MCX & MCXD Sprechstellen"
 
     <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-volume-channel"></div>
-    The [listen screen mode](../devices/mcx.md#operation-mode-switches) must be activated to adjust a channel's volume on an MCX, MCXD, or WPX station. When active, the ++touchscreen++ section for the channel and the ++encoder++ rotation will raise or lower the channel volume. The _volume meter_ on top of the [channel UI](#user-interface) will display the current volume setting.
+    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
+    
+    Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
+
+=== "WPX Wandsprechstelle"
+
+    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-volume-channel"></div>
+    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer WPX Wandsprechstelle zu regeln.
+    
+    Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
 
 #### Kanal Stumm Schalten
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
     <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-mute"></div>
 
     <div class="svg-container svg-inline-right width-25" data-filename="../assets/images/bpx_click1"></div>
-    To mute one of the first 2 - 4 channels of a user, the user needs to press one of the available channel ++bpx-btns++ and pull either the ++bpx-enc1++ or ++bpx-enc2++ towards the display.
+    Um einen der ersten 2 - 4 Kanäle eines Benutzers stumm zu schalten, muss eine der verfügbaren Kanaltasten gedrückt und einer der beiden Enkoder in Richtung des Displays gezogen werden.
 
     !!! warning ""
         :material-alert-outline: **Warning:** Adjusting the channel volume in direct access will always open the channel for voice communication.
@@ -181,7 +201,12 @@ It's possible to adjust the volume for each channel, creating your perfect chann
     !!! tip ""
         :material-lightbulb-outline: **Tip:** The rest of the channels can be accessed and adjusted through the [Extended Channel View](#)<!-- Link needs to be set when device manual is ready -->.
 
-=== "MCX, MCXD & WPX stations"
+=== "MCX & MCXD Sprechstellen"
+
+    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-functions-mode-listen"></div>
+    With the [listen screen mode](../devices/mcx.md#operation-mode-switches) enabled, a channel's ++touchscreen++ section can be tapped to mute or unmute the channel.
+
+=== "WPX Wandsprechstelle"
 
     <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-functions-mode-listen"></div>
     With the [listen screen mode](../devices/mcx.md#operation-mode-switches) enabled, a channel's ++touchscreen++ section can be tapped to mute or unmute the channel.
@@ -194,7 +219,7 @@ Green-GO supports call signs with an alert signal on each of the 32 user channel
 
 Should a channel receive or send a call signal, the channel status will change to <span class="status-dot red"></span> red and, after a short while, to blinking <span class="status-dot blink__white-red"></span> red and white, signaling the [alert call](../glossary.md#alert-call).
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
     Green-GO belt packs feature several [user interface presets](#) that influence how a call sign can be sent to a channel. To find more about the available user interface presets, check out the corresponding device manual.
 
@@ -203,7 +228,15 @@ Should a channel receive or send a call signal, the channel status will change t
     | <div class="svg-container svg-center" data-filename="../assets/images/bpx_call-2ch"></div> | <div class="svg-container svg-center" data-filename="../assets/images/bpx_call-3ch"></div> | <div class="svg-container svg-center" data-filename="../assets/images/bpx_call-ext"></div> |
     | A belt pack using the [2-channel UI-mode](../devices/bpx.md#ui-modes) will feature direct access to call signs on channels 1 and 2 on <br>++bpx-btn3++ or ++bpx-btn4++, respectively. | The [3-channel UI-mode](../devices/bpx.md#ui-modes) features access to the call function on ++bpx-btn4++ as soon as any of the three first channels are open. | The [Extended Channel View](../devices/bpx.md#extended-channel-view) allows access to all 32 user channels. A call sign can be sent to the selected channel by pressing ++bpx-btn2++. |
 
-=== "MCX, MCXD & WPX stations"
+=== "MCX & MCXD Sprechstellen"
+
+     <div class="svg-container svg-center width-60" data-filename="../assets/images/mcx-functions-mode-call"></div>
+    The [call screen mode](../devices/mcx.md#operation-mode-switches) needs to be active on the device to enable the **sending** of call signals. When activated, the touch on a channel's ++touchscreen++ section will send a call sign to the assigned target(s).
+
+    !!! tip ""
+        :material-lightbulb-outline: **Tip:** It is possible to send a call sign with the press of a channel's ++button++. The property [`Button`](../devices/mcx.md#button) defines if the buttons should change their function to the active [screen mode](../devices/mcx.md#screen-function) or always open a channel for voice communication.
+
+=== "WPX Wandsprechstelle"
 
      <div class="svg-container svg-center width-60" data-filename="../assets/images/mcx-functions-mode-call"></div>
     The [call screen mode](../devices/mcx.md#operation-mode-switches) needs to be active on the device to enable the **sending** of call signals. When activated, the touch on a channel's ++touchscreen++ section will send a call sign to the assigned target(s).
@@ -223,21 +256,21 @@ A cue signal is sent by tapping the channel's ++touchscreen++ section while usin
 
 Incoming cue signs will be displayed with a pop-up on the screen. Additionally, the channel status will change its [color](#status-colors) according to the cue stage.<!-- The pop-ups can be easily cleared by pressing any ++button++ on the device.-->
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
      <div class="svg-container svg-inline width-25" data-filename="../assets/images/bpx_click2"></div>
     Answering an incoming <span class="status-dot blink__red-yellow"></span> attention cue is the same as [answering any communication](#answering-communications): Pulling one of the encoders up towards the display. 
     
     <!--The pop-ups showing the status and sender information of the signal can be cleared by pressing any of the four ++bpx-btns++ on the front of the device.-->
 
-=== "MCX & MCXD stations"
+=== "MCX & MCXD Sprechstellen"
 
     | Answer incoming Attention Cue {: .two-col} | Incoming Hold or Go Cues {: .two-col} |
     | --- | --- |
     | <div class="svg-container svg-center" data-filename="../assets/images/mcx_functions_cue-rcv_attention"></div> | <div class="svg-container svg-center" data-filename="../assets/images/mcx_functions_cue-rcv_hold_go"></div> |
     | An incoming `Attention` cue will be displayed with its sender information in a pop-up on the third touchscreen. The Setup or Shift buttons can be pressed to answer incoming `Attention` cues. | An incoming `Ready` or `GO` cue will be displayed in a pop-up together with the sender's information on the third touchscreen. <!--The pop-up can be cleared by pressing any ++button++ of the device.--> |
 
-<!-- === "WPX wall panel"
+<!-- === "WPX Wandsprechstelle"
 
     {==I'm honestly lost on how the answer function works on the WPX. Was it pushing the encoder while receiving a communication?==} -->
 
@@ -247,7 +280,7 @@ The setup menu allows for persistent changes on the device and user configuratio
 
 ### User stations
 
-=== "BPX & WBPX belt packs"
+=== "BPX & WBPX Beltpacks"
 
     The [BPX](../devices/bpx.md) and [WBPX](../devices/wbpx.md) belt packs feature two methods to access the setup menu:
 
@@ -256,12 +289,12 @@ The setup menu allows for persistent changes on the device and user configuratio
     | <div class="svg-container svg-center" data-filename="../assets/images/bpx_setup1"></div> | <div class="svg-container svg-center" data-filename="../assets/images/bpx-setup-method_b"></div> |
     | Pull the ++bpx-enc1+bpx-enc2++ up towards the display. | Press ++bpx-btn1+bpx-btn3++ after pulling and holding either the ++bpx-enc1++ or ++bpx-enc2++ up towards the display. |
 
-=== "MCX & MCXD stations"
+=== "MCX & MCXD Sprechstellen"
 
      <div class="svg-container svg-inline width-50" data-filename="../assets/images/mcx_setup"></div>
     The [MCX rack](../devices/mcx.md) and [MCXD desktop](../devices/mcxd.md) stations provide easy access to the setup menu using a dedicated ++setup++ button and navigated with the help of the encoder right next to it.
 
-=== "WPX wall panel"
+=== "WPX Wandsprechstelle"
 
      <div class="svg-container svg-inline width-50" data-filename="../assets/images/wpx_setup"></div>
     The setup menu on the [WPX wall panel](../devices/wpx.md) is hidden behind the press of the ++encoder++. When pressed, the 6th ++touchscreen++ section on the bottom right will provide access to the setup menu if tapped.

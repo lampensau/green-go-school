@@ -90,7 +90,7 @@ In der Regel wird es bei Green-GO bei einem Jitter von über 2 ms / 1 s problema
 - In Netzwerken mit viel Datenfluss (Bandbreite oder Paketanzahl) kann es erforderlich sein Green-GO Datenverkehr zu priorisieren.
 - Green-GO Audiodaten können mit Hilfe des [DSCP Werts](https://de.wikipedia.org/wiki/DiffServ) `46` (VoIP) und [PCP Wert](https://de.wikipedia.org/wiki/IEEE_802.1p) `5` priorisiert werden.
 
-### Paket Klassifizierung
+### Paket Klassifizierungen (DSCP)
 
 | DSCP Feld | DSCP Wert | Beschreibung |
 | :-: | :-: | :-- |
