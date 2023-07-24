@@ -17,8 +17,6 @@ theme:
     - content.tabs.link
     - content.tooltips
     - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetch
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -60,6 +58,7 @@ plugins:
   - meta
   - typeset
   - privacy:
+      enabled: !ENV [CI, false]
       assets: true
       assets_fetch: true
       assets_fetch_dir: assets/external
@@ -79,6 +78,7 @@ plugins:
       timezone: Europe/Berlin
       locale: de
   - git-committers:
+      enabled: !ENV [CI, false]
       repository: lampensau/green-go-school
       branch: main
 
