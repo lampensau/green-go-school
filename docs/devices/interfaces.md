@@ -13,7 +13,9 @@ Green-GO Interfaces werden benutzt um externe Signale zu integrieren oder Signal
 
 ## Einkanal Interfaces
 
-### [RDX Funkkanal Interface](https://manual.greengoconnect.com/en/devices/rdx/)
+### RDX Funkkanal Interface
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/rdx/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-rdx-walkie-talkie-interface.html)
 
 <figure markdown>
 ![RDX Radio Interface](../assets/images/rdx-light.png#only-light)
@@ -26,20 +28,37 @@ Green-GO Interfaces werden benutzt um externe Signale zu integrieren oder Signal
 - Ideal um reichweitenintensive Kommunikationskanäle anzubinden.
 - Adapter Pinouts sind ind Handbuch [verfügbar](https://manual.greengoconnect.com/en/devices/rdx/#d-sub-9-pin-outs).
 
-### [Si2WR](https://manual.greengoconnect.com/en/devices/si2wr/) & [Si4WR](https://manual.greengoconnect.com/en/devices/si4wr/) Interfaces
+### Si2WR Interface
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/si2wr/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-td2w-2-draht-interface.html)
 
 <figure markdown>
 ![Si4WR Interface](../assets/images/si4wr-light.png#only-light)
 ![Si4WR Interface](../assets/images/si4wr-dark.png#only-dark)
 </figure>
 
-- Kompakte und einkanalige Interfaces für 2- bzw. analoges Audio und 4-Draht Anbindungen.
+- Kompakte und einkanaliges Interface für 2-Draht Anbindungen.
+- Bieten Zugriff auf alle Funktionen und Kommunikationsmodi (32 Kanäle, Audioprocessing, Ruf- & Lichtzeichen, Scripting u.v.m.)
+- Ideal für kompakte Integrationen (z.B. Avid oder DiGiCo Konsole als Steuerung mit Scripting/OSC angebunden)
+
+### Si4WR Interface
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/si4wr/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-td4w-4-draht-interface.html)
+
+<figure markdown>
+![Si4WR Interface](../assets/images/si4wr-light.png#only-light)
+![Si4WR Interface](../assets/images/si4wr-dark.png#only-dark)
+</figure>
+
+- Kompakte und einkanaliges Interface für analoges Audio und 4-Draht Anbindungen.
 - Bieten Zugriff auf alle Funktionen und Kommunikationsmodi (32 Kanäle, Audioprocessing, Ruf- & Lichtzeichen, Scripting u.v.m.)
 - Ideal für kompakte Integrationen (z.B. Avid oder DiGiCo Konsole als Steuerung mit Scripting/OSC angebunden)
 
 ## 19" Interfaces
 
-### [INTX Audio InterfaceX](https://manual.greengoconnect.com/en/devices/interfacex/)
+### INTX Audio InterfaceX
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/interfacex/) - [:material-shopping: Shop](https://www.castinfo.de/greengo-interfacex-19-audio-interface.html)
 
 <figure markdown>
 ![Audio InterfaceX](../assets/images/intx-light.png#only-light)
@@ -54,7 +73,9 @@ Green-GO Interfaces werden benutzt um externe Signale zu integrieren oder Signal
 - Optionale Spannungsversorgung mittels optionalen 12V Netzteil.
 - Ideales Interface für flexible Integrationen vor Ort.
 
-### [Q4WR Audio Interface](https://manual.greengoconnect.com/en/devices/q4wr/)
+### Q4WR Audio Interface
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/q4wr/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-q4wr-quad-4-draht-interface.html)
 
 <figure markdown>
 ![Q4WR Audio Interface](../assets/images/q4wr-light.png#only-light)
@@ -66,7 +87,9 @@ Green-GO Interfaces werden benutzt um externe Signale zu integrieren oder Signal
 - 2-Port Netzwerkswitch mit PoE Eingang.
 - Optionale Spannungsversorgung mittels optionalen 12V Netzteil.
 
-### [DNTI Dante Interface](https://manual.greengoconnect.com/en/devices/dntx/)
+### DNTI Dante Interface
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/dntx/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-dnti-dante-4x4-interface.html)
 
 <figure markdown>
 ![DNTI Dante Interface](../assets/images/dnti-light.png#only-light)
@@ -78,7 +101,9 @@ Green-GO Interfaces werden benutzt um externe Signale zu integrieren oder Signal
 - 2-Port Netzwerkswitch mit PoE Eingang für eine Anbindung an das lokale Green-GO Netzwerk.
 - Optionale Spannungsversorgung mittels optionalen 12V Netzteil.
 
-### [BridgeX Netzwerk Interface](https://manual.greengoconnect.com/en/devices/bridgex/)
+### BridgeX Netzwerk Interface
+
+[Handbuch](https://manual.greengoconnect.com/en/devices/bridgex/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-bridgex-19-bridge-interface-4-verbindungen-1he.html)
 
 <figure markdown>
 ![Network BridgeX](../assets/images/bridgex-light.png#only-light)
