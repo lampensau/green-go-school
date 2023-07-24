@@ -11,7 +11,7 @@ social:
 
 Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 
-### [MCX Rack- & MCXD Tischstation]()
+### MCX Rack- & MCXD Tischstation
 
 [Handbuch](https://manual.greengoconnect.com/en/devices/mcx/) - [:material-shopping: MCX](https://www.castinfo.de/greengo-mcx-32-kanal-19-rackstation-1he.html), [MCXD](https://www.castinfo.de/greengo-mcxd-32-kanal-tischstation.html)
 
@@ -29,7 +29,7 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 - GPIO Anschluss ermöglicht externe Integrationen über zwei Ein- und Ausgänge.
 - Kompakte Bauweise integriert sich problemlos und platzsparend in Kontrollräume oder Systemracks.
 
-### [MCX(D) Kanalerweiterung]()
+### MCX(D) Kanalerweiterung
 
 [Handbuch](https://manual.greengoconnect.com/en/devices/mcxext/) - [:material-shopping: MCXEXT](https://www.castinfo.de/greengo-mcxext-24-kanal-19-erweiterung-fur-mcx.html), [MCXDEXT](https://www.castinfo.de/greengo-mcxdext-24-kanal-erweiterung-fur-mcxd.html)
 
