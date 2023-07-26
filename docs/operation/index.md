@@ -44,7 +44,7 @@ Jede Green-GO Sprechstelle verfügt über mindestens einen Display welcher Kanal
 
 Die Anzahl der Kanäle im direkten Zugriff variiert je nach Gerätetyp oder -konfiguration. Grundsätzlich bleibt die Struktur aber über alle Möglichkeiten gleich:
 
-<div class="svg-container svg-center width-80" data-filename="../assets/images/mcx-display-ui-channel_new"></div>
+![Green-GO Kanal UI](../assets/images/mcx-display-ui-channel_new.svg){.img-center .width-80 inline=true}
 
 Channel Status
 :  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](../glossary.md#green-go-engine) kein Gerät oder User als für den Kanal finden kann.
@@ -74,13 +74,13 @@ Ein _offener_ Kanal wird von der Status-LED durch ein <span class="status-dot gr
 
 === "BPX & WBPX Beltpacks"
 
-    <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-talk"></div>
+    ![BPX/WBPX: Kanal Ansprechen](../assets/images/bpx-use-talk.svg){.img-center .width-60 inline=true}
 
 === "MCX, MCXD & WPX stations"
 
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-talk"></div>
+    ![MCX/MCXD: Kanal Ansprechen](../assets/images/mcx-use-talk.svg){.img-center .width-80 inline=true}
 
-Mit den _werkseitigen Standardeinstellungen_, sind zwei [Funktionen] (`Latch/Momentary`) mit einer ++button++ verknüpft:
+Mit den _werkseitigen Standardeinstellungen_, sind zwei Funktionen für das Besprechen eines Kanals (`Latch/Momentary`) mit einer Funktionstaste verknüpft:
 
 1. **Drücken und halten:** Kanal ist für die Dauer des Knopfdrucks geöffnet und wird direkt nach dem Loslassen wieder geschlossen. ([`Momentary`](https://manual.greengoconnect.com/en/glossary/#momentary))
 2. **Kurzes Drücken:** Schaltet den Kanal zwischen _geöffnet_ und _geschlossen_, abhängig von aktuellen Status. ([`Latch`](https://manual.greengoconnect.com/en/glossary/#latch))
@@ -93,25 +93,19 @@ Das Gerät überträgt Audio mit der eingestellten Kanallautstärke an den aktiv
 
 === "BPX & WBPX Beltpacks"
 
-    <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-listen">
-      <noscript>
-        <p>Bitte schalte Javascript ein um das Bild zu laden.</p>
-        <p>BPX: Wie man Audio empfängt.</p>
-      </noscript>
-    </div>
+    ![BPX/WBPX: Audio auf Kanal empfangen](../assets/images/bpx-use-listen.svg){.img-center .width-60 inline=true}
 
 === "MCX & MCXD Sprechstellen"
 
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-listen"></div>
-    
+    ![MCX/MCXD: Audio auf Kanal empfangen](../assets/images/mcx-use-listen.svg){.img-center .width-70 inline=true}   
 
 === "WPX Wandsprechstelle"
     
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-listen"></div>
+    ![WPX: Audio auf Kanal empfangen](../assets/images/mcx-use-listen.svg){.img-center .width-70 inline=true}
 
 Nach dem Empfang des letzten Audiosignals bleibt ein Kanal standardmäßig für 1 Sekunde länger <span class="status-dot yellow"></span> aktiv, um dem Benutzer Zeit zu geben, den Empfangskanal zu identifizieren und die Antwortfunktion zu nutzen. Dieses Verhalten kann in den Benutzereinstellungen über die Eigenschaft [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time) konfiguriert werden.
 
-<div class="svg-container svg-inline width-20" data-filename="../assets/images/bpx-popup-direct"></div>
+![Popup für den Direkten Kanal](../assets/images/bpx-popup-direct.svg){.img-inline .width-20 inline=true}
 
 Sollte ein User eine direkte Kommunikation von einem anderen User erhalten, der nicht auf einem der 32 Kanäle konfiguriert ist, wird die Kommunikation auf einem zusätzlichen 33. Kanal ([`temp direct`](https://manual.greengoconnect.com/en/glossary/#direct-channel)) übertragen. In einem solchen Falle informiert ein [konfigurierbares Pop-up](https://manual.greengoconnect.com/en/devices/mcx/#popup) den Benutzer über die Informationen des Absenders.
 
@@ -126,15 +120,18 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
 === "BPX & WBPX Beltpacks"
 
-    <div class="svg-container svg-inline width-25" data-filename="../assets/images/bpx_click2"></div>
+    ![](../assets/images/bpx_click2.svg){.img-inline .width-25 inline=true}
+
     Die Klickfunktion des ++bpx-enc1++ und des ++bpx-enc2++ ist immer mit der Antwortfunktion verknüpft. Wird einer der Enkoder in Richtung Display gezogen, während eine Kommunikation empfangen wird, antwortet das Gerät auf den zuletzt aktiven Kanal.
 
-    <div class="svg-container svg-inline-right width-20" data-filename="../assets/images/bpx-status-answer"></div>
+    ![](../assets/images/bpx-status-answer.svg){.img-inline-right .width-20 inline=true}
+
     Wird einer der Enkoder nach oben gezogen, zeigt der [Statusbildschirm](https://manual.greengoconnect.com/en/devices/bpx/#status-screen) des Geräts in der mittleren Sektion die Kanäle an, welche gerade durch die Antwortfunktion aktiviert wurden.
 
 === "MCX & MCXD Sprechstellen"
 
-    <div class="svg-container svg-inline width-50" data-filename="../assets/images/mcx-functions-answerreply"></div>
+    ![](../assets/images/mcx-functions-answerreply.svg){.img-inline .width-50 inline=true}
+
     Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar ist.
     
     Wenn verfügbar, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des `Reply Mode`. Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück.
@@ -143,7 +140,8 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
 === "WPX Wandsprechstelle"
 
-    <div class="svg-container svg-inline width-50" data-filename="../assets/images/wpx-functions-answerreply_2"></div>
+    ![](../assets/images/wpx-functions-answerreply_2.svg){.img-inline .width-50 inline=true}
+
     Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar ist.
     
     Wenn verfügbar, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des `Reply Mode`. Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück.
@@ -161,7 +159,8 @@ Es ist möglich, die Lautstärke für jeden Kanal einzustellen und damit den ide
 
     Ein Green-GO Beltpack ermöglicht den direkten Zugriff auf die ersten 2 - 4 Kanäle des verknüpften Users, je nach dem konfigurierten [UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#ui-modes).
 
-    <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-volume-channel"></div>
+    ![](../assets/images/bpx-use-volume-channel.svg){.img-center .width-60 inline=true}
+
     Die Kanallautstärke kann einfach mit Hilfe der Kanaltaste und der Drehbewegung eines Enkoders reguliert werden.
 
     Die Lautstärkeanzeige unter dem Kanalnamen zeigt die aktuelle Lautstärke an.
@@ -174,14 +173,16 @@ Es ist möglich, die Lautstärke für jeden Kanal einzustellen und damit den ide
 
 === "MCX & MCXD Sprechstellen"
 
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-volume-channel"></div>
+    ![](../assets/images/mcx-use-volume-channel.svg){.img-center .width-60 inline=true}
+
     Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
     
     Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
 
 === "WPX Wandsprechstelle"
 
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-use-volume-channel"></div>
+    ![](../assets/images/mcx-use-volume-channel.svg){.img-center .width-70 inline=true}
+
     Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer WPX Wandsprechstelle zu regeln.
     
     Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
@@ -190,9 +191,10 @@ Es ist möglich, die Lautstärke für jeden Kanal einzustellen und damit den ide
 
 === "BPX & WBPX Beltpacks"
 
-    <div class="svg-container svg-center width-60" data-filename="../assets/images/bpx-use-mute"></div>
+    ![](../assets/images/bpx-use-mute.svg){.img-center .width-60 inline=true}
 
-    <div class="svg-container svg-inline-right width-25" data-filename="../assets/images/bpx_click1"></div>
+    ![](../assets/images/bpx_click1.svg){.img-inline-right .width-25 inline=true}
+
     Um einen der ersten 2 - 4 Kanäle eines Benutzers stumm zu schalten, muss eine der verfügbaren Kanaltasten gedrückt und einer der beiden Enkoder in Richtung des Displays gezogen werden.
 
     !!! warning ""
@@ -203,12 +205,14 @@ Es ist möglich, die Lautstärke für jeden Kanal einzustellen und damit den ide
 
 === "MCX & MCXD Sprechstellen"
 
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-functions-mode-listen"></div>
+    ![](../assets/images/mcx-functions-mode-listen.svg){.img-center .width-70 inline=true}
+
     With the [listen screen mode](../devices/mcx.md#operation-mode-switches) enabled, a channel's ++touchscreen++ section can be tapped to mute or unmute the channel.
 
 === "WPX Wandsprechstelle"
 
-    <div class="svg-container svg-center width-70" data-filename="../assets/images/mcx-functions-mode-listen"></div>
+    ![](../assets/images/mcx-functions-mode-listen.svg){.img-center .width-70 inline=true}
+
     With the [listen screen mode](../devices/mcx.md#operation-mode-switches) enabled, a channel's ++touchscreen++ section can be tapped to mute or unmute the channel.
 
 The volume meter on top of the [channel UI](#user-interface) will become hollow as soon as the channel is muted and return to the previous set volume when unmuted. The previous set channel volume will be stored and recalled upon muting or unmuting, respectively.
@@ -225,12 +229,13 @@ Should a channel receive or send a call signal, the channel status will change t
 
     | 2-Channel Mode {: .three-col} | 3-Channel Mode {: .three-col} | Extended Channel View {: .three-col} |
     |:-|:-|:-|
-    | <div class="svg-container svg-center" data-filename="../assets/images/bpx_call-2ch"></div> | <div class="svg-container svg-center" data-filename="../assets/images/bpx_call-3ch"></div> | <div class="svg-container svg-center" data-filename="../assets/images/bpx_call-ext"></div> |
+    | ![](../assets/images/bpx_call-2ch.svg){.img-center inline=true} | ![](../assets/images/bpx_call-3ch.svg){.img-center inline=true} | ![](../assets/images/bpx_call-ext.svg){.img-center inline=true} |
     | A belt pack using the [2-channel UI-mode](../devices/bpx.md#ui-modes) will feature direct access to call signs on channels 1 and 2 on <br>++bpx-btn3++ or ++bpx-btn4++, respectively. | The [3-channel UI-mode](../devices/bpx.md#ui-modes) features access to the call function on ++bpx-btn4++ as soon as any of the three first channels are open. | The [Extended Channel View](../devices/bpx.md#extended-channel-view) allows access to all 32 user channels. A call sign can be sent to the selected channel by pressing ++bpx-btn2++. |
 
 === "MCX & MCXD Sprechstellen"
 
-     <div class="svg-container svg-center width-60" data-filename="../assets/images/mcx-functions-mode-call"></div>
+    ![](../assets/images/mcx-functions-mode-call.svg){.img-center .width-60 inline=true}
+
     The [call screen mode](../devices/mcx.md#operation-mode-switches) needs to be active on the device to enable the **sending** of call signals. When activated, the touch on a channel's ++touchscreen++ section will send a call sign to the assigned target(s).
 
     !!! tip ""
@@ -238,7 +243,8 @@ Should a channel receive or send a call signal, the channel status will change t
 
 === "WPX Wandsprechstelle"
 
-     <div class="svg-container svg-center width-60" data-filename="../assets/images/mcx-functions-mode-call"></div>
+    ![](../assets/images/mcx-functions-mode-call.svg){.img-center .width-60 inline=true}
+
     The [call screen mode](../devices/mcx.md#operation-mode-switches) needs to be active on the device to enable the **sending** of call signals. When activated, the touch on a channel's ++touchscreen++ section will send a call sign to the assigned target(s).
 
     !!! tip ""
@@ -246,7 +252,8 @@ Should a channel receive or send a call signal, the channel status will change t
 
 ### Kanal Lichtzeichen (Cue)
 
- <div class="svg-container svg-inline-right width-50" data-filename="../assets/images/mcx-functions-mode-cue"></div>
+![](../assets/images/mcx-functions-mode-cue.svg){.img-inline-right .width-50 inline=true}
+
 A cue signal is sent by tapping the channel's ++touchscreen++ section while using the [cue screen mode](../devices/mcx.md#operation-mode-switches) on an MCX rack or MCXD desktop station. The first tap will initiate an <span class="status-dot blink__red-yellow"></span> attention cue. A second tap on the ++touchscreen++ will directly send the <span class="status-dot green"></span> GO cue and clear the channel after the local [`Cue Timeout`](../devices/mcx.md#cue-timeout) reaches 0.
 
 !!! tip ""
@@ -258,7 +265,8 @@ Incoming cue signs will be displayed with a pop-up on the screen. Additionally, 
 
 === "BPX & WBPX Beltpacks"
 
-     <div class="svg-container svg-inline width-25" data-filename="../assets/images/bpx_click2"></div>
+    ![](../assets/images/bpx_click2.svg){.img-inline .width-25 inline=true}
+
     Answering an incoming <span class="status-dot blink__red-yellow"></span> attention cue is the same as [answering any communication](#answering-communications): Pulling one of the encoders up towards the display. 
     
     <!--The pop-ups showing the status and sender information of the signal can be cleared by pressing any of the four ++bpx-btns++ on the front of the device.-->
@@ -267,7 +275,7 @@ Incoming cue signs will be displayed with a pop-up on the screen. Additionally, 
 
     | Answer incoming Attention Cue {: .two-col} | Incoming Hold or Go Cues {: .two-col} |
     | --- | --- |
-    | <div class="svg-container svg-center" data-filename="../assets/images/mcx_functions_cue-rcv_attention"></div> | <div class="svg-container svg-center" data-filename="../assets/images/mcx_functions_cue-rcv_hold_go"></div> |
+    | ![](../assets/images/mcx_functions_cue-rcv_attention.svg){.img-center inline=true} | ![](../assets/images/mcx_functions_cue-rcv_hold_go.svg){.img-center inline=true} |
     | An incoming `Attention` cue will be displayed with its sender information in a pop-up on the third touchscreen. The Setup or Shift buttons can be pressed to answer incoming `Attention` cues. | An incoming `Ready` or `GO` cue will be displayed in a pop-up together with the sender's information on the third touchscreen. <!--The pop-up can be cleared by pressing any ++button++ of the device.--> |
 
 <!-- === "WPX Wandsprechstelle"
@@ -286,22 +294,24 @@ The setup menu allows for persistent changes on the device and user configuratio
 
     | Method A {: .two-col} | Method B {: .two-col} |
     | :- | :- |
-    | <div class="svg-container svg-center" data-filename="../assets/images/bpx_setup1"></div> | <div class="svg-container svg-center" data-filename="../assets/images/bpx-setup-method_b"></div> |
+    | ![](../assets/images/bpx_setup1.svg){.img-center inline=true} | ![](../assets/images/bpx-setup-method_b.svg){.img-center inline=true} |
     | Pull the ++bpx-enc1+bpx-enc2++ up towards the display. | Press ++bpx-btn1+bpx-btn3++ after pulling and holding either the ++bpx-enc1++ or ++bpx-enc2++ up towards the display. |
 
 === "MCX & MCXD Sprechstellen"
 
-     <div class="svg-container svg-inline width-50" data-filename="../assets/images/mcx_setup"></div>
+    ![](../assets/images/mcx_setup.svg){.img-inline .width-50 inline=true}
+
     The [MCX rack](../devices/mcx.md) and [MCXD desktop](../devices/mcxd.md) stations provide easy access to the setup menu using a dedicated ++setup++ button and navigated with the help of the encoder right next to it.
 
 === "WPX Wandsprechstelle"
 
-     <div class="svg-container svg-inline width-50" data-filename="../assets/images/wpx_setup"></div>
+    ![](../assets/images/wpx_setup.svg){.img-inline .width-50 inline=true}
+
     The setup menu on the [WPX wall panel](../devices/wpx.md) is hidden behind the press of the ++encoder++. When pressed, the 6th ++touchscreen++ section on the bottom right will provide access to the setup menu if tapped.
 
 <!-- === "MCXEXT & MCXDEXT extensions"
 
-     <div class="svg-container svg-center width-40" data-filename="../assets/images/mcxext_setup"></div>
+    ![](../assets/images/mcxext_setup.svg){.img-center .width-40 inline=true}
     The setup menu on the [MCXEXT rack](../devices/mcxext.md) or [MCXDEXT desktop](../devices/mcxext.md) channel extensions is only available if **not connected** to a master [MCX rack](../devices/mcx.md) or [MCXD desktop](../devices/mcxd.md) station. It can be accessed with the last ++button++ on the bottom-right of the 4th display.<br>
     The two buttons above can be used to navigate the setup menu. -->
 
@@ -309,13 +319,15 @@ The setup menu allows for persistent changes on the device and user configuratio
 
 === "19" Rack-Interfaces"
 
-     <div class="svg-container svg-inline width-50" data-filename="../assets/images/interface_tft-setup"></div>
+     ![](../assets/images/interface_tft-setup.svg){.img-inline .width-50 inline=true}
+
     Pressing the ++encoder++ will bring up the setup menu on all 19" rack Green-GO interfaces like the [audio InterfaceX](../devices/interfacex.md), [Q4WR quad 4-wire interface](../devices/q4wr.md),  and many more.<br>
     The setup menu is navigated by scrolling or clicking the ++encoder++.
 
 === "1CH Interfaces"
 
-     <div class="svg-container svg-inline width-50" data-filename="../assets/images/1ch_setup"></div>
+     ![](../assets/images/1ch_setup.svg){.img-inline .width-50 inline=true}
+     
     Pressing ++bpx-btn1+bpx-btn2++ at the same time brings up the setup menu on one-channel interfaces like the [RDX radio interface](../devices/rdx.md) or [SI4WR 4-wire interface](../devices/si4wr.md).
     
     In the setup menu, ++bpx-btn3++ and ++bpx-btn4++ go up and down. ++bpx-btn1++ affirms a selection, and ++bpx-btn2++ exits the current menu or selection.

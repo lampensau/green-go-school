@@ -50,15 +50,13 @@ theme:
     logo: logo
 
 extra_css:
-  - assets/styles/extra.css
-extra_javascript:
-  - assets/javascript/svg-load.js
+  - assets/stylesheets/extra.css
 
 plugins:
   - meta
   - typeset
   - privacy:
-      enabled: !ENV [CI, false]
+      enabled: true
       assets: true
       assets_fetch: true
       assets_fetch_dir: assets/external
@@ -71,7 +69,7 @@ plugins:
       cards_layout_dir: layouts
       cards_layout: default
   - minify:
-      minify_html: true
+      minify_html: !ENV [CI, false]
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       type: timeago
@@ -81,6 +79,7 @@ plugins:
       enabled: !ENV [CI, false]
       repository: lampensau/green-go-school
       branch: main
+  - svg-inline
 
 extra:
   generator: false

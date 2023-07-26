@@ -104,9 +104,10 @@ Für eine vollständige Analyse kann es erforderlich sein den Paketfluss eines s
 
 Ein solcher Mittschnitt kann zum Beispiel mit Hilfe einer sogenannten [Network TAP](https://www.dualcomm.com/products/usb-powered-10-100-1000base-t-network-tap) erzeugt werden.
 
-<div class="svg-container svg-center width-80" data-filename="../../assets/images/network-tap"></div>
+![](../assets/images/network-tap.svg){.img-center width-80 inline=true} 
 
 Alternativ kann auch der Datenverkehr eines bestimten Switchports auf einen mit dem Rechner verbundenen Switchport dupliziert werden. Diese Funktionalität ist abhängig vom Switchmodel und erfordert eine Anpassung der Switchkonfiguration.
+
 ### Wireshark
 
 - **Link:** [wireshark.org](https://www.wireshark.org/download.html)
@@ -168,11 +169,11 @@ Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paket
 === "Mitschnittfilter"
 
     Ein Mittschnittfilter kann hilfreich sein um Umfang eines Mittschnitts auf das Notwendige zu reduzieren. Dies kann die Dateigröße eines Mittschnitts signifikant verringern.
+
+    ![Wireshark Mittschnittfilter](../assets/images/wireshark-capture-filter.png)
     
     !!! warning ""
         :material-alert-outline: **Achtung:** Es ist nicht möglich ausgefilterte Pakete im Nachhinein wiederherzustellen, daher sollte dieser Filtermechanismus mit vorsicht verwendet werden.
-
-    ![Alt text](image.png)
 
     Folgende Filter-Statements können mit den Operatoren `&&` (und), `||` (oder) logisch verknüpft und mit `()` gruppiert werden.
 
@@ -190,7 +191,9 @@ Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paket
 
     Ein Displayfilter limitiert die aktuelle Paketliste, hat aber keinen Einfluss auf den Mittschnitt. Pakete werden unabhängig vom Displayfilter weiter aufgezeichnet.
 
-    ![Alt text](image-2.png)
+    ![Wireshark Mittschnittfilter](../assets/images/wireshark-display-filter.png)
+
+    Folgende Filter-Statements können mit den Operatoren `&&` (und), `||` (oder) logisch verknüpft und mit `()` gruppiert werden.
 
     `eth.addr[0:3] == 00:1F:80`
     : Dieses Statement überprüft ob Pakete die OUI von ELC (`00:1F:80`) in den ersten drei Bytes der MAC-Adresse verwenden.

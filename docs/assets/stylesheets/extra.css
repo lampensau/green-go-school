@@ -1,0 +1,398 @@
+:root > * {
+  /* Color overrides */
+  --md-primary-fg-color: hsl(137, 81%, 29%);
+  --md-primary-fg-color--light: hsla(137, 81%, 34%, 1);
+  --md-primary-fg-color--dark: hsla(120, 100%, 17%, 1);
+  --md-accent-fg-color: hsl(120, 68%, 40%);
+  --md-accent-fg-color--light: hsla(137, 81%, 34%, 1);
+  --md-accent-fg-color--dark: hsla(120, 100%, 17%, 1);
+
+  /* Green-GO state colors */
+  --gg-status-black: var(--md-primary-bg-color);
+  --gg-status-white: var(--md-primary-bg-color);
+  --gg-status-gray: hsla(0, 0%, 47%, 1);
+  --gg-status-red: hsla(0, 100%, 50%, 1);
+  --gg-status-green: hsla(137, 81%, 34%, 1);
+  --gg-status-dark-green: hsla(137, 81%, 14%, 1);
+  --gg-status-blue: hsla(240, 100%, 50%, 1);
+  --gg-status-cyan: hsla(180, 100%, 50%, 1);
+  --gg-status-magenta: hsla(300, 100%, 50%, 1);
+  --gg-status-yellow: hsla(60, 100%, 50%, 1);
+  --gg-status-orange: hsla(39, 100%, 50%, 1);
+  --gg-status-purple: hsla(300, 100%, 25%, 1);
+}
+
+/* Slight spacing correction on logo and heading */
+[dir='ltr'] .md-header__title {
+  margin-left: 0.5rem;
+}
+
+/* Markdown definitions */
+[dir='ltr'] .md-typeset dl dt {
+  font-weight: 700;
+}
+[dir='ltr'] .md-typeset dl dd {
+  margin-top: 0.25em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+}
+
+/* Green-GO Control Buttons */
+.md-typeset .button-outline,
+.md-typeset .button-fill {
+  display: inline-block;
+  color: var(--md-primary-fg-color);
+  border: solid var(--md-primary-fg-color) 0.0625em;
+  border-radius: 0.25em;
+  margin: 0px 0.25em;
+  padding: 0.21875em 1.375em;
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  font-size: 75%;
+  font-weight: normal !important;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  cursor: default;
+}
+.md-typeset .button-fill {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-default-bg-color) !important;
+}
+
+/* Green-GO State Dots */
+.md-typeset span.status-dot {
+  display: inline-block;
+  height: 0.875em;
+  width: 0.875em;
+  margin: 0 0.125em 0 0.125em;
+  border-radius: 100%;
+  border: 0.0625em solid transparent;
+}
+.md-typeset span.status-dot.black {
+  background-color: var(--gg-status-black);
+}
+.md-typeset span.status-dot.white {
+  background-color: var(--gg-status-white);
+  border: 0.0625em solid #cccccc;
+}
+.md-typeset span.status-dot.gray {
+  background-color: var(--gg-status-gray);
+}
+.md-typeset span.status-dot.red {
+  background-color: var(--gg-status-red);
+}
+.md-typeset span.status-dot.green {
+  background-color: var(--gg-status-green);
+}
+.md-typeset span.status-dot.dark-green {
+  background-color: var(--gg-status-dark-green);
+}
+.md-typeset span.status-dot.blue {
+  background-color: var(--gg-status-blue);
+}
+.md-typeset span.status-dot.cyan {
+  background-color: var(--gg-status-cyan);
+  border: 0.0625em solid #009999;
+}
+.md-typeset span.status-dot.magenta {
+  background-color: var(--gg-status-magenta);
+}
+.md-typeset span.status-dot.yellow {
+  background-color: var(--gg-status-yellow);
+  border: 0.0625em solid #b3b300;
+}
+.md-typeset span.status-dot.orange {
+  background-color: var(--gg-status-orange);
+}
+.md-typeset span.status-dot.purple {
+  background-color: var(--gg-status-purple);
+}
+.md-typeset span.status-dot.blink__black-red {
+  animation: blink__black-red 1.5s step-start infinite;
+}
+@keyframes blink__black-red {
+  from,
+  to {
+    background-color: var(--gg-status-black);
+    border: 0.0625em solid transparent;
+  }
+  50% {
+    background-color: var(--gg-status-red);
+    border: 0.0625em solid transparent;
+  }
+}
+.md-typeset span.status-dot.blink__black-green {
+  animation: blink__black-green 1.5s step-start infinite;
+}
+@keyframes blink__black-green {
+  from,
+  to {
+    background-color: var(--gg-status-black);
+    border: 0.0625em solid transparent;
+  }
+  50% {
+    background-color: var(--gg-status-green);
+    border: 0.0625em solid transparent;
+  }
+}
+.md-typeset span.status-dot.blink__black-yellow {
+  animation: blink__black-yellow 1.5s step-start infinite;
+}
+@keyframes blink__black-yellow {
+  from,
+  to {
+    background-color: var(--gg-status-black);
+    border: 0.0625em solid transparent;
+  }
+  50% {
+    background-color: var(--gg-status-yellow);
+    border: 0.0625em solid #b3b300;
+  }
+}
+.md-typeset span.status-dot.blink__blue-red {
+  animation: blink__blue-red 1.5s step-start infinite;
+}
+@keyframes blink__blue-red {
+  from,
+  to {
+    background-color: var(--gg-status-blue);
+    border: 0.0625em solid #cccccc;
+  }
+  50% {
+    background-color: var(--gg-status-red);
+    border: 0.0625em solid transparent;
+  }
+}
+.md-ty .md-typeset span.status-dot.blink__white-red {
+  animation: blink__white-red 1.5s step-start infinite;
+}
+@keyframes blink__white-red {
+  from,
+  to {
+    background-color: var(--gg-status-white);
+    border: 0.0625em solid #cccccc;
+  }
+  50% {
+    background-color: var(--gg-status-red);
+    border: 0.0625em solid transparent;
+  }
+}
+.md-typeset span.status-dot.blink__red-green {
+  animation: blink__red-green 1.5s step-start infinite;
+}
+@keyframes blink__red-green {
+  from,
+  to {
+    background-color: var(--gg-status-red);
+    border: 0.0625em solid transparent;
+  }
+  50% {
+    background-color: var(--gg-status-green);
+    border: 0.0625em solid transparent;
+  }
+}
+.md-typeset span.status-dot.blink__red-yellow {
+  animation: blink__red-yellow 1.5s step-start infinite;
+}
+@keyframes blink__red-yellow {
+  from,
+  to {
+    background-color: var(--gg-status-red);
+    border: 0.0625em solid transparent;
+  }
+  50% {
+    background-color: var(--gg-status-yellow);
+    border: 0.0625em solid #b3b300;
+  }
+}
+.md-typeset span.status-dot.blink__blue-yellow {
+  animation: blink__blue-yellow 1.5s step-start infinite;
+}
+@keyframes blink__blue-yellow {
+  from,
+  to {
+    background-color: var(--gg-status-blue);
+    border: 0.0625em solid transparent;
+  }
+  50% {
+    background-color: var(--gg-status-yellow);
+    border: 0.0625em solid #b3b300;
+  }
+}
+.md-typeset span.status-dot.fast {
+  animation-duration: 0.5s;
+}
+.md-typeset span.status-dot.slow {
+  animation-duration: 2.5s;
+}
+
+/* External links */
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de'])::after
+{
+  display: inline-block;
+  vertical-align: text-top;
+  content: '';
+  mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z"/></svg>');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  height: 1.125em;
+  width: 1.125em;
+  margin: 0 0 0 0.125em;
+  background-color: var(--md-typeset-a-color);
+  transition: background-color 125ms;
+}
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--secondary,
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--primary
+{
+  display: inline-block;
+}
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--secondary::after,
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--primary::after
+{
+  display: none;
+}
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):hover::after,
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):focus::after
+{
+  background-color: var(--md-accent-fg-color);
+}
+.md-typeset a[href^='https://manual.greengoconnect.com']::before
+{
+  display: inline-block;
+  vertical-align: text-top;
+  content: '';
+  mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center bottom;
+  /* padding-top: 0.2em; */
+  height: 1.125em;
+  width: 1.125em;
+  margin: 0 0.125em 0 0;
+  background-color: var(--md-typeset-a-color);
+  transition: background-color 125ms;
+}
+.md-typeset a[href^='https://manual.greengoconnect.com'].md-button.md-button--secondary,
+.md-typeset a[href^='https://manual.greengoconnect.com'].md-button.md-button--primary
+{
+  display: inline-block;
+}
+.md-typeset a[href^='https://manual.greengoconnect.com'].md-button.md-button--secondary::before,
+.md-typeset a[href^='https://manual.greengoconnect.com'].md-button.md-button--primary::before
+{
+  display: none;
+}
+.md-typeset a[href^='https://manual.greengoconnect.com']:hover::before,
+.md-typeset a[href^='https://manual.greengoconnect.com']:focus::before
+{
+  background-color: var(--md-accent-fg-color);
+}
+/*.md-typeset a[href^='https://www.castinfo.de']::before
+{
+  display: inline-block;
+  vertical-align: text-top;
+  content: '';
+  mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3 3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5 5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"/></svg>');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  height: 1.125em;
+  width: 1.125em;
+  margin: 0 0.125em 0 0;
+  background-color: var(--md-typeset-a-color);
+  transition: background-color 125ms;
+}
+.md-typeset a[href^='https://www.castinfo.de'].md-button.md-button--secondary,
+.md-typeset a[href^='https://www.castinfo.de'].md-button.md-button--primary
+{
+  display: inline-block;
+}
+.md-typeset a[href^='https://www.castinfo.de'].md-button.md-button--secondary::before,
+.md-typeset a[href^='https://www.castinfo.de'].md-button.md-button--primary::before
+{
+  display: none;
+}
+.md-typeset a[href^='https://www.castinfo.de']:hover::before,
+.md-typeset a[href^='https://www.castinfo.de']:focus::before
+{
+  background-color: var(--md-accent-fg-color);
+} */
+
+.md-typeset .img-center,
+.md-typeset .img-inline,
+.md-typeset .img-inline-right {
+  margin: 0 auto 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.md-typeset .img-inline {
+  float: left;
+  margin: 0.25em 0.5em 0 0;
+}
+
+.md-typeset .img-inline-right {
+  float: right;
+  margin: 0.25em 0 0.5em 0;
+}
+
+.md-typeset .width-90 {
+  width: 90%;
+  min-width: 90%;
+}
+
+.md-typeset .width-80 {
+  width: 80%;
+}
+
+.md-typeset .width-70 {
+  width: 70%;
+}
+
+.md-typeset .width-60 {
+  width: 60%;
+}
+
+.md-typeset .width-50 {
+  width: 50%;
+}
+
+.md-typeset .width-40 {
+  width: 40%;
+}
+
+.md-typeset .width-30 {
+  width: 30%;
+}
+
+.md-typeset .width-25 {
+  width: 25%;
+}
+
+.md-typeset .width-20 {
+  width: 20%;
+}
+
+.md-typeset__table {
+  display: block;
+}
+.md-typeset__table table:not([class]) {
+  display: table;
+}
+.md-typeset__table table:not([class]) th {
+  min-width: 1.5rem;
+  font-size: 0.7rem;
+}
+.md-typeset__table table:not([class]) td {
+  overflow-wrap: break-word;
+}
+.md-typeset__table .three-col {
+  width: 33%;
+}
+.md-typeset__table .two-col {
+  width: 50%;
+}
