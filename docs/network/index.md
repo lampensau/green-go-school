@@ -10,9 +10,10 @@ social:
 
 ## Verkabelung
 
-- Ein ungeschirmtes Netzwerkkabel ([UTP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#UTP)) wird vom Hersteller für eine Verkabelung empfohlen.
-- Der Standard [TIA/EIA-568B.1](https://www.csd.uoc.gr/~hy435/material/TIA-EIA-568-B.1.pdf) definieret die maximale Länge eines Ethernet Kabels auf 100 Meter. Die eigentliche Reichweite kann aber abhängig von der Kabelqualität abweichen.
-- Geräte mit zwei Neutrik EtherCON Anschlüssen verfügen über einen internen (unmanaged) Netzwerk Switch. Pakete werden nicht-diskriminierend weitergeleitet.
+- Ein ungeschirmtes Netzwerkkabel ([UTP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#UTP)) wird für eine Verkabelung von Green-GO Geräten empfohlen.
+    - Grundsätzlich sind auch geschirmte Kabel ([STP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#STP)) kompatibel. 
+- Der Standard [TIA/EIA-568B.1](https://www.csd.uoc.gr/~hy435/material/TIA-EIA-568-B.1.pdf) definiert die maximale Länge eines Ethernet Kabels auf 100 Meter. Die eigentliche Kabellänge kann aber abhängig von der Leitungsqualität abweichen.
+- Geräte mit mindestens zwei Neutrik EtherCON Anschlüssen verfügen über einen internen (unmanaged) Netzwerk Switch. Pakete werden nicht-diskriminierend weitergeleitet.
     - PoE Spannungsversorgung wird **nicht** mit durchgeschliffen.
 
 ## Switches
@@ -27,9 +28,9 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 
 ### Managed
 
-- Support für QoS via [CoS](https://de.wikipedia.org/wiki/IEEE_802.1p) / [DSCP](https://de.wikipedia.org/wiki/DiffServ)
+- Support für QoS ([DSCP](https://de.wikipedia.org/wiki/DiffServ))
 - Support für VLANs ([IEEE 802.1Q](https://standards.ieee.org/ieee/802.1Q/6844/))
-- Support für IGMP Snooping
+- Support für IGMPv2 Snooping
 - [PoE](https://de.wikipedia.org/wiki/Power_over_Ethernet) Support (min. [IEEE 802.3af](https://standards.ieee.org/ieee/802.3af/1090/), 48 V)
 
 ## Spannungsversorgung
@@ -51,7 +52,7 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 - Die Statuskommunikation zwischen den Green-GO Geräten beträgt ca. `500 Bit/s` pro Gerät.
 - Die Statuskommunikation zwischen Green-GO Gerät und Software beträgt ca. `255 Bit/s` pro Gerät
 
-| Sample Rate | Bandbreite ([Engine](https://manual.greengoconnect.com/en/glossary/#green-go-engine)) | Aktive Streams (max) |
+| Sample Rate | Bandbreite (pro [Engine](https://manual.greengoconnect.com/en/glossary/#green-go-engine)) | Aktive Streams (max) |
 | :-- | :-- | :-- |
 | 16 kHz | 319 KBit/s | ~ 300 Streams/Gerät |
 | 32 kHz | 636 KBit/s | ~ 150 Streams/Gerät |
@@ -76,23 +77,28 @@ In der Regel wird es bei Green-GO bei einem Jitter von über 2 ms / 1 s problema
 ## VLAN Setups
 
 - VLANs werden nach IEEE 802.1Q unterstützt und werden für komplexe Netzwerkinfrastrukturen empfohlen.
+- Ein Green-GO System und seine Geräte sollten sich in einem eigenen VLAN befinden.
 - Die Einrichtung und Konfiguration eines VLAN hängt vom Hersteller und Modell des Netzwerkswitches ab.
-- Ein Green-GO Gerät sollte an einem _untagged_ Switchport angeschlossen sein.
+- Ein Green-GO Gerät und die Software sollten an einem _untagged_ Switchport angeschlossen sein.
 - Die Green-GO Control Software ist derzeit nicht zuverlässig lauffähig mit _trunked_ bzw. _tagged_ Switchports.
 
 ### IGMP Snooping Setup
 
-- Nur mit VLAN-Konfiguration empfohlen.
-- Es gibt eine [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings) pro Konfiguration.
+- Empfehlenswert in Netzwerken mit vielen Multicast Streams um die Last auf den Switches zu reduzieren.
+- Switches sollten min. den IGMPv2 Standard unterstützen.
+- IGMP Snooping sollte auf allen Switches aktiviert sein.
+- Ein IGMP Querier oder Router ist erforderlich um Multicast Pakete korrekt im Netzwerk zu verteilen.
+- Es sollte nicht mehr als einen IGMP Querier oder Router im Netzwerk oder VLAN geben.
+- Es gibt eine [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings) pro Green-GO Konfiguration/System.
 
 ### QoS Konfiguration
 
 - In Netzwerken mit viel Datenfluss (Bandbreite oder Paketanzahl) kann es erforderlich sein Green-GO Datenverkehr zu priorisieren.
 - Green-GO Audiodaten können mit Hilfe des [DSCP Werts](https://de.wikipedia.org/wiki/DiffServ) `46` (VoIP) und [PCP Wert](https://de.wikipedia.org/wiki/IEEE_802.1p) `5` priorisiert werden.
 
-### Paket Klassifizierungen (DSCP)
+#### Paket Klassifizierungen (DSCP)
 
-| DSCP Feld | DSCP Wert | Beschreibung |
+| DSCP Label | DSCP Wert | Beschreibung |
 | :-: | :-: | :-- |
-| EF | 46 | Priorisieren von Paketen für die Kommunikation und den Statusaustausch zwischen Geräten. |
-| CS0 | 0 | Der allgemeine Status-Broadcast wird mit dem `CS0` versand und benötigt keine Priorisierung. |
+| EF | 46 | Pakete für die Kommunikation und den Statusaustausch zwischen Geräten sollte priorisiert weitergeleitet werden. |
+| CS0 | 0 | Der allgemeine Status-Broadcast wird mit dem Label `CS0` versand und kann nach dem _Best Effort_ Prinzip behandelt werden. |
