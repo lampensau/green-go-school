@@ -35,6 +35,8 @@ site/
 pyvenv.cfg
 .venv*
 pip-selfcheck.json
+*.egg-info
+__pycache__
 
 ### VisualStudioCode ###
 .vscode/*
