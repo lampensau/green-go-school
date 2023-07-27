@@ -3,26 +3,43 @@ icon: material/wifi-cog
 ---
 # Wireless mit Green-GO v5
 
-Green-GO nutzt den DECT Standard um eine drahtlose Kommunikation zwischen den Geräten zu ermöglichen. DECT steht für Digital Enhanced Cordless Telecommunications - ein von der ETSI entwickelter Kommunikationsstandard, der vorwiegend für den Einsatz in schnurlosen Telefonsystemen bekannt ist. Die meisten Länder bieten einen lizenzfreien Frequenzbereich, der für DECT genutzt werden kann. 
+- Lizenzfreie drahtlose Kommunikation via DECT:
+    - EU: `1880 - 1900 MHz` (10 Trägerfrequenzen)
+    - USA/Canada: `1920 - 1930 MHz` (5 Trägerfrequenzen)
+    - Japan: `1893 - 1906 MHz` (3 Trägerfrequenzen)
+- Reichweite von bis zu 300 Metern.
+- Bis zu vier Beltpacks können mit einer Antenne verbunden werden.
+- Roaming mit bis zu 7 Antennen (X-Pools) ist _immer_ mit einer Unterbrechung von ca. 4 - 7 Sekunden verbunden.
 
-Die Anzahl der verfügbaren Trägerfrequenzen _(1728 MHz-Abstand)_ kann in jedem Land variieren. Der DECT Standard nutzt sowohl FDMA _(Frequency-Division Multiple Access)_ als auch TDMA _(Time-Division Multiple Access)_.
+## Pairing Methoden
 
-Es stehen mehrere Trägerfrequenzen mit jeweils 24 Slots zur Verfügung. Jede Trägerfrequenz verfügt über 12 Upstream- und 12 Downstream-Slots.
+- Mischbetrieb von OTA und X-Pools is seit v5 nicht mehr möglich.
+- OTA Pairings:
+    - One-Shot-Verfahren. Keine nachträgliche Änderung möglich.
+    - Kein Roaming möglich.
+    - Ausschließlich Monitoring via Software.
+- X-Pools:
+    - Konfiguration via Software.
+    - Roaming mit bis zu 7 Antennen möglich.
+    - Hinzufügen und Entfernen von Beltpacks mit USB-Verbindung möglich.
+    - Ein drahtloses Beltpack kann immer nur mit einem X-Pool verbunden sein.
 
-Das Green-GO WBPX drahtlos Beltpack und die WAA Antenne belegen standardmäßig einen Slot mit _doppelter Breite_, um die Audiodaten mit einer Audiobandbreite von 7 kHz zu übertragen. Es ist jedoch möglich, die Audiobandbreite und Slotbreite zu reduzieren, wenn mehr Geräte angebunden werden müssen.
+### X-Pool Programmierung
 
-- OTA Pairings (kein Roaming, ausschließlich monitoring via Software)
-- X-Pools (Roaming mit bis zu 7 Antennen, volle Kontrolle via Software)
-
-## X-Pool Programmierung
-
-- USB Verbindung auch via Netzwerk
-- Erstellen eines X-Pools
-- Löschen eines X-Pools
-- Umbenennen eines X-Pools
+- Das Setup ist ausschließlich über die Green-GO Control Software möglich.
+- Ein Abbrechen des Wizards ist nach dem zweiten Schritt nicht mehr möglich.
+- WAA Antennen müssen Mitglied (Adopt) der Konfiguration und über das Netzwerk mit der Software verbunden sein bevor diese im Wizard zur Verfügung stehen.
+- Drahtlose Beltpacks werden via USB programmiert.
+- WAA Antennen oder Beltpacks werden mit Hilfe 
+- Beltpacks werden direkt nach dem Hinzufügen oder Entfernen programmiert.
+- Die Programmierung der Beltpacks kann nacheinander erfolgen.
+- WAA Antennen werden erst nach dem Beenden des Wizards programmiert.
+- Löschen eines X-Pools ist nur möglich, nachdem alle Beltpacks und Antennen entfernt wurden.
+- Ein X-Pool kann jederzeit editiert und angepasst werden.
 
 ## OTA Pools
 
-- Kein Roaming!
-- Pairing wird direkt an den Geräten konfiguriert
-- Keine Software benötigt
+- Das Setup erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist notwendig.
+- Ein Zurücksetzen der Pairings sollte vor einem Setup an der Antenne und den Beltpacks erfolgen.
+- Ein Bearbeiten der Pairings ist nicht möglich. Die Software ermöglicht nur das Monitoring.
+- Es gibt keine Möglichkeit des Roamings.
