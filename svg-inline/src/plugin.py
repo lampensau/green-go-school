@@ -42,7 +42,7 @@ def process_svg_img(basepath, img, plugin):
     classes = img.get('class', '')
     alt_text = img.get('alt', '')
     src = img['src'].replace('.svg', '')
-    # check if the source file is not 'index.md' and adjust the src attribute
+    # Check if the source file is not 'index.md' and adjust the src attribute
     if not plugin.current_file.endswith('index.md'):
         src = os.path.relpath(src, '..')
     filename = os.path.abspath(os.path.join(basepath, src + '.svg'))
@@ -50,10 +50,15 @@ def process_svg_img(basepath, img, plugin):
     svg_content = read_file(filename)
     svg_doc = minidom.parseString(svg_content)
     svg_doc = randomize_ids_and_classes(svg_doc)
-    # convert back to string
+    # Convert SVG back to string
     svg_content = svg_doc.toxml()
     soup = BeautifulSoup(svg_content, 'lxml-xml')
+    if soup.svg.has_attr('width'):
+        del soup.svg['width']
+    if soup.svg.has_attr('height'):
+        del soup.svg['height']
     add_accessibility_features(soup, alt_text)
+    # Increment the SVG count and return the wrapped SVG
     plugin.svg_count += 1
     return wrap_svg(soup, classes)
 

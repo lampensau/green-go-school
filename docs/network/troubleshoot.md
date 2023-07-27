@@ -104,7 +104,7 @@ Für eine vollständige Analyse kann es erforderlich sein den Paketfluss eines s
 
 Ein solcher Mittschnitt kann zum Beispiel mit Hilfe einer sogenannten [Network TAP](https://www.dualcomm.com/products/usb-powered-10-100-1000base-t-network-tap) erzeugt werden.
 
-![](../assets/images/network-tap.svg){.img-center width-80 inline=true} 
+![](../assets/images/network-tap.svg){.img-center .width-90 .bottom-gap inline=true} 
 
 Alternativ kann auch der Datenverkehr eines bestimten Switchports auf einen mit dem Rechner verbundenen Switchport dupliziert werden. Diese Funktionalität ist abhängig vom Switchmodel und erfordert eine Anpassung der Switchkonfiguration.
 

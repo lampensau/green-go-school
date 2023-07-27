@@ -164,7 +164,7 @@
     border: 0.0625em solid transparent;
   }
 }
-.md-ty .md-typeset span.status-dot.blink__white-red {
+.md-typeset span.status-dot.blink__white-red {
   animation: blink__white-red 1.5s step-start infinite;
 }
 @keyframes blink__white-red {
@@ -375,6 +375,10 @@
 
 .md-typeset .width-20 {
   width: 20%;
+}
+
+.md-typeset .bottom-gap {
+  margin-bottom: 1.25em;
 }
 
 .md-typeset__table {

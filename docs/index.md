@@ -22,17 +22,37 @@ Zusätzlich ist es möglich eine Schulung in Ihrem Hause oder Online durchzufüh
 
 ## Termine (2023)
 
-### 04.07.2023
+### ~~04.07.2023~~
 
 - Location: [cast C.Adolph & RST Distribution GmbH](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu) (Google Maps)
 - Start: 10:00 Uhr
-- Anmeldung: [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung (04.07.2023))
+- Anmeldung: Link
 
 ### 21.11.2023
 
 - Location: [cast C.Adolph & RST Distribution GmbH](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu) (Google Maps)
 - Start: 10:00 Uhr
 - Anmeldung: [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung (21.11.2023))
+
+## Termine (2022)
+
+### ~~22.06.2022~~
+
+- Location: [cast C.Adolph & RST Distribution GmbH](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu) (Google Maps)
+- Start: 10:00 Uhr
+- Anmeldung: Link
+
+### ~~30.08.2022~~
+
+- Location: [cast C.Adolph & RST Distribution GmbH](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu) (Google Maps)
+- Start: 10:00 Uhr
+- Anmeldung: Link
+
+### ~~12.10.2022~~
+
+- Location: [cast C.Adolph & RST Distribution GmbH](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu) (Google Maps)
+- Start: 10:00 Uhr
+- Anmeldung: Link
 
 ## Kontakt
 
