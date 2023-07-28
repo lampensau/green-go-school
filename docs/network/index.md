@@ -10,8 +10,9 @@ social:
 
 ## Verkabelung
 
-- Ein ungeschirmtes Netzwerkkabel ([UTP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#UTP)) wird für eine Verkabelung von Green-GO Geräten empfohlen.
-    - Grundsätzlich sind auch geschirmte Kabel ([STP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#STP)) kompatibel. 
+- Ungeschirmte Netzwerkkabel ([UTP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#UTP)) werden für eine Verkabelung von Green-GO Geräten empfohlen.
+    - Grundsätzlich können auch geschirmte Kabel ([STP](https://de.wikipedia.org/wiki/Twisted-Pair-Kabel#STP)) verwendet werden, sofern _Ground Loops_ vermieden werden.
+    - Die Verbindung eines Potentials kann mit Hilfe von Adaptern welche die Abschirmung nicht durchschleifen (z.B. [Neutrik NE8FF](https://www.neutrik.com/en/product/ne8ff)) unterbrochen werden.
 - Der Standard [TIA/EIA-568B.1](https://www.csd.uoc.gr/~hy435/material/TIA-EIA-568-B.1.pdf) definiert die maximale Länge eines Ethernet Kabels auf 100 Meter. Die eigentliche Kabellänge kann aber abhängig von der Leitungsqualität abweichen.
 - Geräte mit mindestens zwei Neutrik EtherCON Anschlüssen verfügen über einen internen (unmanaged) Netzwerk Switch. Pakete werden nicht-diskriminierend weitergeleitet.
     - PoE Spannungsversorgung wird **nicht** mit durchgeschliffen.
@@ -37,14 +38,14 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 
 - Green-GO Geräte erfordern mindestens den PoE Standard IEEE 802.3af (15.4W, 48V).
 - Es werden beide PoE Varianten utnerstützt. PoE Typ `A` (spare lines) und `B` (data lines).
-- Verbrauch liegt zwichen 2 - 6 Watt, abhängig vom Gerät und der Konfiguration.
+- Verbrauch liegt zwischen 2 - 6 Watt, abhängig vom Gerät und der Konfiguration.
 
 ## IP Addressierung
 
-- Es müssen _lokale_ IP-Adressbereiche (z.B. `192.168.0.0/24`) bei einer _manuellen Netzwerkkonfiguration_ verwendet werden ([RFC1918](https://datatracker.ietf.org/doc/html/rfc1918)).
+- Es sollten _lokale_ IP-Adressbereiche (z.B. `192.168.0.0/24`) bei einer _manuellen Netzwerkkonfiguration_ verwendet werden ([RFC1918](https://datatracker.ietf.org/doc/html/rfc1918)).
 - Die dynamische Netzwerkkonfiguration folgt [RFC3927](https://datatracker.ietf.org/doc/html/rfc3927) und benutzt den IP-Addressbereich `169.254.0.0/16`. Dieser Bereich wird gerne auch als _link-local_, _bonjour_, or _zeroconf_ bezeichnet. 
 - Green-GO Geräte sind kompatibel mit allen standard DHCPv4 Servern.
-- Es gibt derzeit **keinen** IPv6 Support für _alle_ Green-GO Geräte.
+- Es gibt derzeit **keinen** IPv6 Support für Green-GO Geräte.
 
 ## Bandbreiten
 
@@ -72,28 +73,28 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 
 Green-GO ist eine Echtzeit-Audio-Anwendung und erwartet einen stetigen Paketfluss mit miminalen zeitlichen Variationen zwischen einzelnen Paketen (Jitter). Die eigentliche Paketlatenz ist grundsätzlich weniger entscheidend.
 
-In der Regel wird es bei Green-GO bei einem Jitter von über 2 ms / 1 s problematisch. Auftretende Symptome könnten z.B. verterrtes Audio oder abgehackte Kommunikationen sein.
+In der Regel wird es bei Green-GO bei einem Jitter von über `5ms` problematisch. Auftretende Symptome könnten z.B. verterrtes Audio oder abgehackte Kommunikationen sein.
 
 ## VLAN Setups
 
 - VLANs werden nach IEEE 802.1Q unterstützt und werden für komplexe Netzwerkinfrastrukturen empfohlen.
 - Ein Green-GO System und seine Geräte sollten sich in einem eigenen VLAN befinden.
-- Die Einrichtung und Konfiguration eines VLAN hängt vom Hersteller und Modell des Netzwerkswitches ab.
 - Ein Green-GO Gerät und die Software sollten an einem _untagged_ Switchport angeschlossen sein.
 - Die Green-GO Control Software ist derzeit nicht zuverlässig lauffähig mit _trunked_ bzw. _tagged_ Switchports.
+- Die Einrichtung und Konfiguration eines VLAN hängt vom Hersteller und Modell des Netzwerkswitches ab.
 
 ### IGMP Snooping Setup
 
 - Empfehlenswert in Netzwerken mit vielen Multicast Streams um die Last auf den Switches zu reduzieren.
+- Ein IGMP Querier oder Router ist erforderlich um Multicast Pakete korrekt im Netzwerk zu verteilen.
 - Switches sollten min. den IGMPv2 Standard unterstützen.
 - IGMP Snooping sollte auf allen Switches aktiviert sein.
-- Ein IGMP Querier oder Router ist erforderlich um Multicast Pakete korrekt im Netzwerk zu verteilen.
 - Es sollte nicht mehr als einen IGMP Querier oder Router im Netzwerk oder VLAN geben.
 - Es gibt eine [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings) pro Green-GO Konfiguration/System.
 
 ### QoS Konfiguration
 
-- In Netzwerken mit viel Datenfluss (Bandbreite oder Paketanzahl) kann es erforderlich sein Green-GO Datenverkehr zu priorisieren.
+- In Netzwerken mit viel Datenfluss (Bandbreite oder Paketanzahl) kann es erforderlich sein Green-GO Datenverkehr mit Hilfe von QoS zu priorisieren.
 - Green-GO Audiodaten können mit Hilfe des [DSCP Werts](https://de.wikipedia.org/wiki/DiffServ) `46` (VoIP) und [PCP Wert](https://de.wikipedia.org/wiki/IEEE_802.1p) `5` priorisiert werden.
 
 #### Paket Klassifizierungen (DSCP)

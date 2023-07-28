@@ -13,7 +13,7 @@ social:
 - [x] Green-GO Traffic ist isoliert von anderen Systemen (VLAN oder Physisch)
 - [x] Sollten mehrere Konfigurationen im gleichen Netzwerk aktiv sein, darf die [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings) nicht für mehrere Konfigurationen verwendet werden.
 - [x] Bei hohem Paketvorkommen sollte QoS konfiguriert sein (DSCP: 46)
-- [x] Der Multicast Traffic des Green-GO Systems kommt überall an ([Wireshark](#wireshark), [Multicast Tester](http://www.dqnetworks.ie/toolsinfo/mcasttest/), [GGO-MTA](#green-go-mta))
+- [x] Der Multicast Traffic des Green-GO Systems kommt überall ohne Jitter an ([Wireshark](#wireshark), [Multicast Tester](http://www.dqnetworks.ie/toolsinfo/mcasttest/), [GGO-MTA](#green-go-mta))
 
 ## Häufige Probleme
 
@@ -21,7 +21,7 @@ social:
 
 #### Geräte werden nicht automatisch in der Software angezeigt
 
-Sollten Green-GO Geräte nicht automatisch in der Connection View der Software erscheinen kann ein [manueller Netzwerkscan](https://manual.greengoconnect.com/en/getting-started/upgrade/#scan-your-network) durchgeführt werden.
+Sollten Green-GO Geräte nicht automatisch in der [Connection View](https://manual.greengoconnect.com/en/software/views/connection/) der Software erscheinen kann ein [manueller Netzwerkscan](https://manual.greengoconnect.com/en/getting-started/upgrade/#scan-your-network) durchgeführt werden.
 
 Tauchen die Geräte nach diesem Scan mit dem Status <span class="status-dot purple"></span> `Boot Mode` oder <span class="status-dot orange"></span> `Unreachable` auf, sollte folgendes überprüft werden:
 
@@ -38,11 +38,11 @@ Dies kann u.a. mit Tools wie [Wireshark](#wireshark), dem [Multicast Tester](htt
 
 #### Geräte werden überhaupt nicht angezeigt
 
-Dies ist in der Regel nur der Fall wenn überhaupt keine Kommunikation mit dem Netzwerk möglich ist.
+Sollte die Software auch nach einem manuellen Netzwerkscan keine Geräte anzeigen, dann ist davon auszugehen, dass keine Kommunikation mit dem Netzwerk möglich ist.
 
 - [x] Es gibt keine Firewall welche die Verbindung der Software blockiert.
 - [x] Die Konfiguration der Netzwerkschnittstelle ist korrekt und erlaubt eine Kommunikation mit dem Green-GO System.
-- [x] Die Ports 6464 und 5810 sind nicht blockiert.
+- [x] Die Ports 6464 und 5810 werden von keiner Anwendung auf dem Rechner blockiert.
 
 ??? warning "Wichtiger Hinweis für Firewalls"
     Die Applikation welche für die Netzwerkkommunikation verantwortlich ist trägt den Namen `Core(.exe)`. Diese Applikation versucht über die Ports `2001`, `2002` (TCP) und `5810`, `6464` (UDP) zu kommunizieren:
@@ -52,7 +52,7 @@ Dies ist in der Regel nur der Fall wenn überhaupt keine Kommunikation mit dem N
 
 #### Einzelne Fimware Updates schlagen fehl
 
-Das kann leider immer mal wieder vorkommen. In manchen Fällen "gibt" die Software zu früh auf, nachdem das Gerät in den <span class="status-dot purple"></span> `Boot Mode` neugestartet wurde. Das Gerät ist noch nicht verfügbar und wartet z.B. noch auf eine IP-Adresse.
+Es kann leider immer mal wieder vorkommen, das ein Firmwareupdate fehlschlägt. In manchen Fällen gibt die Software zu früh auf, nachdem das Gerät in den <span class="status-dot purple"></span> `Boot Mode` neugestartet wurde. Das Gerät ist noch nicht verfügbar und wartet z.B. noch auf eine IP-Adresse.
 
 1. In einem solchen Fall kann das betroffene Gerät einfach mit Hilfe des <span class="button-outline">Remove Offline Devices</span> Buttons aus der Software entfernt werden.
 2. Anschließend muss ein _manueller Scan_ durch einen Klick auf den <span class="button-outline">Update</span> Button und die folgende `Scan` Option erfolgen.
@@ -69,7 +69,7 @@ Das kann leider immer mal wieder vorkommen. In manchen Fällen "gibt" die Softwa
 
 Dies ist in der Regel der Fall wenn es Unterbrechungen im Paketfluss kommt. Die Software fragt den Status aller Geräte regelmäßig ab und erwartet ein Paket als Antwort.
 
-Da Green-GO für diese Kommunikation ausschließlich [UDP Pakete](index.md#udp-ports) benutzt kann eine Zustellung leider nicht garantiert werden und ist stark abhängig von der eingesetzten Netzwerkinfrastruktur.
+Da Green-GO für diese Kommunikation ausschließlich [UDP Pakete](index.md#udp-ports) benutzt, kann eine Zustellung leider nicht garantiert werden und ist stark abhängig von der eingesetzten Netzwerkinfrastruktur.
 
 Eine häufige Ursache für einen "flackernden" Status ist z.B. eine drahtlose WLAN Verbindung, diese kann abhängig vom AP und der Konfiguration den Multicast-Datenverkehr "verschlucken". 
 
@@ -90,9 +90,9 @@ Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-
 
 #### Sprache wird abgehackt oder verändert übertragen
 
-Da Green-GO UDP Multicast für die Kommunikation benutzt muss der Netzwerkverkehr "non-blocking" ohne zusätzliches Processing von der Netzwerk-Infrastruktur durchgeleitet werden.
+Da Green-GO UDP Multicast für die Kommunikation benutzt muss, der Netzwerkverkehr "non-blocking" und ohne Verzögerungen von der Netzwerk-Infrastruktur durchgeleitet werden.
 
-Unterbrochenes bzw. veränderte Audiosignale werden in der Regel dann produziert, wenn die Paketreihenfolge zu stark abweicht, oder der [Jitter](index.md#jitter-und-latenzen) einer Verbindung zu hoch ist. In einem solchen Falle produziert das Green-GO Audio-Codec Artefakte.
+Unterbrochenes bzw. veränderte Audiosignale werden in der Regel dann produziert, wenn die Paketreihenfolge zu stark abweicht, oder der [Jitter](index.md#jitter-und-latenzen) einer Verbindung zu hoch ist. In einem solchen Falle kann das Green-GO Audio-Codec Artefakte im Audio produzieren.
 
 Eine weitere Ursache für dieses Problem kann auch ein (zu hoher) Paketverlust bei der Kommunikation mit der _Multicast-Adresse_ der Systemkonfiguration sein.
 
@@ -102,7 +102,7 @@ Für eine weiterführende Analyse kann u.a. das Programm [Wireshark](#wireshark)
 
 Für eine vollständige Analyse kann es erforderlich sein den Paketfluss eines spezifischen Switchports zu überwachen. Dies ermöglicht eine direkte Sicht auf den Datenverkehr eines problembehafteten Gerät.
 
-Ein solcher Mittschnitt kann zum Beispiel mit Hilfe einer sogenannten [Network TAP](https://www.dualcomm.com/products/usb-powered-10-100-1000base-t-network-tap) erzeugt werden.
+Ein solcher Mittschnitt kann zum Beispiel mit Hilfe einer sogenannten [Network TAP](https://www.dualcomm.com/products/usb-powered-10-100-1000base-t-network-tap) erzeugt werden:
 
 ![](../assets/images/network-tap.svg){.img-center .width-90 .bottom-gap inline=true} 
 
@@ -113,7 +113,7 @@ Alternativ kann auch der Datenverkehr eines bestimten Switchports auf einen mit 
 - **Link:** [wireshark.org](https://www.wireshark.org/download.html)
 - **Einfärbungsregeln**: [Download](../assets/files/Green-GO_ColoringRules)
 
-Wireshark kann hilfreich sein um Netzwerkprobleme in einem System zu analysieren. Das Program ermöglicht einen schnellen Überblick über generelle "Erreichbarkeiten", Latenzprobleme aber auch tiefer gehende Analysen.
+Wireshark kann hilfreich sein um Netzwerkprobleme in einem System zu analysieren. Das Programm ermöglicht einen schnellen Überblick über generelle "Erreichbarkeiten", Latenzprobleme aber auch tiefer gehende Analysen.
 
 <figure markdown>
 ![Wireshark Capture](../assets/images/wireshark.png)
@@ -219,56 +219,76 @@ Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paket
 
 Eine Python (3.x) Terminal Applikation welche Verbindungsstatistiken zu Green-GO Konfigurations Subscribern (Geräte) aufführt.
 
+Die Applikation kann mit folgendem Befehl gestartet werden:
+
+```
+python3 ggo-mta.py <multicast-address> <interface-address>
+```
+
 #### Installation der Vorraussetzungen
 
 Damit diese Applikation funktionieren kann, müssen `Python 3` und der Paketmanager `pip` _lokal_ installiert sein.
 
-##### Python 3
+##### Python 3 & Pip
 
 Eine existierende Installation kann wie folgt über ein Terminalfenster verifiziert werden:
 
-```{title="Terminal Fenster"}
-$ python3 --version
-Python 3.11.4
-```
+=== "Python 3"
+
+    ```{title="Terminal Fenster"}
+    $ python3 --version
+    Python 3.11.4
+    ```
+
+=== "Pip"
+
+    ```{title="Terminal Fenster"}
+    $ pip3 --version
+    pip 23.2.1 from /path/to/python-pip/executable
+    ```
+
+Muss eines von beiden Installiert werden, kann dies wie folgt geschehen:
 
 === ":simple-linux: Linux (Debian/Ubuntu)"
 
     Um Python 3 zu installieren muss folgender Befehl ausgeführt werden:
 
     ```{.bash title="Linux Shell"}
-    sudo apt update && sudo apt install python3
+    sudo apt update && sudo apt install python3 python3-pip python3-setuptools
     ```
 
 === ":material-apple: MacOS"
 
-=== ":material-microsoft-windows: Windows"
+    Dieser Befehl installiert `Python 3`, `pip 3` und `setuptools`:
 
-##### pip
-
-Eine existierende Installation kann wie folgt über ein Terminalfenster verifiziert werden:
-
-```{title="Terminal Fenster"}
-$ pip3 --version
-pip 23.2.1 from /path/to/python-pip/executable
-```
-
-=== ":simple-linux: Linux (Debian/Ubuntu)"
-
-    Um den Paketmanager `pip` zu installieren muss folgender Befehl ausgeführt werden:
-
-    ```{.bash title="Linux Shell"}
-    sudo apt update && sudo apt install python3-pip
+    ```{.bash title="MacOS Shell"}
+    brew install python3
     ```
 
-=== ":material-apple: MacOS"
-
 === ":material-microsoft-windows: Windows"
+
+    Die Installation von `Python 3` und `pip 3` unter Windows kann über den [Python Installer](https://www.python.org/downloads/) erfolgen.
+
+    Alternativ kann `Python 3` zusammen mit `pip 3` auch über den [Windows Store](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K) installiert werden.
 
 ##### Andere Vorraussetzungen
 
+Die Applikation benötigt die folgenden Python Pakete welche mit `pip` installiert werden können:
+
 === ":simple-linux: Linux (Debian/Ubuntu)"
+
+    ```{.bash title="Linux Shell"}
+    sudo pip3 install --upgrade curses
+    ```	
 
 === ":material-apple: MacOS"
 
+    ```{.bash title="MacOS Shell"}
+    sudo pip3 install --upgrade curses
+    ```	
+
 === ":material-microsoft-windows: Windows"
+
+    ```{.bash title="Linux Shell"}
+    sudo pip3 install --upgrade windows-curses
+    ```	

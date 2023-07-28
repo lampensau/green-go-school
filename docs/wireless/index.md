@@ -3,6 +3,10 @@ icon: material/wifi-cog
 ---
 # Wireless mit Green-GO v5
 
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/guides/wirelessx/)
+
+## Allgemeines
+
 - Lizenzfreie drahtlose Kommunikation via DECT:
     - EU: `1880 - 1900 MHz` (10 Trägerfrequenzen)
     - USA/Canada: `1920 - 1930 MHz` (5 Trägerfrequenzen)
@@ -24,22 +28,21 @@ icon: material/wifi-cog
     - Hinzufügen und Entfernen von Beltpacks mit USB-Verbindung möglich.
     - Ein drahtloses Beltpack kann immer nur mit einem X-Pool verbunden sein.
 
+### OTA Pools
+
+- Der Pairing-Speicher von Antennen und Beltpacks sollte vor Beginn des Pairing-Setups [zurück gesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations) werden.
+- Das [Pairing-Setup](https://manual.greengoconnect.com/en/guides/wirelessx/#ad-hock-over-the-air-pairings) erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist notwendig.
+- Ein Bearbeiten der Pairings ist nicht möglich. Die Software ermöglicht nur das Monitoring.
+- Es gibt keine Möglichkeit des Roamings.
+
 ### X-Pool Programmierung
 
-- Das Setup ist ausschließlich über die Green-GO Control Software möglich.
+- Das Pairing-Setup ist ausschließlich über die Green-GO Control Software möglich.
 - Ein Abbrechen des Wizards ist nach dem zweiten Schritt nicht mehr möglich.
-- WAA Antennen müssen Mitglied (Adopt) der Konfiguration und über das Netzwerk mit der Software verbunden sein bevor diese im Wizard zur Verfügung stehen.
-- Drahtlose Beltpacks werden via USB programmiert.
-- WAA Antennen oder Beltpacks werden mit Hilfe 
-- Beltpacks werden direkt nach dem Hinzufügen oder Entfernen programmiert.
+- WAA Antennen müssen Mitglied der Konfiguration (Adopted) und über das Netzwerk mit der Software verbunden sein bevor diese im Wizard zur Verfügung stehen.
+- Drahtlose Beltpacks werden via USB mit Hilfe der Software programmiert.
+- Bei Beltpacks wird ein Pairing direkt nach dem Hinzufügen oder Entfernen programmiert.
 - Die Programmierung der Beltpacks kann nacheinander erfolgen.
 - WAA Antennen werden erst nach dem Beenden des Wizards programmiert.
 - Löschen eines X-Pools ist nur möglich, nachdem alle Beltpacks und Antennen entfernt wurden.
 - Ein X-Pool kann jederzeit editiert und angepasst werden.
-
-## OTA Pools
-
-- Das Setup erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist notwendig.
-- Ein Zurücksetzen der Pairings sollte vor einem Setup an der Antenne und den Beltpacks erfolgen.
-- Ein Bearbeiten der Pairings ist nicht möglich. Die Software ermöglicht nur das Monitoring.
-- Es gibt keine Möglichkeit des Roamings.
