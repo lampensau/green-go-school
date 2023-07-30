@@ -9,6 +9,8 @@ social:
 ---
 # Green-GO Eigenschaften und Featureübersicht
 
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/features/)
+
 ## Zentrale Eigenschaften
 
 - Green-GO ist ein _dezentrales_ & digitales Kummunikationssystem und flexibel im Einsatz.
@@ -16,14 +18,14 @@ social:
     - Layer 3 Multicast mit einer dedizierten Multicast-Adresse pro System.
     - Green-GO Geräte sind sparsam und benötigen maximal 6 Watt Leistung.
     - Prinzipiell erfolgt eine sternenförmige Verkabelung von den Switches zum Endgerät.
-    - Einzelne Geräte (MCX(D), 19“ Interfaces) ermöglichen optionale 12V Spannungsversorgung (externes Netzteil) und Daisy-Chaining via Netzwerk.
+    - Einzelne Geräte (MCX(D), 19“ Interfaces) ermöglichen eine _optionale_ 12 V Spannungsversorgung (externes Netzteil) und Daisy-Chaining der Netzwerkverbindung.
     - Mehr Informationen zum Netzwerk können [hier](https://manual.greengoconnect.com/en/guides/network/) gefunden werden.
 - Green-GO Systeme beginnen bereits ab zwei Beltpacks und können jederzeit _bedarfsgerecht_ erweitert werden.
 - Green-GO ist ein _lineares Investement_.
     - Geräte können bedarfsgerecht zugemietet oder käuflich erworben werden.
     - DryHire-Kontakte auf Anfrage bei mail@castinfo.de erhältlich.
 
-## [Wichtige Eigenschaften](https://manual.greengoconnect.com/en/features/)
+## Wichtige Eigenschaften
 
 - **Keine zentrale Steuereineheit** wird benötigt (z.B. Master Station oder Matrix Frame).
     - Jedes Gerät speichert die aktive Konfiguration im lokalen Speicher und kann als Startpunkt für ein eigenständiges System dienen.

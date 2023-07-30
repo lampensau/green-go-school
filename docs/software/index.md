@@ -1,7 +1,7 @@
 ---
 title: Die Green-GO Control Software
 description: Eine Einführung in die Bedienung der Software und die Verwaltung einer Green-GO Systemkonfiguration
-icon: material/application-cog
+icon: material/application
 ---
 # Green-GO Control Software
 

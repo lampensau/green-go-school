@@ -20,6 +20,12 @@
   --gg-status-yellow: hsla(60, 100%, 50%, 1);
   --gg-status-orange: hsla(39, 100%, 50%, 1);
   --gg-status-purple: hsla(300, 100%, 25%, 1);
+
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /* Slight spacing correction on logo and heading */
@@ -379,6 +385,56 @@
 
 .md-typeset .bottom-gap {
   margin-bottom: 1.75em;
+}
+
+.md-typeset .carousel-container {
+  position: relative;
+}
+
+.md-typeset .carousel-container img {
+  display: none;
+}
+
+.md-typeset .carousel-container img[data-active-image='true'] {
+  display: block;
+}
+
+.md-typeset .carousel-container::before,
+.md-typeset .carousel-container::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 0.75em);
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transform: translateY(-50%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.md-typeset .carousel-container::before {
+  left: 10px;
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>box-ctrl-left</title><g><path d="M5,31H27a4,4,0,0,0,4-4V5a4,4,0,0,0-4-4H5A4,4,0,0,0,1,5V27A4,4,0,0,0,5,31Zm6.293-15.707,6-6a1,1,0,0,1,1.414,1.414L13.414,16l5.293,5.293a1,1,0,0,1-1.414,1.414l-6-6A1,1,0,0,1,11.293,15.293Z"></path></g></svg>');
+}
+
+.md-typeset .carousel-container::after {
+  right: 10px;
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>box-ctrl-right</title><g><path d="M27,1H5A4,4,0,0,0,1,5V27a4,4,0,0,0,4,4H27a4,4,0,0,0,4-4V5A4,4,0,0,0,27,1ZM20.707,16.707l-6,6a1,1,0,0,1-1.414-1.414L18.586,16l-5.293-5.293a1,1,0,0,1,1.414-1.414l6,6A1,1,0,0,1,20.707,16.707Z"></path></g></svg>');
+}
+
+.md-typeset .carousel-container.no-prev::before,
+.md-typeset .carousel-container.no-next::after {
+  display: none;
+}
+
+.md-typeset .carousel-container figcaption {
+  max-width: 96%;
+}
+
+.md-typeset .carousel-container figcaption:nth-of-type(1n + 2) {
+  display: none;
 }
 
 .md-typeset__table {
