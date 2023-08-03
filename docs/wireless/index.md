@@ -22,7 +22,7 @@ icon: material/wifi
 
 1. **Setup Menü Wegweiser:**<br><kbd>Setup Menü</kbd> --> <kbd>Dect</kbd> --> <kbd>Information</kbd> --> <kbd>Region: EU</kbd>
 
-### Wieviele drahtlose Geräte sind möglich? { data-toc-label="function_name" }
+### Wieviele drahtlose Geräte sind möglich? { data-toc-label="Wieviel Wireless ist möglich?" }
 
 Die Anzahl von möglichen drahtlosen Green-GO Beltpacks in einem Empfangsbereich ist nicht immer einfach zu bestimmen und hängt von verschiedenen Faktoren ab:
 
@@ -41,7 +41,7 @@ Die Anzahl von möglichen drahtlosen Green-GO Beltpacks in einem Empfangsbereich
 
 ### Roaming mit Green-GO
 
-Roaming mit Green-GO ist nicht nahtlos. Bei jedem Hand-Off muss mit einer Verbindungsunterbrechung von ca. `6 - 15 Sekunden` gerechnet werden. Abseits davon gibt es zwei Möglichkeiten den Zeitpunkt des Antennenwechsels zu beeinflussen:
+Roaming mit Green-GO ist möglich, aber nicht nahtlos. Bei jedem Hand-Off muss mit einer Verbindungsunterbrechung von ca. `6 - 15 Sekunden` gerechnet werden. Abseits davon gibt es zwei Möglichkeiten den Zeitpunkt des Antennenwechsels zu beeinflussen:
 
 <div class="annotate" markdown>
 1. `Roaming Threshold`: Beeinflusst den Zeitpunkt bzw. die berrechnete durchschnittliche Feldstärke für den automatischen Antennenwechsel. (1)

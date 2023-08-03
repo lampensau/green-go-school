@@ -13,25 +13,25 @@ icon: material/application
 ## Ein Erster Überblick
 
 - Starten der Software: Der Splashscreen
-- [Erstellen einer ersten Konfiguration mit dem Quickstart Wizard](https://manual.greengoconnect.com/en/getting-started/software/#create-a-configuration-using-the-wizard)
-    - Konfigurationsname und automatische konfiguration für Sonderkanäle
-    - Bis zu 10 User und Gruppen können erstellt und individuell benannt werden
-    - Einträge ohne einen Namen werden nach dem Prinzip `{User|Group} #ID` benannt
-    - Kommunikationsziele (ausschließlich Gruppen) können auf Userkanäle verteilt werden
-    - Klickreihenfolge definiert die Kanalreihenfolge in der Kanalmatrix
-    - Geräte einer Konfiguraiton hinzufügen
-    - Userzuweisung mittels Drag&Drop im letzten Schritt möglich
-- [Neue Oberfläche](https://manual.greengoconnect.com/en/software/interface/)
-    - Ansichten (Dashboard, Konfiguration, Netzwerk, Drahtlos)
-    - Tools (Save to Devices, Assistenten, Support, File, Settings, Handbuch)
-    - Statusleiste (Listen In (noch nicht veröffentlicht), Konfigurationsname, Gerätestatus, Warnungen)
-    - Index-Tree (Konfigurationsindex mit Suchfunktion)
-    - Navigationsleiste (Sektionsnavigation und -funktionen)
-    - Inhaltsansicht der aktiven Elemente
-- [Dashboard(s)](https://manual.greengoconnect.com/en/software/views/dashboard/)
-    - Beliebig viele Dashboards möglich
-    - Frei konfigurierbares 3x3 Grid
-    - Karten können konfiguriert werden
+    - Ermöglicht unterschiedliche Enstiege in die Software.
+    - Eine Support-Connection muss über den Button <span class="button-outline">support (beta)</span> separat initiiert werden.
+- [Eine neue Oberfläche](https://manual.greengoconnect.com/en/software/interface/)
+    - Unterschiedliche Ansichten für verschiedene Aufgaben
+        - **Dashboard:** Mehrere sind möglich. Dashboards ermöglichen einen geordneten Blick auf das System.
+        - **Config:** Die globalen Systemeinstellungen einer Konfiguration.
+        - **Connection:** Verwaltung von Geräten, Firmwares, und Konfiguraitonzugehörigkeit.
+        - **Wireless:** Verwaltung von Pairings und Wireless-Verbindungen.
+    - Tools:
+        - **Save to Devices:** Ermöglicht das Speichern der Konfiguration auf die Geräte und damit einen Betrieb ohne die Software.
+        - **Assistenten:** Ermöglichen die schnelle Erstellung von Konfigurationselementen.
+        - **Support:** Ermöglicht einen Ad-Hock Zugriff durch eine externe Person auf das System und die Konfiguration wenn aktiv.
+        - **File:** Ermöglicht das Laden, Mergen, Speichern, etc. von Konfigurationen.
+        - **Settings:** Erlaubt die Anpassung bestimmter Programmeinstellungen.
+        - **Help:** Ein kontextbasierter Link zum offline Handbuch welches mit der Software ausgeliefert wird.
+    - Ein Index-Baum der alle Elemente der aktiven Konfiguration enthält (mit Suchfunktion).
+    - Nie Navigationsleiste über der Inhaltsansicht teilt die aktive Ansicht mittels Tabs in verschiedene Bereiche auf. Zusätzlich befinden sich hier alle kontextbasierten Aktionen in Form von Buttons.
+    - Inhaltsansicht der aktiven Elemente oder Ansicht.
+    - Die Statusleiste gibt einen Überblick über Dinge wie den Konfigurationsnamen, Gerätestatus und Warnungen.
 
 ## Konfigurations- und Systemverwaltung
 
