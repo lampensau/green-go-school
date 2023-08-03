@@ -22,15 +22,15 @@ icon: material/wifi
 
 1. **Setup Menü Wegweiser:**<br><kbd>Setup Menü</kbd> --> <kbd>Dect</kbd> --> <kbd>Information</kbd> --> <kbd>Region: EU</kbd>
 
-### Wieviele drahtlose Geräte sind möglich? { data-toc-label="Wieviel Wireless ist möglich?" }
+### Wie viele drahtlose Geräte sind möglich? { data-toc-label="Wie viel Wireless ist möglich?" }
 
 Die Anzahl von möglichen drahtlosen Green-GO Beltpacks in einem Empfangsbereich ist nicht immer einfach zu bestimmen und hängt von verschiedenen Faktoren ab:
 
 <div class="annotate" markdown>
-- Die drei verfügbaren Frequenzbereiche (`EU`, `US/Canada`, `Japan`) verfügen über unterschiedlich viele Trägerfrequenzen mit je 24 Slots und haben daher unterschiedliche Möglichkeiten.
 - Das benutzte Green-GO Wireless-Codec haben Einfluss auf die benötigte Bandbreite:
     - `Wideband` (G.722): Bis zu 30 Beltpacks (EU). (1)
     - `Narrowband` (G.726): Bis zu 60 Beltpacks (EU). (2)
+- Die drei verfügbaren Frequenzbereiche (`EU`, `US/Canada`, `Japan`) verfügen über unterschiedlich viele Trägerfrequenzen mit je 24 Slots und haben daher unterschiedliche Möglichkeiten.
 - Aktivität von Fremdsystemen im DECT Frequenzbereich (EU: `1,88 - 1,90 GHz`) kann die verfügbare Bandbreite im Frequenzband verringern.
 - Green-GO WAA Antennen sind aufgrund fehlender Synchronisation nicht besonders effizient und brauchen unbelegten Aktionsraum im Frequenzband um Kollisionen zu vermeiden. Ist ein Fremdsystem im Einsatz kann das `Narrowband` Codec Abhilfe schaffen, da dies weniger Bandbreite benötigt.
 - Die Empfangsqualität im Aktionsraum der Beltpacks kann Einfluss auf die Verbindungsstabilität nehmen. Geräte am Rand des Empfangsbereichs können verhäuft Verbindungsabbrüche oder Probleme beim Verbindungsaufbau erleben. 
