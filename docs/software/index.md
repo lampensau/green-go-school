@@ -35,7 +35,9 @@ icon: material/application
 
 ## Konfigurations- und Systemverwaltung
 
-### [Connection View](https://manual.greengoconnect.com/en/software/views/connection/)
+### Connection View
+
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/software/views/connection/)
 
 - [Firmware Updates von Geräten via Netzwerk oder USB](https://manual.greengoconnect.com/en/guides/firmware/)
 - Änderung der Netzwerk- und Verbindungseinstellungen sind im `Network Tab` verfügbar

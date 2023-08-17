@@ -72,7 +72,7 @@ Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten 
     - Ausschließlich Monitoring via Software.
 - X-Pools:
     - Konfiguration via Software.
-    - Roaming mit bis zu 7 Antennen möglich.
+    - Roaming mit bis zu 7 Antennen möglich.    
     - Hinzufügen und Entfernen von Beltpacks mit USB-Verbindung möglich.
     - Ein drahtloses Beltpack kann immer nur mit einem X-Pool verbunden sein.
 
@@ -84,6 +84,22 @@ Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten 
 - Es gibt keine Möglichkeit des Roamings.
 
 #### OTA Workflow
+
+Als erstes muss die Antenne mit Hilfe des roten Knopfes in den sogenanten Pairing-Modus versetzt werden. Dazu muss der Knopf auf der Unterseite für ca. 2 Sekunden gedrückt werden.
+
+Als bald der Knopf gedrückt wird beginnt die Status-LED wie folgend dargestellt zu blinken und bleibt für ca. 30 Sekunden im Pairing-Modus:
+
+![WAA Antenna Pairing Mode LED](../assets/images/waa-led-pairing-slots.svg){.img-center inline=true}
+
+<div class="annotate" markdown>
+Anschließend muss über das WBPX Beltpack der Pairing-Prozess initiiert werden. Dies erfolgt über das [Setup-Menü](https://manual.greengoconnect.com/en/getting-started/usage/#__tabbed_8_1) direkt am Gerät. (1)
+</div>
+
+1. **Setup Menü Wegweiser:**<br><kbd>Setup Menü</kbd> --> <kbd>Dect</kbd> --> <kbd>Pair Antenna</kbd> --> <kbd>Start Pairing</kbd>
+
+Während des Pairing-Prozesses erscheint ein Popup auf dem Display des WBPX. Dieses zeigt den aktuellen Status des Pairing-Prozesses an.
+
+Nach erfolgreichem Abschluss des Pairing-Prozesses wird die Antenne automatisch in den normalen Betriebsmodus versetzt und das WBPX Beltpack verbindet sich mit der Antenne.
 
 ### X-Pool Pairing
 
@@ -99,7 +115,7 @@ Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten 
 
 #### X-Pool Workflow
 
-Das folgende Video zeigt einen groben Überblick über den X-Pool Workflow. Es zeigt das Hinzufügen, editieren und entfernen eines X-Pools.
+Das folgende Video zeigt einen groben Überblick über den X-Pool Workflow. Es zeigt das Hinzufügen, editieren und entfernen eines X-Pools:
 
 <figure markdown>
 ![Video zum X-Pool Workflow](../assets/images/xpool-setup.gif)
