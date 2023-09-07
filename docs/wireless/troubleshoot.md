@@ -4,7 +4,7 @@
 
 ### Ein OTA-Pairing schlägt fehl
 
-Sollte ein OTA-Pairing fehlschlagen, so kann dies entweder daran liegen, dass die Antenne bereits voll belegt ist, oder dass das Beltpack bereits ein Pairing gespeichert hat.
+> Sollte ein OTA-Pairing fehlschlagen, so kann dies entweder daran liegen, dass die Antenne bereits voll belegt ist, oder dass das Beltpack bereits ein Pairing gespeichert hat.
 
 Sind die Pairing-Slots der Antenne voll belegt, zeigt die Status-LED dies wie folgt an:
 
@@ -14,9 +14,9 @@ In beiden Fällen sollten die [Pairings der Geräte zurückgesetzt](https://manu
 
 ### Ein X-Pool Pairing schlägt fehl
 
-Ein X-Pool Pairing kann fehlschlagen, wenn die Antenne bereits voll belegt ist oder die Datenverbindung zu den Geräten beim Programmieren des Pairings unterbrochen wurde.
+> Ein X-Pool Pairing kann fehlschlagen, wenn die Antenne bereits voll belegt ist oder die Datenverbindung zu den Geräten beim Programmieren des Pairings unterbrochen wurde.
 
-Ein Problem mit einem Pairing wird in der Regel durch ein :material-alert-outline:{style="color:orange"} Ausrufezeichen am betroffenen X-Pool und dem Gerät angezeigt.
+Ein Problem mit einem Pairing wird in der Regel durch ein :material-alert-outline:{style="color:orange"} Ausrufezeichen am betroffenen X-Pool und Gerät angezeigt.
 
 ![Alt text](../assets/images/software-xpool-problem.png){.img-center}
 
@@ -24,9 +24,16 @@ Ist dies der Fall, kann einfach der betroffene X-Pool in der "Wireless View" aus
 
 ### Ein programmiertes Beltpack verbindet sich nicht mehr mit der Antenne
 
-Dies kann passieren, wenn die Programmierung nicht korrekt abgeschlossen wurde und Pairinginformationen nicht korrekt gelesen werden können. Wurden die Geräte mit Hilfe eines OTA-Pairings verbunden, so müssen alle Pairings zurückgesetzt werden (WAA und WBPX) und anschließend erneut programmiert werden.
+> Dies kann passieren, wenn die Programmierung nicht korrekt abgeschlossen wurde und die Pairinginformationen nicht korrekt gelesen werden können.
 
-Wurde das X-Pool Pairing verwendet, kann das Pairing mit Hilfe der Software repariert werden. Dazu muss der betroffene X-Pool in der "Wireless View" ausgewählt, und über den Button <span class="button-outline">edit</span> das Paring repariert werden. Voraussetung ist aber eine vorhandene Datenverbindung zu den betroffenen Geräten (WAA und WBPX).
+Wurden die Geräte mit Hilfe eines OTA-Pairings verbunden, so müssen [alle Pairings zurückgesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations) werden (WAA und WBPX) und anschließend erneut programmiert werden.
+
+Wurde das X-Pool Pairing verwendet, kann das Pairing mit Hilfe der Software repariert werden:
+
+Dazu muss der betroffene X-Pool in der "Wireless View" ausgewählt, und über den Button <span class="button-outline">edit</span> das Paring durch das Entfernen und erneutes Hinzufügen des betroffenen Geräts repariert werden.
+
+!!! warning ""
+    :material-alert-outline: **Achtung:** Voraussetung ist eine vorhandene Datenverbindung zu den betroffenen Geräten (WAA und WBPX).
 
 ## Antenne
 
@@ -53,9 +60,9 @@ Die Laufzeit des Akkus kann von folgenden Dingen beeinflusst werden:
 
 ### Beltpacks nutzen eine unbekannte Kanalbelegung
 
-Dies ist ein bekanntes Problem welches auftreten kann, wenn die mit einer Antenne verbundenen Beltpacks zum Zeitpunkt der Konfigurationsänderung oder dem Adoptieren nicht eingeschaltet sind.
+> Dies ist ein bekanntes Problem welches auftreten kann, wenn die mit einer Antenne verbundenen Beltpacks zum Zeitpunkt der Konfigurationsänderung oder dem Adoptieren nicht eingeschaltet waren.
 
-In diesem Fall kann es passieren, dass die Antenne die Konfigurationsänderung nicht an die Beltpacks übermitteln kann und die Beltpacks nach dem Enschalten die alte Konfiguration nutzen.
+> In einem solchen Fall kann es passieren, dass die Antenne die Konfigurationsänderung nicht an die Beltpacks übermitteln kann und die Beltpacks nach dem Enschalten die alte Konfiguration nutzen.
 
 <div class="annotate" markdown>
 Das Problem kann in der Regel durch ein erneutes Laden des Users behoben werden. (1)

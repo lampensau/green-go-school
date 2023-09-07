@@ -12,30 +12,46 @@ icon: material/application
 
 ## Ein Erster Überblick
 
-- Starten der Software: Der Splashscreen
-    - Ermöglicht unterschiedliche Enstiege in die Software.
-    - Eine Support-Connection muss über den Button <span class="button-outline">support (beta)</span> separat initiiert werden.
-- [Eine neue Oberfläche](https://manual.greengoconnect.com/en/software/interface/)
-    - Unterschiedliche Ansichten für verschiedene Aufgaben
-        - **Dashboard:** Mehrere sind möglich. Dashboards ermöglichen einen geordneten Blick auf das System.
-        - **Config:** Die globalen Systemeinstellungen einer Konfiguration.
-        - **Connection:** Verwaltung von Geräten, Firmwares, und Konfiguraitonzugehörigkeit.
-        - **Wireless:** Verwaltung von Pairings und Wireless-Verbindungen.
-    - Tools:
-        - **Save to Devices:** Ermöglicht das Speichern der Konfiguration auf die Geräte und damit einen Betrieb ohne die Software.
-        - **Assistenten:** Ermöglichen die schnelle Erstellung von Konfigurationselementen.
-        - **Support:** Ermöglicht einen Ad-Hock Zugriff durch eine externe Person auf das System und die Konfiguration wenn aktiv.
-        - **File:** Ermöglicht das Laden, Mergen, Speichern, etc. von Konfigurationen.
-        - **Settings:** Erlaubt die Anpassung bestimmter Programmeinstellungen.
-        - **Help:** Ein kontextbasierter Link zum offline Handbuch welches mit der Software ausgeliefert wird.
-    - Ein Index-Baum der alle Elemente der aktiven Konfiguration enthält (mit Suchfunktion).
-    - Nie Navigationsleiste über der Inhaltsansicht teilt die aktive Ansicht mittels Tabs in verschiedene Bereiche auf. Zusätzlich befinden sich hier alle kontextbasierten Aktionen in Form von Buttons.
-    - Inhaltsansicht der aktiven Elemente oder Ansicht.
-    - Die Statusleiste gibt einen Überblick über Dinge wie den Konfigurationsnamen, Gerätestatus und Warnungen.
+### Starten der Software: Der Splashscreen
+
+![Green-GO Control: Der Splashscreen](software-splash.png)
+
+- Der Splashscreen ermöglicht unterschiedliche Enstiege in die Software:
+    - <span class="button-outline">Quickstart</span> ermöglicht ein einfaches Erstellen einer ersten Green-GO Konfiguration.
+    - <span class="button-outline">Create New</span> ermöglicht das Erstellen einer neuen Konfiguration ohne Hilfestellungen.
+    - <span class="button-outline">Load File</span> ermöglicht das Laden einer existierenden Konfiguration.
+    - <span class="button-outline">Recent Files</span> hat derzeit keine Funktion.
+    - <span class="button-outline">Join</span> ermöglicht es einer im Netzwerk aktiven Konfiguration beizutreten. Die Konfiguration wird von einem verfügbaren Gerät geladen.
+- Eine _ausgehende_ Support-Connection muss über den Button <span class="button-outline">support (beta)</span> separat initiiert werden.
+
+### Eine neue Benutzeroberfläche
+
+Die neue Benutzeroberfläche vereint die Funktionen der einzelnen Green-GO v4 Programme.
+
+![Alt text](image.png)
+
+- Unterschiedliche Ansichten für verschiedene Aufgaben:
+    - **Dashboard:** Mehrere sind möglich. Dashboards ermöglichen einen geordneten Blick auf das System.
+    - **Config:** Die globalen Systemeinstellungen einer Konfiguration.
+    - **Connection:** Verwaltung von Geräten, Firmwares, und Konfiguraitonzugehörigkeit.
+    - **Wireless:** Verwaltung von Pairings und Wireless-Verbindungen.
+- Verfügbare Tools:
+    - **Save to Devices:** Ermöglicht das Speichern der Konfiguration auf die Geräte und damit einen Betrieb ohne die Software.
+    - **Assistenten:** Ermöglichen die schnelle Erstellung von Konfigurationselementen.
+    - **Support:** Ermöglicht einen Ad-Hock Zugriff durch eine externe Person auf das System und die Konfiguration wenn aktiv.
+    - **File:** Ermöglicht das Laden, Mergen, Speichern, etc. von Konfigurationen.
+    - **Settings:** Erlaubt die Anpassung bestimmter Programmeinstellungen.
+    - **Help:** Ein kontextbasierter Link zum offline Handbuch welches mit der Software ausgeliefert wird.
+- Ein **Index-Baum** der alle Elemente der aktiven Konfiguration enthält (mit Suchfunktion).
+- Nie **Navigationsleiste** über der Inhaltsansicht teilt die aktive Ansicht mittels Tabs in verschiedene Bereiche auf. Zusätzlich befinden sich hier alle kontextbasierten Aktionen in Form von Buttons.
+- Inhaltsansicht der aktiven Elemente oder Ansicht.
+- Die **Statusleiste** gibt einen Überblick über Dinge wie den Konfigurationsnamen, Gerätestatus und Warnungen.
 
 ## Konfigurations- und Systemverwaltung
 
 ### Connection View
+
+![Alt text](image-1.png)
 
 **Handbuch:** [Link](https://manual.greengoconnect.com/en/software/views/connection/)
 
@@ -49,6 +65,8 @@ icon: material/application
 - Einer Konfiguration via eines Geräts oder entfernter Softwareinstanz beitreten
 
 ### Konfigurations- bzw. Systemeinstellungen
+
+![Alt text](image-2.png)
 
 - Konfigurationen laden via dem File-Menü in der Toolbar
     - Mit diesem Tool können auch v4 Konfigurationen geladen und auf v5 geupdated werden (nicht über den Splash-Screen möglich!)
