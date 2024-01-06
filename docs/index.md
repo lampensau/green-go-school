@@ -4,7 +4,7 @@ icon: material/home
 hide:
     - toc
 ---
-# Willkommen
+# Willkommen zur Green-GO School
 
 Diese Seite dient hauptsächlich als digitaler Handout zur Schulung (vor Ort oder Online).
 
