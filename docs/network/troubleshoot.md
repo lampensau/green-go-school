@@ -121,71 +121,50 @@ Wireshark kann hilfreich sein um Netzwerkprobleme in einem System zu analysieren
 
 #### Konfiguration
 
-Damit Wireshark optimal funktioniert sollten ein paar Einstellungen überprüft und vorgenommen werden:
+Damit Wireshark optimal funktioniert sollten ein paar Einstellungen überprüft und gegebenenfalls vorgenommen werden:
 
-##### Promiskuitiver Modus
+=== "Promiskuitiver Modus"
 
-Diese Einstellung ist abhängig vom Treiber des Netzwerk Interfaces und ist möglicherweise nicht immer verfügbar.
+    Diese Einstellung ist abhängig vom Treiber des Netzwerk Interfaces und ist möglicherweise nicht immer verfügbar.
 
-Sofern dieser Modus verfügbar ist, sollte dieser aktiviert sein. Wenn aktiv, wird das Interface beim Mittschnitt korrekt initialisiert.
+    Sofern dieser Modus verfügbar ist, sollte dieser unbedingt aktiviert sein. Wenn aktiv, wird das Interface beim Start eines Mittschnitts korrekt initialisiert und Pakete welche nicht an dieses adressiert sind können mitgeschnitten werden.
 
-<figure markdown>
-![Wireshark Einstellungen - Mitschnitt](../assets/images/wireshark-einstellungen.png)
-<figcaption>Bearbeiten --> Einstellungen --> Mitschnitt</figcaption>
-</figure>
+    <figure markdown>
+    ![Wireshark Einstellungen - Mitschnitt](../assets/images/wireshark-einstellungen.png)
+    <figcaption>Bearbeiten --> Einstellungen --> Mitschnitt</figcaption>
+    </figure>
 
-##### Anzeige und Spalten
+=== "Anzeige und Spalten"
 
-Wireshark ist ein mächtiges Werkzeug welches umfangreich konfiguriert werden kann. Für den Anfang kann es aber hilfreich sein folgende Einstellungen vorzunehmen:
+    Wireshark ist ein mächtiges Werkzeug welches für eine tiefergende Analyse umfangreich konfiguriert werden kann. Für den Anfang kann es hilfreich sein folgende Einstellungen vorzunehmen:
 
-###### Zeitanzeige
+    === "Zeitanzeige"
 
-Um Ereignisse besser identifizieren zu können, kann es hilfreich sein die Zeitanzeige auf `Uhrzeit (01:02:03.123456)` zu stellen (Ansicht --> Zeitanzeige --> Uhrzeit).
+        Um Ereignisse besser im Mittschnitt identifizieren zu können, kann es hilfreich sein die Zeitanzeige der Pakete auf `Uhrzeit (01:02:03.123456)` zu stellen (Ansicht --> Zeitanzeige --> Uhrzeit).
 
-###### Delta Timing Spalte
+    === "Delta Timing Spalte"
 
-Um die Latenz zwischen angezeigten (gefilterten) Paketen besser im Überblick behalten zu können, kann es helfen eine zusätzliche Spalte für diese Berechnung anzulegen:
+        Um die Latenz zwischen angezeigten (gefilterten) Paketen besser im Überblick behalten zu können, kann es helfen eine zusätzliche Spalte für diese Berechnung anzulegen:
 
-<figure markdown>
-![Wireshark Einstellungen - Spalten](../assets/images/wireshark-spalten.png)
-<figcaption>Bearbeiten --> Einstellungen --> Darstellung --> Spalten</figcaption>
-</figure>
+        <figure markdown>
+        ![Wireshark Einstellungen - Spalten](../assets/images/wireshark-spalten.png)
+        <figcaption>Bearbeiten --> Einstellungen --> Darstellung --> Spalten</figcaption>
+        </figure>
 
-Wichtig ist hier, dass als Spaltentyp `Delta time displayed` ausgewählt wird.
+        Wichtig ist hier, dass als Spaltentyp `Delta time displayed` ausgewählt wird.
 
-##### Green-GO Pakete Einfärben
+=== "Green-GO Pakete Einfärben"
 
-Es kann hilfreich sein die Green-GO Pakete mit Hilfe von Farbfiltern einzufärben um Probleme besser zu visualisieren. Die zum Download stehenden Einfärbungsregeln können einfach importiert und verwendet werden:
+    Es kann hilfreich sein die Green-GO Pakete mit Hilfe von Farbfiltern einzufärben um Probleme besser zu visualisieren. Die zum Download stehenden Einfärbungsregeln können einfach importiert und verwendet werden:
 
-<figure markdown>
-![Wireshark Einstellungen - Mitschnitt](../assets/images/wireshark-farbregeln.png)
-<figcaption>Ansicht --> Einfärbungsregeln</figcaption>
-</figure>
+    <figure markdown>
+    ![Wireshark Einstellungen - Mitschnitt](../assets/images/wireshark-farbregeln.png)
+    <figcaption>Ansicht --> Einfärbungsregeln</figcaption>
+    </figure>
 
 #### Datenverkehr Filtern
 
 Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paketen zu begrenzen und für eine bessere Übersicht zu sorgen.
-
-=== "Mitschnittfilter"
-
-    Ein Mittschnittfilter kann hilfreich sein um Umfang eines Mittschnitts auf das Notwendige zu reduzieren. Dies kann die Dateigröße eines Mittschnitts signifikant verringern.
-
-    ![Wireshark Mittschnittfilter](../assets/images/wireshark-capture-filter.png)
-    
-    !!! warning ""
-        :material-alert-outline: **Achtung:** Es ist nicht möglich ausgefilterte Pakete im Nachhinein wiederherzustellen, daher sollte dieser Filtermechanismus mit vorsicht verwendet werden.
-
-    Folgende Filter-Statements können mit den Operatoren `&&` (und), `||` (oder) logisch verknüpft und mit `()` gruppiert werden.
-
-    `host <ip.address>`
-    : Ermöglicht den Mittschnitt auf bestimte IP-Adressen zu begrenzen.
-
-    `port 5810`
-    : Ermöglicht den Mittschnitt auf einen bestimten Port zu begrenzen.
-
-    `not <statement>`
-    : Das `not` Statement ermöglicht es etwas explizit vom Mittschnitt auszuschließen.<br>
-    Das Statement `not host 169.254.32.187` schließt alle Pakete von und zum Host `169.254.32.187` vom Mittschnitt aus.
 
 === "Displayfilter"
 
@@ -209,6 +188,27 @@ Es können verschiedene Filtermechanismen verwendet werden um die Menge an Paket
 
     `data.data[0:2] == 4735`
     : Dieser Filter überprüft die ersten zwei Bytes eines Pakets auf für Green-GO relevante Kommunikation.
+
+=== "Mitschnittfilter"
+
+    Ein Mittschnittfilter kann hilfreich sein um den Umfang eines Mittschnitts auf das Notwendige zu reduzieren. Dies kann die Dateigröße eines lang laufenden Mittschnitts signifikant verringern.
+
+    ![Wireshark Mittschnittfilter](../assets/images/wireshark-capture-filter.png)
+    
+    !!! warning ""
+        :material-alert-outline: **Achtung:** Es ist nicht möglich ausgefilterte Pakete im Nachhinein wiederherzustellen, daher sollte dieser Filtermechanismus mit vorsicht verwendet werden.
+
+    Folgende Filter-Statements können mit den Operatoren `&&` (und), `||` (oder) logisch verknüpft und mit `()` gruppiert werden.
+
+    `host <ip.address>`
+    : Ermöglicht den Mittschnitt auf bestimte IP-Adressen zu begrenzen.
+
+    `port 5810`
+    : Ermöglicht den Mittschnitt auf einen bestimten Port zu begrenzen.
+
+    `not <statement>`
+    : Das `not` Statement ermöglicht es etwas explizit vom Mittschnitt auszuschließen.<br>
+    Das Statement `not host 169.254.32.187` schließt alle Pakete von und zum Host `169.254.32.187` vom Mittschnitt aus.
 
 
 ### Green-GO MTA
