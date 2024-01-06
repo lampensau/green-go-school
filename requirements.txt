@@ -5,3 +5,4 @@ mkdocs-git-revision-date-localized-plugin>=1.2
 pillow>=10.0
 cairosvg>=2.7
 pngquant>=1.0
+lxml
