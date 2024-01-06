@@ -29,7 +29,7 @@ jobs:
       - run: sudo apt-get install pngquant
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install -e svg-inline
-      - run: pip install -r -U requirements.txt
+      - run: pip install -U -r requirements.txt
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
