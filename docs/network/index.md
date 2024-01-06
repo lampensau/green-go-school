@@ -99,7 +99,7 @@ In der Regel wird es bei Green-GO bei einem Jitter von über `5ms` problematisch
 
 #### Paket Klassifizierungen (DSCP)
 
-| DSCP Label | DSCP Wert | Beschreibung |
+| DSCP Label {width=20%} | DSCP Wert {width=20%} | Beschreibung {width=60%} |
 | :-: | :-: | :-- |
 | EF | 46 | Pakete für die Kommunikation und den Statusaustausch zwischen Geräten sollte priorisiert weitergeleitet werden. |
 | CS0 | 0 | Der allgemeine Status-Broadcast wird mit dem Label `CS0` versand und kann nach dem _Best Effort_ Prinzip behandelt werden. |

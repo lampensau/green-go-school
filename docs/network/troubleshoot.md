@@ -21,7 +21,7 @@ social:
 
 #### Geräte werden nicht automatisch in der Software angezeigt
 
-Sollten Green-GO Geräte nicht automatisch in der [Connection View](https://manual.greengoconnect.com/en/software/views/connection/) der Software erscheinen kann ein [manueller Netzwerkscan](https://manual.greengoconnect.com/en/getting-started/upgrade/#scan-your-network) durchgeführt werden.
+> Sollten Green-GO Geräte nicht automatisch in der [Connection View](https://manual.greengoconnect.com/en/software/views/connection/) der Software erscheinen kann ein [manueller Netzwerkscan](https://manual.greengoconnect.com/en/getting-started/upgrade/#scan-your-network) durchgeführt werden.
 
 Tauchen die Geräte nach diesem Scan mit dem Status <span class="status-dot purple"></span> `Boot Mode` oder <span class="status-dot orange"></span> `Unreachable` auf, sollte folgendes überprüft werden:
 
@@ -52,9 +52,11 @@ Sollte die Software auch nach einem manuellen Netzwerkscan keine Geräte anzeige
 
 #### Einzelne Fimware Updates schlagen fehl
 
-Es kann leider immer mal wieder vorkommen, das ein Firmwareupdate fehlschlägt. In manchen Fällen gibt die Software zu früh auf, nachdem das Gerät in den <span class="status-dot purple"></span> `Boot Mode` neugestartet wurde. Das Gerät ist noch nicht verfügbar und wartet z.B. noch auf eine IP-Adresse.
+> Es kann leider immer mal wieder vorkommen, das ein Firmwareupdate fehlschlägt. In manchen Fällen gibt die Software zu früh auf, nachdem das Gerät in den <span class="status-dot purple"></span> `Boot Mode` neugestartet wurde. Das Gerät ist noch nicht verfügbar und wartet z.B. noch auf eine IP-Adresse.
 
-1. In einem solchen Fall kann das betroffene Gerät einfach mit Hilfe des <span class="button-outline">Remove Offline Devices</span> Buttons aus der Software entfernt werden.
+In einem solchen Fall kann folgender Workaround helfen:
+
+1. Das betroffene Gerät einfach mit Hilfe des <span class="button-outline">Remove Offline Devices</span> Buttons aus der Software entfernt werden.
 2. Anschließend muss ein _manueller Scan_ durch einen Klick auf den <span class="button-outline">Update</span> Button und die folgende `Scan` Option erfolgen.
 3. Das Gerät sollte nun mit dem Status <span class="status-dot purple"></span> `Boot Mode` erscheinen. Das Firmwareupdate läuft nun in der Regel problemlos [wie gewohnt](https://manual.greengoconnect.com/en/guides/firmware/#flash-the-firmware) durch.
 
@@ -65,22 +67,24 @@ Es kann leider immer mal wieder vorkommen, das ein Firmwareupdate fehlschlägt. 
     
     Diese Prozedur sollte ebenfalls ein problemloses Firmwareupdate über den <span class="button-outline">Update</span> Button und die folgende `Scan` Option ermöglichen.
 
-#### <span class="status-dot red"></span> Geräte ändern Ihren Status immer wieder auf "Lost"
+#### Geräte ändern Ihren Status immer wieder auf <span class="status-dot red"></span> "Lost"
 
-Dies ist in der Regel der Fall wenn es Unterbrechungen im Paketfluss kommt. Die Software fragt den Status aller Geräte regelmäßig ab und erwartet ein Paket als Antwort.
+> Dies ist in der Regel der Fall wenn es Unterbrechungen im Paketfluss kommt. Die Software fragt den Status aller Geräte regelmäßig ab und erwartet ein Paket als Antwort.
 
-Da Green-GO für diese Kommunikation ausschließlich [UDP Pakete](index.md#udp-ports) benutzt, kann eine Zustellung leider nicht garantiert werden und ist stark abhängig von der eingesetzten Netzwerkinfrastruktur.
+> Da Green-GO für diese Kommunikation ausschließlich [UDP Pakete](index.md#udp-ports) benutzt, kann eine Zustellung leider nicht garantiert werden und ist stark abhängig von der eingesetzten Netzwerkinfrastruktur.
 
-Eine häufige Ursache für einen "flackernden" Status ist z.B. eine drahtlose WLAN Verbindung, diese kann abhängig vom AP und der Konfiguration den Multicast-Datenverkehr "verschlucken". 
+Eine häufige Ursache für einen "flackernden" Status ist ein Problem mit dem Empfang von Multicast-Traffic der Green-GO Geräte. Dies kann z.B. durch eine drahtlose WLAN Verbindung passieren, eine solche drahtlose Verbindung kann abhängig vom AP und der Konfiguration den Multicast-Datenverkehr "verschlucken".  
 
 ??? info "Nützliche Information"
     Sollte ein Antwort-Paket mal nicht am Rechner ankommen wird der Verbindungsstatus des Geräts auf "Lost" umgestellt. Dies muss nicht immer bedeuten, dass das betroffene Green-GO Gerät ein Problem hat. Es ist durchaus möglich das eine Antwort auf der "Strecke" geblieben ist.
 
 ### Geräte
 
-#### <span class="status-dot blink__blue-red"></span> Statusindikatoren blinken rot
+#### Statusindikatoren blinken rot/blau <span class="status-dot blink__blue-red"></span>
 
-Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-red"></span> rot blinken ist in der Regel kein weiteres Green-GO Gerät mit gleicher [Konfiguration](https://manual.greengoconnect.com/en/getting-started/software/#adopting-devices) im lokalen Netzwerk vorhanden.
+> Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-red"></span> rot/blau blinken ist in der Regel kein weiteres Green-GO Gerät mit gleicher [Konfiguration](https://manual.greengoconnect.com/en/getting-started/software/#adopting-devices) im lokalen Netzwerk vorhanden. Alternativ ist es möglich, dass die Kommunikation zu anderen Green-GO Geräten durch die Netzwerkinfrastruktur blockiert ist.
+
+In einem solchen Falle sollte folgendes geprüft werden:
 
 - [x] Alle Geräte haben eine korrekte Netzwerkkonfiguration und kommunizieren im gleichen lokalen Netwerk.
 - [x] Alle Geräte benutzen eine Konfiguration mit [gleicher Konfigurations ID](https://manual.greengoconnect.com/en/software/views/config/#config-info).<br>
@@ -88,7 +92,7 @@ Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-
 - [x] Die Geräte sind in der Lage sich gegenseitig zu Pingen<br>
     (Setup Menü --> Info --> IP --> Ping)
 
-#### Sprache wird abgehackt oder verändert übertragen
+#### Audio oder Sprache wird abgehackt oder verändert übertragen
 
 Da Green-GO UDP Multicast für die Kommunikation benutzt muss, der Netzwerkverkehr "non-blocking" und ohne Verzögerungen von der Netzwerk-Infrastruktur durchgeleitet werden.
 

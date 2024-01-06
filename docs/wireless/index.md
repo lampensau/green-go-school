@@ -22,15 +22,15 @@ icon: material/wifi
 
 1. **Setup Menü Wegweiser:**<br><kbd>Setup Menü</kbd> --> <kbd>Dect</kbd> --> <kbd>Information</kbd> --> <kbd>Region: EU</kbd>
 
-### Wieviele drahtlose Geräte sind möglich? { data-toc-label="function_name" }
+### Wie viele drahtlose Geräte sind möglich? { data-toc-label="Wie viel Wireless ist möglich?" }
 
 Die Anzahl von möglichen drahtlosen Green-GO Beltpacks in einem Empfangsbereich ist nicht immer einfach zu bestimmen und hängt von verschiedenen Faktoren ab:
 
 <div class="annotate" markdown>
-- Die drei verfügbaren Frequenzbereiche (`EU`, `US/Canada`, `Japan`) verfügen über unterschiedlich viele Trägerfrequenzen mit je 24 Slots und haben daher unterschiedliche Möglichkeiten.
 - Das benutzte Green-GO Wireless-Codec haben Einfluss auf die benötigte Bandbreite:
     - `Wideband` (G.722): Bis zu 30 Beltpacks (EU). (1)
     - `Narrowband` (G.726): Bis zu 60 Beltpacks (EU). (2)
+- Die drei verfügbaren Frequenzbereiche (`EU`, `US/Canada`, `Japan`) verfügen über unterschiedlich viele Trägerfrequenzen mit je 24 Slots und haben daher unterschiedliche Möglichkeiten.
 - Aktivität von Fremdsystemen im DECT Frequenzbereich (EU: `1,88 - 1,90 GHz`) kann die verfügbare Bandbreite im Frequenzband verringern.
 - Green-GO WAA Antennen sind aufgrund fehlender Synchronisation nicht besonders effizient und brauchen unbelegten Aktionsraum im Frequenzband um Kollisionen zu vermeiden. Ist ein Fremdsystem im Einsatz kann das `Narrowband` Codec Abhilfe schaffen, da dies weniger Bandbreite benötigt.
 - Die Empfangsqualität im Aktionsraum der Beltpacks kann Einfluss auf die Verbindungsstabilität nehmen. Geräte am Rand des Empfangsbereichs können verhäuft Verbindungsabbrüche oder Probleme beim Verbindungsaufbau erleben. 
@@ -41,7 +41,7 @@ Die Anzahl von möglichen drahtlosen Green-GO Beltpacks in einem Empfangsbereich
 
 ### Roaming mit Green-GO
 
-Roaming mit Green-GO ist nicht nahtlos. Bei jedem Hand-Off muss mit einer Verbindungsunterbrechung von ca. `6 - 15 Sekunden` gerechnet werden. Abseits davon gibt es zwei Möglichkeiten den Zeitpunkt des Antennenwechsels zu beeinflussen:
+Roaming mit Green-GO ist möglich, aber nicht nahtlos. Bei jedem Hand-Off muss mit einer Verbindungsunterbrechung von ca. `6 - 15 Sekunden` gerechnet werden. Abseits davon gibt es zwei Möglichkeiten den Zeitpunkt des Antennenwechsels zu beeinflussen:
 
 <div class="annotate" markdown>
 1. `Roaming Threshold`: Beeinflusst den Zeitpunkt bzw. die berrechnete durchschnittliche Feldstärke für den automatischen Antennenwechsel. (1)
@@ -53,14 +53,14 @@ Roaming mit Green-GO ist nicht nahtlos. Bei jedem Hand-Off muss mit einer Verbin
 
 ## Antennen Platzierung
 
-Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten sind und teilweise erheblichen Einfluss auf die Reichweite einer Green-GO WAA Antenne (Rundstrahler) nehmen können. 
+Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten sind und teilweise erheblichen Einfluss auf die Reichweite einer Green-GO WAA Antenne (Rundstrahler) nehmen können:
 
 - Die lokale Architektur kann großen Einfluss auf die Empfangsqualität und Reichweite nehmen; abhängig von der Antennenpositionierung und dem Aktionsraum der verbundenen Beltpacks.
-- Reflektionen können einen negativen Einfluss auf die Empfangsqualtät nehmen. Aus diesem Grund kann die Positionierung im Raum eine Entscheidene Rolle spielen.
-- Bereiche mit existierender Infrastruktur für den gleichen Frequenzbereich (EU: 1,88 - 1,90 GHz) können Einfluss auf die Anzahl der insgesamt möglichen Beltpacks nehmen.
+- Reflektionen können einen negativen Einfluss auf die Empfangsqualtät haben. Aus diesem Grund kann die Positionierung der Antenne im Raum eine Entscheidene Rolle bei der Empfangsqualität spielen.
+- Existierende Infrastruktur auf dem DECT Frequenzbereich (EU: 1,88 - 1,90 GHz) können Einfluss auf die Anzahl der insgesamt möglichen Beltpacks nehmen.
 - Abstand zu anderen elektromagnetischen Strahlern (Antennen, Netzteile, WiFi AP/Router, Bluetooth, etc.) sollte min. 1,20 Meter betragen.
 - Eine direkte Sichtverbindung vom Beltpack zur Antenne ist vorteilhaft für die Reichweite und Empfangsqualität. Hindernisse jeglicher Art (auch der menschliche Körper) haben einen dämpfenden Einfluss auf alle Radiowellen und sollten, wenn möglich vermieden werden.
-- Eine Platzierung über Kopfhöhe ist grundsätzlich empfohlen und Höhe kann einen positiven Performanceeinfluss haben. Aber aufgrund der Funkcharakteristik (Rundstrahler) kann eine zu hohe Platzierung der WAA Antenne eine (zu große) tote Zone direkt unter der Antenne kreieren.
+- Eine Platzierung über Kopfhöhe ist grundsätzlich empfohlen und Höhe kann einen positiven Einfluss auf die Empfangsqualität haben. Aber aufgrund der Funkcharakteristik (Rundstrahler) kann eine zu hohe Platzierung der WAA Antenne eine (zu große) tote Zone direkt unter der Antenne kreieren.
 - Die Antenne sollte _aufrecht_ installiert sein (Netzwerkanschluss zeigt entweder nach unten oder oben).
 
 ## Pairing Methoden
@@ -72,34 +72,50 @@ Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten 
     - Ausschließlich Monitoring via Software.
 - X-Pools:
     - Konfiguration via Software.
-    - Roaming mit bis zu 7 Antennen möglich.
+    - Roaming mit bis zu 7 Antennen möglich.    
     - Hinzufügen und Entfernen von Beltpacks mit USB-Verbindung möglich.
     - Ein drahtloses Beltpack kann immer nur mit einem X-Pool verbunden sein.
 
 ### OTA-Pool Pairing
 
 - Der Pairing-Speicher von Antennen und Beltpacks sollte vor Beginn des Pairing-Setups [zurück gesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations) werden.
-- Das [Pairing-Setup](https://manual.greengoconnect.com/en/guides/wirelessx/#ad-hock-over-the-air-pairings) erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist notwendig.
+- Das [Pairing-Setup](https://manual.greengoconnect.com/en/guides/wirelessx/#ad-hock-over-the-air-pairings) erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist für das Einrichten der Pairings notwendig.
 - Ein Bearbeiten der Pairings ist nicht möglich. Die Software ermöglicht nur das Monitoring.
 - Es gibt keine Möglichkeit des Roamings.
 
 #### OTA Workflow
 
+Als erstes muss die Antenne mit Hilfe des roten Knopfes in den sogenanten Pairing-Modus versetzt werden. Dazu muss der Knopf auf der Unterseite für ca. 2 Sekunden gedrückt werden.
+
+Als bald der Knopf gedrückt wird beginnt die Status-LED wie folgend dargestellt zu blinken und bleibt für ca. 30 Sekunden im Pairing-Modus:
+
+![WAA Antenna Pairing Mode LED](../assets/images/waa-led-pairing-slots.svg){.img-center inline=true}
+
+<div class="annotate" markdown>
+Anschließend muss über das WBPX Beltpack der Pairing-Prozess initiiert werden. Dies erfolgt über das [Setup-Menü](https://manual.greengoconnect.com/en/getting-started/usage/#__tabbed_8_1) direkt am Gerät. (1)
+</div>
+
+1. **Setup Menü Wegweiser:**<br><kbd>Setup Menü</kbd> --> <kbd>Dect</kbd> --> <kbd>Pair Antenna</kbd> --> <kbd>Start Pairing</kbd>
+
+Während des Pairing-Prozesses erscheint ein Popup auf dem Display des WBPX. Dieses zeigt den aktuellen Status des Pairing-Prozesses an.
+
+Nach erfolgreichem Abschluss des Pairing-Prozesses wird die Antenne automatisch in den normalen Betriebsmodus versetzt und das WBPX Beltpack verbindet sich mit der Antenne.
+
 ### X-Pool Pairing
 
 - Das Pairing-Setup ist ausschließlich über die Green-GO Control Software möglich.
 - WAA Antennen müssen Mitglied der Konfiguration (Adopted) und über das Netzwerk mit der Software verbunden sein bevor diese im Wizard zur Verfügung stehen.
-- Ein Abbrechen des Wizards ist nach dem zweiten Schritt nicht mehr möglich.
 - Drahtlose Beltpacks werden via USB mit Hilfe der Software programmiert.
-- Bei Beltpacks wird ein Pairing direkt nach dem Hinzufügen oder Entfernen programmiert.
 - Die Programmierung der Beltpacks kann nacheinander und mit Hilfe eines einzelnen USB-Kabels erfolgen.
+- Ein Abbrechen des Wizards ist nach dem zweiten Schritt nicht mehr möglich.
+- Bei Beltpacks wird ein Pairing direkt nach dem Hinzufügen oder Entfernen programmiert.
 - WAA Antennen werden erst nach dem Beenden des Wizards programmiert.
 - Ein X-Pool kann jederzeit editiert und angepasst werden.
 - Das Löschen eines X-Pools ist erst dann möglich, nachdem alle Antennen und Beltpacks durch das Editieren des X-Pools entfernt wurden.
 
 #### X-Pool Workflow
 
-Das folgende Video zeigt einen groben Überblick über den X-Pool Workflow. Es zeigt das Hinzufügen, editieren und entfernen eines X-Pools.
+Das folgende Video zeigt einen groben Überblick über den X-Pool Workflow. Es zeigt das Hinzufügen, editieren und entfernen eines X-Pools:
 
 <figure markdown>
 ![Video zum X-Pool Workflow](../assets/images/xpool-setup.gif)

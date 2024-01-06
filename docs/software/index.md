@@ -12,30 +12,48 @@ icon: material/application
 
 ## Ein Erster Überblick
 
-- Starten der Software: Der Splashscreen
-- [Erstellen einer ersten Konfiguration mit dem Quickstart Wizard](https://manual.greengoconnect.com/en/getting-started/software/#create-a-configuration-using-the-wizard)
-    - Konfigurationsname und automatische konfiguration für Sonderkanäle
-    - Bis zu 10 User und Gruppen können erstellt und individuell benannt werden
-    - Einträge ohne einen Namen werden nach dem Prinzip `{User|Group} #ID` benannt
-    - Kommunikationsziele (ausschließlich Gruppen) können auf Userkanäle verteilt werden
-    - Klickreihenfolge definiert die Kanalreihenfolge in der Kanalmatrix
-    - Geräte einer Konfiguraiton hinzufügen
-    - Userzuweisung mittels Drag&Drop im letzten Schritt möglich
-- [Neue Oberfläche](https://manual.greengoconnect.com/en/software/interface/)
-    - Ansichten (Dashboard, Konfiguration, Netzwerk, Drahtlos)
-    - Tools (Save to Devices, Assistenten, Support, File, Settings, Handbuch)
-    - Statusleiste (Listen In (noch nicht veröffentlicht), Konfigurationsname, Gerätestatus, Warnungen)
-    - Index-Tree (Konfigurationsindex mit Suchfunktion)
-    - Navigationsleiste (Sektionsnavigation und -funktionen)
-    - Inhaltsansicht der aktiven Elemente
-- [Dashboard(s)](https://manual.greengoconnect.com/en/software/views/dashboard/)
-    - Beliebig viele Dashboards möglich
-    - Frei konfigurierbares 3x3 Grid
-    - Karten können konfiguriert werden
+### Starten der Software: Der Splashscreen
+
+![Green-GO Control: Der Splashscreen](software-splash.png)
+
+- Der Splashscreen ermöglicht unterschiedliche Enstiege in die Software:
+    - <span class="button-outline">Quickstart</span> ermöglicht ein einfaches Erstellen einer ersten Green-GO Konfiguration.
+    - <span class="button-outline">Create New</span> ermöglicht das Erstellen einer neuen Konfiguration ohne Hilfestellungen.
+    - <span class="button-outline">Load File</span> ermöglicht das Laden einer existierenden Konfiguration.
+    - <span class="button-outline">Recent Files</span> hat derzeit keine Funktion.
+    - <span class="button-outline">Join</span> ermöglicht es einer im Netzwerk aktiven Konfiguration beizutreten. Die Konfiguration wird von einem verfügbaren Gerät geladen.
+- Eine _ausgehende_ Support-Connection muss über den Button <span class="button-outline">support (beta)</span> separat initiiert werden.
+
+### Eine neue Benutzeroberfläche
+
+Die neue Benutzeroberfläche vereint die Funktionen der einzelnen Green-GO v4 Programme.
+
+![Alt text](image.png)
+
+- Unterschiedliche Ansichten für verschiedene Aufgaben:
+    - **Dashboard:** Mehrere sind möglich. Dashboards ermöglichen einen geordneten Blick auf das System.
+    - **Config:** Die globalen Systemeinstellungen einer Konfiguration.
+    - **Connection:** Verwaltung von Geräten, Firmwares, und Konfiguraitonzugehörigkeit.
+    - **Wireless:** Verwaltung von Pairings und Wireless-Verbindungen.
+- Verfügbare Tools:
+    - **Save to Devices:** Ermöglicht das Speichern der Konfiguration auf die Geräte und damit einen Betrieb ohne die Software.
+    - **Assistenten:** Ermöglichen die schnelle Erstellung von Konfigurationselementen.
+    - **Support:** Ermöglicht einen Ad-Hock Zugriff durch eine externe Person auf das System und die Konfiguration wenn aktiv.
+    - **File:** Ermöglicht das Laden, Mergen, Speichern, etc. von Konfigurationen.
+    - **Settings:** Erlaubt die Anpassung bestimmter Programmeinstellungen.
+    - **Help:** Ein kontextbasierter Link zum offline Handbuch welches mit der Software ausgeliefert wird.
+- Ein **Index-Baum** der alle Elemente der aktiven Konfiguration enthält (mit Suchfunktion).
+- Nie **Navigationsleiste** über der Inhaltsansicht teilt die aktive Ansicht mittels Tabs in verschiedene Bereiche auf. Zusätzlich befinden sich hier alle kontextbasierten Aktionen in Form von Buttons.
+- Inhaltsansicht der aktiven Elemente oder Ansicht.
+- Die **Statusleiste** gibt einen Überblick über Dinge wie den Konfigurationsnamen, Gerätestatus und Warnungen.
 
 ## Konfigurations- und Systemverwaltung
 
-### [Connection View](https://manual.greengoconnect.com/en/software/views/connection/)
+### Connection View
+
+![Alt text](image-1.png)
+
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/software/views/connection/)
 
 - [Firmware Updates von Geräten via Netzwerk oder USB](https://manual.greengoconnect.com/en/guides/firmware/)
 - Änderung der Netzwerk- und Verbindungseinstellungen sind im `Network Tab` verfügbar
@@ -47,6 +65,8 @@ icon: material/application
 - Einer Konfiguration via eines Geräts oder entfernter Softwareinstanz beitreten
 
 ### Konfigurations- bzw. Systemeinstellungen
+
+![Alt text](image-2.png)
 
 - Konfigurationen laden via dem File-Menü in der Toolbar
     - Mit diesem Tool können auch v4 Konfigurationen geladen und auf v5 geupdated werden (nicht über den Splash-Screen möglich!)
