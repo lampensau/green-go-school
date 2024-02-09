@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+  <style>
+    .cls-1 { fill: #356cb4; }
+    .cls-2 { fill: #305784; }
+    .cls-3 { fill: none; stroke: #1d1d1b; stroke-miterlimit: 10;}
+  </style>
+  <g>
+    <rect class="cls-1" x="10" y="10" width="30" height="20" />
+    <rect class="cls-3" x="10" y="10" width="30" height="20" />
+    <rect class="cls-2" x="60" y="10" width="30" height="20" />
+    <rect class="cls-3" x="60" y="10" width="30" height="20" />
+  </g>
+</svg>
