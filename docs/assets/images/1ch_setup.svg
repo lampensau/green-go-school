@@ -3,7 +3,7 @@
 <style type="text/css">
 	.st0{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-miterlimit:10;}
 	.st1{fill:#368A41;}
-	.st2{fill:#1D1D1B;}
+	.st2{fill:currentColor;}
 	.st3{fill:#43AD4C;}
 	.st4{fill:#356CB4;}
 	.st5{clip-path:url(#SVGID_2_);}
