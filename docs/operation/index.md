@@ -47,16 +47,16 @@ Die Anzahl der Kanäle im direkten Zugriff variiert je nach Gerätetyp oder -kon
 ![Green-GO Kanal UI](../assets/images/mcx-display-ui-channel_new.svg){.img-center .width-80 inline=true}
 
 Channel Status
-:  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](../glossary.md#green-go-engine) kein Gerät oder User als für den Kanal finden kann.
+:  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](https://manual.greengoconnect.com/en/glossary.md#green-go-engine) kein Gerät oder User als für den Kanal finden kann.
 
 Channel ID
 :  Dies zeigt die ID des Kanals an. Grundsätzlich hat ein Green-GO User Zugriff auf die Kanäle 1 bis 32.
 
 Display Name
-:  Der Name oder Anzeigename des Kanalziels ([User](../glossary.md#user) oder [Gruppe](../glossary.md#group)).
+:  Der Name oder Anzeigename des Kanalziels ([User](https://manual.greengoconnect.com/en/glossary.md#user) oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group)).
 
 Channel Color
-:  Die Kanalfarbe kann verwendet werden, um zwischen Kommunikationszielen zu unterscheiden. Die Farbe wird durch das Kanalziel selbst ([User](../glossary.md#user) oder [Gruppe](../glossary.md#group)) definiert.
+:  Die Kanalfarbe kann verwendet werden, um zwischen Kommunikationszielen zu unterscheiden. Die Farbe wird durch das Kanalziel selbst ([User](https://manual.greengoconnect.com/en/glossary.md#user) oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group)) definiert.
 
 Channel Volume
 :  Die aktuelle Lautstärke des Kanals. Ein nicht gefüllter balken repräsentiert einen stumm geschalteten Kanal.
@@ -124,7 +124,7 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
 === "BPX & WBPX Beltpacks"
 
-    ![BPX/WBPX: Enkoder zum Display ziehen um ein Gespräch zu beantworten](../assets/images/bpx_click2.svg){.img-inline .width-25 inline=true}
+    ![BPX/WBPX: Enkoder zum Display ziehen um ein Gespräch zu beantworten](../assets/images/bpx-encoder_click1.svg){.img-inline .width-25 inline=true}
 
     Die Klickfunktion des ++bpx-enc1++ und des ++bpx-enc2++ ist immer mit der Antwortfunktion verknüpft. Wird einer der Enkoder in Richtung Display gezogen, während eine Kommunikation empfangen wird, antwortet das Gerät auf den zuletzt aktiven Kanal.
 
@@ -199,7 +199,7 @@ Die Lautstärkenanzeige oberhalb des [Kanalnamens](#benutzeroberfläche) wird ho
 
     ![BPX/WBPX: Für das direkte Stummschalten muss zuerst ein Kanal aktiviert werden](../assets/images/bpx-use-mute.svg){.img-center .width-60 inline=true}
 
-    ![BPX/WBPX: Im Anschluss wird mit einem Ziehen des Enkoders der Kanal stumm geschaltet](../assets/images/bpx_click1.svg){.img-inline-right .width-25 inline=true}
+    ![BPX/WBPX: Im Anschluss wird mit einem Ziehen des Enkoders der Kanal stumm geschaltet](../assets/images/bpx-encoder_click2.svg){.img-inline-right .width-25 inline=true}
 
     Um einen der ersten 2 - 4 Kanäle eines Benutzers stumm zu schalten, muss eine der verfügbaren Kanaltasten gedrückt und einer der beiden Enkoder in Richtung des Displays gezogen werden.
 
@@ -283,7 +283,7 @@ Eingehende Lichtzeichen können auf allen Green-GO Geräten empfangen werden und
 
 === "BPX & WBPX Beltpacks"
 
-    ![](../assets/images/bpx_click2.svg){.img-inline .width-25 inline=true}
+    ![](../assets/images/bpx-encoder_click1.svg){.img-inline .width-25 inline=true}
 
     Ein eingehendes <span class="status-dot blink__red-yellow"></span> Lichtzeichen wird auf die gleiche Weise wie andere Kommunikation [beantwortet](#gespräche-beantworten):
     
@@ -314,7 +314,7 @@ Das Setup-Menü kann auf jedem Gerät aufgerufen werden und bietet Zugang zu fas
 
 === "BPX & WBPX Beltpacks"
 
-    The [BPX](../devices/bpx.md) and [WBPX](../devices/wbpx.md) belt packs feature two methods to access the setup menu:
+    The [BPX](../devices/index.md#bpx-beltpack) and [WBPX](../devices/index.md#wbpx-beltpacks) belt packs feature two methods to access the setup menu:
 
     | Methode A {: .two-col} | Methode B {: .two-col} |
     | :- | :- |

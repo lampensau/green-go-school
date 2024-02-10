@@ -46,7 +46,7 @@ social:
         - Gerät oder Engine werden mit Hilfe des Users im System angesprochen.
         - Ein User kann beliebig vielen Engines oder Geräten zugewiesen werden.
     - Eine Gruppe dient hauptsächlich zur Kommunikation mit mehreren Usern.
-        - Bei Nutzung der Sonderkanäle ([Programmton](https://manual.greengoconnect.com/en/glossary/#program-audio), [Announcements](https://manual.greengoconnect.com/en/glossary/#announcement-channel), [Emergency]((https://manual.greengoconnect.com/en/glossary/#emergency-channel))) muss eine Gruppe für jede Signalquelle verwendet werden.
+        - Bei Nutzung der Sonderkanäle ([Programmton](https://manual.greengoconnect.com/en/glossary/#program-audio), [Announcements](https://manual.greengoconnect.com/en/glossary/#announcement-channel), [Emergency](https://manual.greengoconnect.com/en/glossary/#emergency-channel)) muss eine Gruppe für jede Signalquelle verwendet werden.
 - Maximale eingehende _aktive_ Gespräche pro Gerät:
     - 16 kHz: ca. 300 Streams/Gerät
     - 32 kHz: ca. 150 Streams/Gerät
