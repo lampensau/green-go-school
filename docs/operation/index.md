@@ -47,16 +47,16 @@ Die Anzahl der Kanäle im direkten Zugriff variiert je nach Gerätetyp oder -kon
 ![Green-GO Kanal UI](../assets/images/mcx-display-ui-channel_new.svg){.img-center .width-80 inline=true}
 
 Channel Status
-:  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](../glossary.md#green-go-engine) kein Gerät oder User als für den Kanal finden kann.
+:  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](https://manual.greengoconnect.com/en/glossary.md#green-go-engine) kein Gerät oder User als für den Kanal finden kann.
 
 Channel ID
 :  Dies zeigt die ID des Kanals an. Grundsätzlich hat ein Green-GO User Zugriff auf die Kanäle 1 bis 32.
 
 Display Name
-:  Der Name oder Anzeigename des Kanalziels ([User](../glossary.md#user) oder [Gruppe](../glossary.md#group)).
+:  Der Name oder Anzeigename des Kanalziels ([User](https://manual.greengoconnect.com/en/glossary.md#user) oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group)).
 
 Channel Color
-:  Die Kanalfarbe kann verwendet werden, um zwischen Kommunikationszielen zu unterscheiden. Die Farbe wird durch das Kanalziel selbst ([User](../glossary.md#user) oder [Gruppe](../glossary.md#group)) definiert.
+:  Die Kanalfarbe kann verwendet werden, um zwischen Kommunikationszielen zu unterscheiden. Die Farbe wird durch das Kanalziel selbst ([User](https://manual.greengoconnect.com/en/glossary.md#user) oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group)) definiert.
 
 Channel Volume
 :  Die aktuelle Lautstärke des Kanals. Ein nicht gefüllter balken repräsentiert einen stumm geschalteten Kanal.
@@ -82,14 +82,17 @@ Ein _offener_ Kanal wird von der Status-LED durch ein <span class="status-dot gr
 
 === "WPX Wandsprechstelle"
 
-    ![WPX: Kanal Ansprechen](../assets/images/mcx-use-talk.svg){.img-center .width-80 inline=true}
+    ![WPX: Kanal Ansprechen](../assets/images/wpx-functions-channel_talk.svg){.img-center .width-80 inline=true}
 
-Mit den _werkseitigen Standardeinstellungen_, sind zwei Funktionen für das Besprechen eines Kanals (`Latch/Momentary`) mit einer Funktionstaste verknüpft:
+    !!! warning ""
+        :material-alert-outline: **Achtung:** Ein Kanal sollte immer einer Displaysektion mit ++button++ zugewiesen werden. Ohne ++button++ stehen dem Anwender lediglich die Funktionen der [Touchscreen-Funktionen](https://manual.greengoconnect.com/en/devices/wpx/#screen-function-switches) zur Verfügung; das Besprechen eines Kanals ist ohne Einsatz eines Scripts nicht möglich.
+
+Mit den _werkseitigen Standardeinstellungen_, sind zwei Funktionen für das Besprechen eines Kanals (`Latch/Momentary`) mit einer ++button++ verknüpft:
 
 1. **Drücken und halten:** Kanal ist für die Dauer des Knopfdrucks geöffnet und wird direkt nach dem Loslassen wieder geschlossen. ([`Momentary`](https://manual.greengoconnect.com/en/glossary/#momentary))
 2. **Kurzes Drücken:** Schaltet den Kanal zwischen _geöffnet_ und _geschlossen_, abhängig von aktuellen Status. ([`Latch`](https://manual.greengoconnect.com/en/glossary/#latch))
 
-Die Kopffunktionalität kann einfach in den Einstellungen eines Kanals angepasst werden. Dies kann entweder [direkt am Gerät](https://manual.greengoconnect.com/en/getting-started/devices/#channel-assignments-configuration) oder mit Hilfe der [Green-GO Control Software](https://manual.greengoconnect.com/en/software/tree/users/#channels-tab) erfolgen.
+Das Verhalten einer ++button++ kann in den Einstellungen eines Kanals angepasst werden. Dies kann entweder [direkt am Gerät](https://manual.greengoconnect.com/en/getting-started/devices/#channel-assignments-configuration) oder mit Hilfe der [Green-GO Control Software](https://manual.greengoconnect.com/en/getting-started/software/#channel-configuration) erfolgen.
 
 ### Audio Empfangen (VOX)
 
@@ -105,7 +108,7 @@ Das Gerät überträgt Audio mit der eingestellten Kanallautstärke an den aktiv
 
 === "WPX Wandsprechstellen"
     
-    ![WPX: Audio auf Kanal empfangen](../assets/images/mcx-use-listen.svg){.img-center .width-80 inline=true}
+    ![WPX: Audio auf Kanal empfangen](../assets/images/wpx-functions-channel_listen.svg){.img-center .width-80 inline=true}
 
 Nach dem Empfang des letzten Audiosignals bleibt ein Kanal standardmäßig für 1 Sekunde länger <span class="status-dot yellow"></span> aktiv, um dem Benutzer Zeit zu geben, den Empfangskanal zu identifizieren und die Antwortfunktion zu nutzen. Dieses Verhalten kann in den Benutzereinstellungen über die Eigenschaft [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time) konfiguriert werden.
 
@@ -124,9 +127,9 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
 === "BPX & WBPX Beltpacks"
 
-    ![BPX/WBPX: Enkoder zum Display ziehen um ein Gespräch zu beantworten](../assets/images/bpx_click2.svg){.img-inline .width-25 inline=true}
+    ![BPX/WBPX: Enkoder zum Display ziehen um ein Gespräch zu beantworten](../assets/images/bpx-encoder_click1.svg){.img-inline .width-25 inline=true}
 
-    Die Klickfunktion des ++bpx-enc1++ und des ++bpx-enc2++ ist immer mit der Antwortfunktion verknüpft. Wird einer der Enkoder in Richtung Display gezogen, während eine Kommunikation empfangen wird, antwortet das Gerät auf den zuletzt aktiven Kanal.
+    Die Klickfunktion des linken und rechten <kbd>Enkoders</kbd> ist immer mit der Antwortfunktion verknüpft. Wird einer der ++encoder++ in Richtung Display gezogen, während eine Kommunikation empfangen wird, antwortet das Gerät auf den zuletzt aktiven Kanal.
 
     ![BPX/WBPX: Geöffnete Kanäle werden im Status-Bildschirm](../assets/images/bpx-status-answer.svg){.img-inline-right .width-20 inline=true}
 
@@ -136,21 +139,22 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
     ![MCX/MCXD: Gespräche beantworten](../assets/images/mcx-functions-answerreply.svg){.img-inline .width-50 inline=true}
 
-    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar ist.
+    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar steht.
     
-    Wenn verfügbar, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des `Reply Mode`. Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück.
-
-    Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
+    Sobald zugewiesen, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des [`Reply Mode`](https://manual.greengoconnect.com/en/devices/wpx/#reply-mode). 
+    
+    Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück. Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
 
 === "WPX Wandsprechstellen"
 
     ![WPX: Gespräche beantworten](../assets/images/wpx-functions-answerreply_2.svg){.img-inline .width-50 inline=true}
-
-    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar ist.
     
-    Wenn verfügbar, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des `Reply Mode`. Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück.
+    Ist die Funktion einer ++button++ zugewiesen, ermöglicht ein Druck auf die ++button++ das Beantworten eingehender Kommunikationen, abhängig von der Einstellung des [`Reply Mode`](https://manual.greengoconnect.com/en/devices/wpx/#reply-mode).
+    
+    Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück. Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
 
-    Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
+    !!! warning ""
+        :material-alert-outline: **Achtung:** Die Funktion sollte immer einer Displaysektion mit ++button++ zugewiesen werden. Ohne ++button++ kann die Funktion lediglich als Informationsfläche genutzt werden; es gibt es keine Möglichkeit eine eingehende Kommunikation direkt zu beantworten.
 
 ### Kanal Lautstärke
 
@@ -170,7 +174,7 @@ Es ist möglich, die Lautstärke für jeden Kanal individuell einzustellen und d
     Die Lautstärkeanzeige unter dem Kanalnamen zeigt die aktuelle Lautstärke an.
 
     !!! warning ""
-        :material-alert-outline: **Warunung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
+        :material-alert-outline: **Achtung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
 
     !!! tip ""
         :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) bedient und eingestellt werden.
@@ -183,11 +187,11 @@ Es ist möglich, die Lautstärke für jeden Kanal individuell einzustellen und d
     
     Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
 
-=== "WPX Wandsprechstelle"
+=== "WPX Wandsprechstellen"
 
-    ![WPX: Kanallautstärke einstellen](../assets/images/mcx-use-volume-channel.svg){.img-center .width-80 inline=true}
+    ![MCX/MCXD: Kanallautstärke einstellen](../assets/images/wpx-functions-channel_level.svg){.img-center .width-80 inline=true}
 
-    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer WPX Wandsprechstelle zu regeln.
+    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
     
     Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
 
@@ -199,12 +203,12 @@ Die Lautstärkenanzeige oberhalb des [Kanalnamens](#benutzeroberfläche) wird ho
 
     ![BPX/WBPX: Für das direkte Stummschalten muss zuerst ein Kanal aktiviert werden](../assets/images/bpx-use-mute.svg){.img-center .width-60 inline=true}
 
-    ![BPX/WBPX: Im Anschluss wird mit einem Ziehen des Enkoders der Kanal stumm geschaltet](../assets/images/bpx_click1.svg){.img-inline-right .width-25 inline=true}
+    ![BPX/WBPX: Im Anschluss wird mit einem Ziehen des Enkoders der Kanal stumm geschaltet](../assets/images/bpx-encoder_click2.svg){.img-inline-right .width-25 inline=true}
 
     Um einen der ersten 2 - 4 Kanäle eines Benutzers stumm zu schalten, muss eine der verfügbaren Kanaltasten gedrückt und einer der beiden Enkoder in Richtung des Displays gezogen werden.
 
     !!! warning ""
-        :material-alert-outline: **Warunung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
+        :material-alert-outline: **Achtung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
 
     !!! tip ""
         :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) bedient und eingestellt werden.
@@ -215,9 +219,9 @@ Die Lautstärkenanzeige oberhalb des [Kanalnamens](#benutzeroberfläche) wird ho
 
     Um den Kanal stummzuschalten oder die Stummschaltung wieder aufzuheben, kann der Touchscreen-Bereich eines Kanals angetippt werden. Hierfür muss der [Screen-Mode "Listen"](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) aktiviert sein.
 
-=== "WPX Wandsprechstelle"
+=== "WPX Wandsprechstellen"
 
-    ![WPX: Kanal stumm schalten](../assets/images/mcx-functions-mode-listen.svg){.img-center .width-80 inline=true}
+    ![MCX/MCXD: Kanal stumm schalten](../assets/images/wpx-functions-channel_mute.svg){.img-center .width-80 inline=true}
 
     Um den Kanal stummzuschalten oder die Stummschaltung wieder aufzuheben, kann der Touchscreen-Bereich eines Kanals angetippt werden. Hierfür muss der [Screen-Mode "Listen"](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) aktiviert sein.
 
@@ -233,7 +237,7 @@ Das Alarmsignal hat auch einen Alarmton, der standardmäßig _unabhängig_ von e
 
     Green-GO Beltpacks bieten mehrere Einstellungen für die Benutzeroberfläche, mit denen Sie festlegen können, wieviele Kanäle im direkten Zugriff liegen und wie ein Rufzeichen an einen Kanal gesendet werden kann.
 
-    | 2-Channel Mode {: .three-col} | 3-Channel Mode {: .three-col} | Extended Channel View {: .three-col} |
+    | 2-Kanal Modus {: .three-col} | 3-Kanal Modus {: .three-col} | Erweiterte Kanalansicht {: .three-col} |
     |:-|:-|:-|
     | ![BPX:WBPX: Rufzeichen im 2-Kanal UI](../assets/images/bpx_call-2ch.svg){.img-center inline=true} | ![BPX:WBPX: Rufzeichen im 3-Kanal UI](../assets/images/bpx_call-3ch.svg){.img-center inline=true} | ![BPX:WBPX: Rufzeichen in der erweiterten Kanalansicht](../assets/images/bpx_call-ext.svg){.img-center inline=true} |
     | Ein Beltpack im [2-Kanal UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#__tabbed_1_1) bietet direkten Zugriff auf die Rufzeichen der Kanäle 1 und 2 über die rechten Tasten 3 und 4. | Der [3-Kanal UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#__tabbed_1_2) ermöglicht den Zugriff auf die Rufzeichen mit Hilfe der Taste 4. Diese ändert Ihre Funktion sobald einer der drei ersten Kanäle geöffnet ist. | Die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) ermöglicht den Zugriff auf alle 32 Benutzerkanäle. In dieser kann durch das Drücken der Taste 2 ein Rufzeichen an den ausgewählten Kanal gesendet werden. |
@@ -244,18 +248,18 @@ Das Alarmsignal hat auch einen Alarmton, der standardmäßig _unabhängig_ von e
 
     ![MCX/MCXD: Rufzeichen versenden](../assets/images/mcx-functions-mode-call.svg){.img-center .width-80 inline=true}
 
-    Der [Screen-Mode Call](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2) muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung des Touchscreen-Bereichs eines Kanals ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
+    Der [Screen-Mode für Rufzeichen](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2) muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung eines Touchscreen-Bereichs ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
 
     !!! tip ""
         :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Rufzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button) bestimmt werden.
         
         Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) (Listen, Call, Cue).
 
-=== "WPX Wandsprechstelle"
+=== "WPX Wandsprechstellen"
 
-    ![WPX: Rufzeichen versenden](../assets/images/mcx-functions-mode-call.svg){.img-center .width-80 inline=true}
+    ![MCX/MCXD: Rufzeichen versenden](../assets/images/wpx-functions-channel_call.svg){.img-center .width-80 inline=true}
 
-    Der [Screen-Mode Call](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2) muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung des Touchscreen-Bereichs eines Kanals ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
+    Der [Screen-Mode für Rufzeichen](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2) muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung eines Touchscreen-Bereichs ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
 
     !!! tip ""
         :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Rufzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button) bestimmt werden.
@@ -268,7 +272,7 @@ Das Alarmsignal hat auch einen Alarmton, der standardmäßig _unabhängig_ von e
 
 ![](../assets/images/mcx-functions-mode-cue.svg){.img-inline-right .width-60 inline=true}
 
-Ein Lichtzeichen kann standardmäßig entweder von einer [MCX oder MCXD Sprechstelle](../devices/index.md#mcx-rack---mcxd-tischstation) aus versendet werden. Bei benutzung des [Screen-Modus Cue](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_4) wird ein Lichtzeichen durch ein einfaches Antippen des des Kanal-Touchscreens gesendet:
+Ein Lichtzeichen kann standardmäßig entweder von einer [MCX oder MCXD Sprechstelle](../devices/index.md#mcx-rack---mcxd-tischstation){ data-preview } aus versendet werden. Bei benutzung des [Screen-Modus Cue](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_4) wird ein Lichtzeichen durch ein einfaches Antippen des des Kanal-Touchscreens gesendet:
 
 Das erste Antippen löst die erste Stufe eines Lichtzeichens aus (<span class="status-dot blink__red-yellow"></span> Attention). Ein zweites Antippen des Touchscreens sendet die dritte Stufe, das <span class="status-dot green"></span> GO-Signal und entfernt das Signal, nachdem der lokale [`Cue Timeout`](https://manual.greengoconnect.com/en/devices/mcx/#cue-timeout) abgelaufen ist.
 
@@ -283,7 +287,7 @@ Eingehende Lichtzeichen können auf allen Green-GO Geräten empfangen werden und
 
 === "BPX & WBPX Beltpacks"
 
-    ![](../assets/images/bpx_click2.svg){.img-inline .width-25 inline=true}
+    ![](../assets/images/bpx-encoder_click1.svg){.img-inline .width-25 inline=true}
 
     Ein eingehendes <span class="status-dot blink__red-yellow"></span> Lichtzeichen wird auf die gleiche Weise wie andere Kommunikation [beantwortet](#gespräche-beantworten):
     
@@ -300,9 +304,14 @@ Eingehende Lichtzeichen können auf allen Green-GO Geräten empfangen werden und
     | ![](../assets/images/mcx_functions_cue-rcv_attention.svg){.img-center inline=true} | ![](../assets/images/mcx_functions_cue-rcv_hold_go.svg){.img-center inline=true} |
     | Ein `Attention` Lichtzeichen (Empfang) kann entweder mit einem Druck auf die Setup- oder Shift-Taste beantwortet werden. | Ein eingehendes `Ready` oder `GO` Lichtzeichen wird mit den Absenderinformationen auf dem dritten Touchscreen in einem Pop-Up angezeigt. |
 
-<!-- === "WPX Wandsprechstelle"
+=== "WPX Wandsprechstelle"
 
-    {==I'm honestly lost on how the answer function works on the WPX. Was it pushing the encoder while receiving a communication?==} -->
+    Ein eingehendes Lichtzeichen wird mit den Absenderinformationen auf dem dritten Touchscreen in einem Pop-Up angezeigt. 
+
+    | Answer incoming Attention Cue {: .two-col} | Incoming Hold or Go Cues {: .two-col} |
+    | --- | --- |
+    | ![](../assets/images/wpx-functions-channel_cue.svg){.img-center inline=true} | ![](../assets/images/mcx_functions_cue-rcv_hold_go.svg){.img-center inline=true} |
+    | Ein `Attention` Lichtzeichen (Empfang) kann mit einer einfachen Berührung überall auf dem ++touchscreen++ beantwortet werden. | Ein eingehendes `Ready` oder `GO` Lichtzeichen wird mit den Absenderinformationen auf dem Display in einem Pop-Up angezeigt. |
 
 ## Setup Menü
 
@@ -314,7 +323,7 @@ Das Setup-Menü kann auf jedem Gerät aufgerufen werden und bietet Zugang zu fas
 
 === "BPX & WBPX Beltpacks"
 
-    The [BPX](../devices/bpx.md) and [WBPX](../devices/wbpx.md) belt packs feature two methods to access the setup menu:
+    The [BPX](../devices/index.md#bpx-beltpack) and [WBPX](../devices/index.md#wbpx-beltpacks) belt packs feature two methods to access the setup menu:
 
     | Methode A {: .two-col} | Methode B {: .two-col} |
     | :- | :- |

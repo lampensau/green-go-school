@@ -17,7 +17,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'mkdocs.plugins': [
-            'svg-inline = src.plugin:SvgInlinePlugin',
+            'svg-inline = svg_inline.plugin:SvgInlinePlugin',
         ]
     }
 )

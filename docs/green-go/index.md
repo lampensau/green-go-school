@@ -29,7 +29,6 @@ social:
 
 - **Keine zentrale Steuereineheit** wird benötigt (z.B. Master Station oder Matrix Frame).
     - Jedes Gerät speichert die aktive Konfiguration im lokalen Speicher und kann als Startpunkt für ein eigenständiges System dienen.
-    - System funktioniert praktisch nach dem Peer-to-Peer Prinzip (via Multicast)
 - Standalone Einsatz ohne Software _problemlos möglich_.
     - Für einen Einsatz ohne die v5 Software muss die Konfiguration zuerst im _Binärformat_ auf den Geräten [abgespeichert](https://manual.greengoconnect.com/en/getting-started/software/#save-the-configuration-to-the-devices) werden.
 - Neue (_kostenlose_) [Software](https://manual.greengoconnect.com/en/release-notes/software/) (und [Firmware](https://manual.greengoconnect.com/en/release-notes/firmware/)) bietet zahlreiche Konzepte um ein System _besser und schneller_ einzurichten oder zu überwachen.
@@ -43,8 +42,11 @@ social:
     - Mögliche Kommunikationsziele sind User (private Gespräche) oder Gruppen (Konferenzschaltung oder Party-Line)
 - 4 _extra_ Kanäle für Sonderanwendungen wie Ansagen ([Announcements](https://manual.greengoconnect.com/en/glossary/#announcement-channel) und [Emergencies](https://manual.greengoconnect.com/en/glossary/#emergency-channel)), [Programmton](https://manual.greengoconnect.com/en/glossary/#program-audio) oder [_temporäre_ direkte Kommunikation](https://manual.greengoconnect.com/en/glossary/#direct-channel).
 - Bis zu 3000 [_User_](https://manual.greengoconnect.com/en/glossary/#user) und 400 [_Gruppen_](https://manual.greengoconnect.com/en/glossary/#group) in einem System.
-    - Ein User kann beliebig vielen Geräten zugewiesen werden.
-    - Eine Gruppe wird für die Übertragung der 3 Sonderkanäle für Programmton und Ansagen genutzt.
+    - Ein User stellt einer [Green-GO Engine](https://manual.greengoconnect.com/en/glossary/#green-go-engine) oder Gerät die Konfiguration zur Verfügung.
+        - Gerät oder Engine werden mit Hilfe des Users im System angesprochen.
+        - Ein User kann beliebig vielen Engines oder Geräten zugewiesen werden.
+    - Eine Gruppe dient hauptsächlich zur Kommunikation mit mehreren Usern.
+        - Bei Nutzung der Sonderkanäle ([Programmton](https://manual.greengoconnect.com/en/glossary/#program-audio), [Announcements](https://manual.greengoconnect.com/en/glossary/#announcement-channel), [Emergency](https://manual.greengoconnect.com/en/glossary/#emergency-channel)) muss eine Gruppe für jede Signalquelle verwendet werden.
 - Maximale eingehende _aktive_ Gespräche pro Gerät:
     - 16 kHz: ca. 300 Streams/Gerät
     - 32 kHz: ca. 150 Streams/Gerät
@@ -55,4 +57,7 @@ social:
     - 16 kHz: ca. 320 KBit/s
     - 32 kHz: ca. 650 KBit/s
     - 48 kHz: ca. 900 KBit/s
-- Zweistufiges Rufzeichen & dreistufige Lichtzeichen für nonverbale Kommunikation.
+- Zweistufiges Rufzeichen 
+    - Drei verschiedene Alarmtöne für jeden Teilnehmer individuell konfigurierbar.
+    - Konfiguration ist für jeden Kanal einzeln möglich.
+- Dreistufige Lichtzeichen für nonverbale Kommunikation.

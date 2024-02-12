@@ -234,7 +234,7 @@
 }
 
 /* External links */
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de'])::after
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps'])::after
 {
   display: inline-block;
   vertical-align: text-top;
@@ -253,21 +253,22 @@
   background-color: var(--md-typeset-a-color);
   transition: background-color 125ms;
 }
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--secondary,
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--primary
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--secondary,
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--primary
 {
   display: inline-block;
 }
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--secondary::after,
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']).md-button.md-button--primary::after
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--secondary::after,
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--primary::after
 {
   display: none;
 }
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):hover::after,
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):focus::after
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']):hover::after,
+.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']):focus::after
 {
   background-color: var(--md-accent-fg-color);
 }
+
 .md-typeset a[href^='https://manual.greengoconnect.com']::after
 {
   display: inline-block;
@@ -462,4 +463,11 @@
 }
 .md-typeset__table .two-col {
   width: 50%;
+}
+
+/* Event Detail List */
+.md-typeset .event_details ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }

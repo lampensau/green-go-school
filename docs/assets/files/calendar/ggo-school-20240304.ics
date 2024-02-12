@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//cast C.Adolph & RST Distribution GmbH//Green-GO School//DE
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+SUMMARY:Green-GO School für Einsteiger
+DTSTART;TZID=Europe/Berlin:20240304T093000
+DTEND;TZID=Europe/Berlin:20240304T163000
+UID:f43bb980-7521-4615-a49e-f92244d53f6e
+DESCRIPTION:Die Green-GO School für Einsteiger richtet sich primär an An
+ wender mit geringer Erfahrung mit einem Green-GO Interkom System.\n\nDas e
+ intägige Seminar beginnt mit einem Überblick über das System\, die verf
+ ügbaren Geräte und die sich daraus ergebenen Möglichkeiten. Der Fokus l
+ iegt primär auf der grundlegenden Bedienung von Gerät und Software\, sow
+ ie auf der Einrichtung und dem Aufbau eines einfachen Green-GO Systems. Zi
+ elsetzung ist eine sichere erste Bedienung und Inbetriebnahme.\n\nPreis: K
+ ostenfrei
+LOCATION:BBM/CLAIR Berlin\, Hertzstraße 71\, DE-13158 Berlin
+TRANSP:OPAQUE
+URL:https://school.greengo.digita#green-go-school-fur-einsteiger
+X-MICROSOFT-CDO-BUSYSTATUS:OOF
+END:VEVENT
+END:VCALENDAR
