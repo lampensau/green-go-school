@@ -28,6 +28,11 @@
   hyphens: auto;
 }
 
+[data-md-color-scheme='slate'] {
+  --md-hue: 232;
+  --md-default-bg-color: hsla(var(--md-hue), 15%, 21%, 1);
+}
+
 /* Slight spacing correction on logo and heading */
 [dir='ltr'] .md-header__title {
   margin-left: 0.5rem;
@@ -234,7 +239,7 @@
 }
 
 /* External links */
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps'])::after
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps'])::after
 {
   display: inline-block;
   vertical-align: text-top;
@@ -253,18 +258,18 @@
   background-color: var(--md-typeset-a-color);
   transition: background-color 125ms;
 }
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--secondary,
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--primary
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--secondary,
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--primary
 {
   display: inline-block;
 }
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--secondary::after,
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--primary::after
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--secondary::after,
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']).md-button.md-button--primary::after
 {
   display: none;
 }
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']):hover::after,
-.md-typeset a[href^='http']:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']):focus::after
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']):hover::after,
+.md-content [rel=external]:not([href^='https://manual.greengoconnect.com']):not([href^='https://www.castinfo.de']):not([href^='https://www.google.com/maps']):focus::after
 {
   background-color: var(--md-accent-fg-color);
 }
