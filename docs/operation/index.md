@@ -9,7 +9,7 @@ social:
 ---
 # Benutzung einer Green-GO Station
 
-**Handbuch:** [Link](https://manual.greengoconnect.com/en/getting-started/usage/)
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/getting-started/usage/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 
 ## Benutzeroberfläche
 
@@ -21,12 +21,12 @@ Mit der _Default-Konfiguration_ `Factory Default` werden folgende Farben für de
 
 | Farbe {width=5%}| Verhalten {width=12%}| Status {width=20%}| Beschreibung {width=63%}|
 |:-:|:-|:-|:-|
-| <span class="status-dot blue"></span> | Statisch | Free | Dem Kanal ist kein Kommunikationsziel [zugewiesen](https://manual.greengoconnect.com/en/getting-started/software/#channel-assignments). Der Kanal ist nicht belegt. |
+| <span class="status-dot blue"></span> | Statisch | Free | Dem Kanal ist kein Kommunikationsziel [zugewiesen](https://manual.greengoconnect.com/en/getting-started/software/#channel-assignments "Weitere Informationen im offiziellen Green-GO Handbuch"). Der Kanal ist nicht belegt. |
 | <span class="status-dot blue"></span> | Statisch | No Member | Es gibt kein Green-GO Gerät welches auf diesem Kanal empfängt. |
 | <span class="status-dot blue"></span> | Statisch | Idle | Der Kanal ist belegt, es gibt empfangende Geräte und der Kanal ist inaktiv. |
-| <span class="status-dot blue"></span> | Statisch | Active | Ein Green-GO Gerät oder User hat den Kanal für eine Übertragung [geöffnet](https://manual.greengoconnect.com/en/getting-started/usage/#talking) - es wird aber noch kein Audio übertragen. |
-| <span class="status-dot yellow"></span> | Statisch | Active VOX | Der Kanal _empfängt_ [Audio Kommunikation](https://manual.greengoconnect.com/en/getting-started/usage/#receiving-voice-communication). |
-| <span class="status-dot blink__blue-yellow"></span> | Blinkend | Active Muted | Der Kanal ist [_stumm geschaltet_](https://manual.greengoconnect.com/en/getting-started/usage/#muting-a-channel) und empfängt Audio Kommunikation. |
+| <span class="status-dot blue"></span> | Statisch | Active | Ein Green-GO Gerät oder User hat den Kanal für eine Übertragung [geöffnet](https://manual.greengoconnect.com/en/getting-started/usage/#talking "Weitere Informationen im offiziellen Green-GO Handbuch") - es wird aber noch kein Audio übertragen. |
+| <span class="status-dot yellow"></span> | Statisch | Active VOX | Der Kanal _empfängt_ [Audio Kommunikation](https://manual.greengoconnect.com/en/getting-started/usage/#receiving-voice-communication "Weitere Informationen im offiziellen Green-GO Handbuch"). |
+| <span class="status-dot blink__blue-yellow"></span> | Blinkend | Active Muted | Der Kanal ist [_stumm geschaltet_](https://manual.greengoconnect.com/en/getting-started/usage/#muting-a-channel "Weitere Informationen im offiziellen Green-GO Handbuch") und empfängt Audio Kommunikation. |
 | <span class="status-dot green"></span> | Statisch | Talk | Der Kanal ist für eine Übertragung [_geöffnet_](#talking) und wird den aktiven Input übertragen. |
 | <span class="status-dot green"></span> | Statisch | Autotalk | Der Kanal wurde _automatisch_ durch den Kanalmodus `Autotalk` für eine Übertragung geöffnet. |
 | <span class="status-dot red"></span> | Statisch | Call | Auf dem Kanal wird ein Rufzeichen (Call) gesendet. |
@@ -36,7 +36,7 @@ Mit der _Default-Konfiguration_ `Factory Default` werden folgende Farben für de
 | <span class="status-dot green"></span> | Statisch | Cue GO | Der Kanal empfängt oder sendet die dritte Stufe (GO) des Lichtzeichens. |
 
 !!! tip ""
-    :material-lightbulb-outline: **Tip:** Es ist möglich die Statusfarben eines Green-GO Systems [anzupassen](https://manual.greengoconnect.com/en/software/views/config/#config-colors)!
+    :material-lightbulb-outline: **Tip:** Es ist möglich die Statusfarben eines Green-GO Systems [anzupassen](https://manual.greengoconnect.com/en/software/views/config/#config-colors "Weitere Informationen im offiziellen Green-GO Handbuch")!
 
 ### Kanal-UI
 
@@ -47,22 +47,22 @@ Die Anzahl der Kanäle im direkten Zugriff variiert je nach Gerätetyp oder -kon
 ![Green-GO Kanal UI](../assets/images/mcx-display-ui-channel_new.svg){.img-center .width-80 inline=true}
 
 Channel Status
-:  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](https://manual.greengoconnect.com/en/glossary.md#green-go-engine) kein Gerät oder User als für den Kanal finden kann.
+:  Das rote `X` zeigt an, dass die lokale [Green-GO Engine](https://manual.greengoconnect.com/en/glossary.md#green-go-engine "Weitere Informationen im offiziellen Green-GO Handbuch") kein Gerät oder User als für den Kanal finden kann.
 
 Channel ID
 :  Dies zeigt die ID des Kanals an. Grundsätzlich hat ein Green-GO User Zugriff auf die Kanäle 1 bis 32.
 
 Display Name
-:  Der Name oder Anzeigename des Kanalziels ([User](https://manual.greengoconnect.com/en/glossary.md#user) oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group)).
+:  Der Name oder Anzeigename des Kanalziels ([User](https://manual.greengoconnect.com/en/glossary.md#user "Weitere Informationen im offiziellen Green-GO Handbuch") oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group "Weitere Informationen im offiziellen Green-GO Handbuch")).
 
 Channel Color
-:  Die Kanalfarbe kann verwendet werden, um zwischen Kommunikationszielen zu unterscheiden. Die Farbe wird durch das Kanalziel selbst ([User](https://manual.greengoconnect.com/en/glossary.md#user) oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group)) definiert.
+:  Die Kanalfarbe kann verwendet werden, um zwischen Kommunikationszielen zu unterscheiden. Die Farbe wird durch das Kanalziel selbst ([User](https://manual.greengoconnect.com/en/glossary.md#user "Weitere Informationen im offiziellen Green-GO Handbuch") oder [Gruppe](https://manual.greengoconnect.com/en/glossary.md#group "Weitere Informationen im offiziellen Green-GO Handbuch")) definiert.
 
 Channel Volume
 :  Die aktuelle Lautstärke des Kanals. Ein nicht gefüllter balken repräsentiert einen stumm geschalteten Kanal.
 
 !!! tip ""
-    :material-lightbulb-outline: **Tip:** Die Benutzeroberfläche einer Sprechstelle kann konfiguriert werden. Bitte lese die [Geräte-Dokumentation](https://manual.greengoconnect.com/en/devices/) der entsprechenden Sprechstelle, um mehr zu erfahren.
+    :material-lightbulb-outline: **Tip:** Die Benutzeroberfläche einer Sprechstelle kann konfiguriert werden. Bitte lese die [Geräte-Dokumentation](https://manual.greengoconnect.com/en/devices/ "Weitere Informationen im offiziellen Green-GO Handbuch") der entsprechenden Sprechstelle, um mehr zu erfahren.
 
 ## Kanal Bedienung
 
@@ -85,14 +85,14 @@ Ein _offener_ Kanal wird von der Status-LED durch ein <span class="status-dot gr
     ![WPX: Kanal Ansprechen](../assets/images/wpx-functions-channel_talk.svg){.img-center .width-80 inline=true}
 
     !!! warning ""
-        :material-alert-outline: **Achtung:** Ein Kanal sollte immer einer Displaysektion mit ++button++ zugewiesen werden. Ohne ++button++ stehen dem Anwender lediglich die Funktionen der [Touchscreen-Funktionen](https://manual.greengoconnect.com/en/devices/wpx/#screen-function-switches) zur Verfügung; das Besprechen eines Kanals ist ohne Einsatz eines Scripts nicht möglich.
+        :material-alert-outline: **Achtung:** Ein Kanal sollte immer einer Displaysektion mit ++button++ zugewiesen werden. Ohne ++button++ stehen dem Anwender lediglich die Funktionen der [Touchscreen-Funktionen](https://manual.greengoconnect.com/en/devices/wpx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") zur Verfügung; das Besprechen eines Kanals ist ohne Einsatz eines Scripts nicht möglich.
 
 Mit den _werkseitigen Standardeinstellungen_, sind zwei Funktionen für das Besprechen eines Kanals (`Latch/Momentary`) mit einer ++button++ verknüpft:
 
-1. **Drücken und halten:** Kanal ist für die Dauer des Knopfdrucks geöffnet und wird direkt nach dem Loslassen wieder geschlossen. ([`Momentary`](https://manual.greengoconnect.com/en/glossary/#momentary))
-2. **Kurzes Drücken:** Schaltet den Kanal zwischen _geöffnet_ und _geschlossen_, abhängig von aktuellen Status. ([`Latch`](https://manual.greengoconnect.com/en/glossary/#latch))
+1. **Drücken und halten:** Kanal ist für die Dauer des Knopfdrucks geöffnet und wird direkt nach dem Loslassen wieder geschlossen. ([`Momentary`](https://manual.greengoconnect.com/en/glossary/#momentary "Weitere Informationen im offiziellen Green-GO Handbuch"))
+2. **Kurzes Drücken:** Schaltet den Kanal zwischen _geöffnet_ und _geschlossen_, abhängig von aktuellen Status. ([`Latch`](https://manual.greengoconnect.com/en/glossary/#latch "Weitere Informationen im offiziellen Green-GO Handbuch"))
 
-Das Verhalten einer ++button++ kann in den Einstellungen eines Kanals angepasst werden. Dies kann entweder [direkt am Gerät](https://manual.greengoconnect.com/en/getting-started/devices/#channel-assignments-configuration) oder mit Hilfe der [Green-GO Control Software](https://manual.greengoconnect.com/en/getting-started/software/#channel-configuration) erfolgen.
+Das Verhalten einer ++button++ kann in den Einstellungen eines Kanals angepasst werden. Dies kann entweder [direkt am Gerät](https://manual.greengoconnect.com/en/getting-started/devices/#channel-assignments-configuration "Weitere Informationen im offiziellen Green-GO Handbuch") oder mit Hilfe der [Green-GO Control Software](https://manual.greengoconnect.com/en/getting-started/software/#channel-configuration "Weitere Informationen im offiziellen Green-GO Handbuch") erfolgen.
 
 ### Audio Empfangen (VOX)
 
@@ -110,18 +110,18 @@ Das Gerät überträgt Audio mit der eingestellten Kanallautstärke an den aktiv
     
     ![WPX: Audio auf Kanal empfangen](../assets/images/wpx-functions-channel_listen.svg){.img-center .width-80 inline=true}
 
-Nach dem Empfang des letzten Audiosignals bleibt ein Kanal standardmäßig für 1 Sekunde länger <span class="status-dot yellow"></span> aktiv, um dem Benutzer Zeit zu geben, den Empfangskanal zu identifizieren und die Antwortfunktion zu nutzen. Dieses Verhalten kann in den Benutzereinstellungen über die Eigenschaft [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time) konfiguriert werden.
+Nach dem Empfang des letzten Audiosignals bleibt ein Kanal standardmäßig für 1 Sekunde länger <span class="status-dot yellow"></span> aktiv, um dem Benutzer Zeit zu geben, den Empfangskanal zu identifizieren und die Antwortfunktion zu nutzen. Dieses Verhalten kann in den Benutzereinstellungen über die Eigenschaft [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time "Weitere Informationen im offiziellen Green-GO Handbuch") konfiguriert werden.
 
 ![Popup für den Direkten Kanal](../assets/images/bpx-popup-direct.svg){.img-inline .width-20 inline=true}
 
-Sollte ein User eine direkte Kommunikation von einem anderen User erhalten, der nicht auf einem der 32 Kanäle konfiguriert ist, wird die Kommunikation auf einem zusätzlichen 33. Kanal ([`temp direct`](https://manual.greengoconnect.com/en/glossary/#direct-channel)) übertragen. In einem solchen Falle informiert ein [konfigurierbares Pop-up](https://manual.greengoconnect.com/en/devices/mcx/#popup) den Benutzer über die Informationen des Absenders.
+Sollte ein User eine direkte Kommunikation von einem anderen User erhalten, der nicht auf einem der 32 Kanäle konfiguriert ist, wird die Kommunikation auf einem zusätzlichen 33. Kanal ([`temp direct`](https://manual.greengoconnect.com/en/glossary/#direct-channel "Weitere Informationen im offiziellen Green-GO Handbuch")) übertragen. In einem solchen Falle informiert ein [konfigurierbares Pop-up](https://manual.greengoconnect.com/en/devices/mcx/#popup "Weitere Informationen im offiziellen Green-GO Handbuch") den Benutzer über die Informationen des Absenders.
 
 ### Gespräche Beantworten
 
-Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot yellow"></span> Sprachkommunikation mit nur einem Tastendruck zu beantworten. In den Standardeinstellungen reagiert die Antwortfunktion auf den Kanal, der **zuletzt** eine Kommunikation empfangen hat ([`Reply Mode: Last`](https://manual.greengoconnect.com/en/devices/bpx/?h=reply+mode#reply-mode)). Sie kann jedoch so konfiguriert werden, dass sie auf **alle** derzeit aktiven eingehenden Sprachkommunikationen antwortet.
+Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot yellow"></span> Sprachkommunikation mit nur einem Tastendruck zu beantworten. In den Standardeinstellungen reagiert die Antwortfunktion auf den Kanal, der **zuletzt** eine Kommunikation empfangen hat ([`Reply Mode: Last`](https://manual.greengoconnect.com/en/devices/bpx/?h=reply+mode#reply-mode "Weitere Informationen im offiziellen Green-GO Handbuch")). Sie kann jedoch so konfiguriert werden, dass sie auf **alle** derzeit aktiven eingehenden Sprachkommunikationen antwortet.
 
 !!! tip ""
-    :material-lightbulb-outline: **Tip:** Die Einstellung [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time) beeinflusst die Dauer, die ein Kanal weiterhin als <span class="status-dot yellow"></span> aktiv angezeigt wird.
+    :material-lightbulb-outline: **Tip:** Die Einstellung [`Active Time`](https://manual.greengoconnect.com/en/devices/mcx/#active-time "Weitere Informationen im offiziellen Green-GO Handbuch") beeinflusst die Dauer, die ein Kanal weiterhin als <span class="status-dot yellow"></span> aktiv angezeigt wird.
     
     Diese Einstellung hat auch Einfluss darauf, wie lange ein Kanal für die Antwortfunktion zur Verfügung steht, nachdem eine Kommunikation empfangen wurde.
 
@@ -133,15 +133,15 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
     ![BPX/WBPX: Geöffnete Kanäle werden im Status-Bildschirm](../assets/images/bpx-status-answer.svg){.img-inline-right .width-20 inline=true}
 
-    Wird einer der Enkoder nach oben gezogen, zeigt der [Statusbildschirm](https://manual.greengoconnect.com/en/devices/bpx/#status-screen) des Geräts in der mittleren Sektion die Kanäle an, welche gerade durch die Antwortfunktion aktiviert wurden.
+    Wird einer der Enkoder nach oben gezogen, zeigt der [Statusbildschirm](https://manual.greengoconnect.com/en/devices/bpx/#status-screen "Weitere Informationen im offiziellen Green-GO Handbuch") des Geräts in der mittleren Sektion die Kanäle an, welche gerade durch die Antwortfunktion aktiviert wurden.
 
 === "MCX & MCXD Sprechstellen"
 
     ![MCX/MCXD: Gespräche beantworten](../assets/images/mcx-functions-answerreply.svg){.img-inline .width-50 inline=true}
 
-    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface), bevor diese zur Benutzung verfügbar steht.
+    Die Antwortfunktion muss der Benutzer&shy;oberfläche [zugewiesen werden](https://manual.greengoconnect.com/en/devices/mcx/#configuring-the-user-interface "Weitere Informationen im offiziellen Green-GO Handbuch"), bevor diese zur Benutzung verfügbar steht.
     
-    Sobald zugewiesen, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des [`Reply Mode`](https://manual.greengoconnect.com/en/devices/wpx/#reply-mode). 
+    Sobald zugewiesen, ermöglicht die ++button++ der Funktion das Antworten auf aktive Kanäle, abhängig von der Einstellung des [`Reply Mode`](https://manual.greengoconnect.com/en/devices/wpx/#reply-mode "Weitere Informationen im offiziellen Green-GO Handbuch"). 
     
     Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück. Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
 
@@ -149,7 +149,7 @@ Green-GO ermöglicht es dem Benutzer, jede eingehende <span class="status-dot ye
 
     ![WPX: Gespräche beantworten](../assets/images/wpx-functions-answerreply_2.svg){.img-inline .width-50 inline=true}
     
-    Ist die Funktion einer ++button++ zugewiesen, ermöglicht ein Druck auf die ++button++ das Beantworten eingehender Kommunikationen, abhängig von der Einstellung des [`Reply Mode`](https://manual.greengoconnect.com/en/devices/wpx/#reply-mode).
+    Ist die Funktion einer ++button++ zugewiesen, ermöglicht ein Druck auf die ++button++ das Beantworten eingehender Kommunikationen, abhängig von der Einstellung des [`Reply Mode`](https://manual.greengoconnect.com/en/devices/wpx/#reply-mode "Weitere Informationen im offiziellen Green-GO Handbuch").
     
     Eine Berührung des ++touchscreen++ setzt die Antwortfunktion wieder zurück. Ist die Funktion inaktiv, zeigt sie den lokalen Benutzer des Geräts an.
 
@@ -167,7 +167,7 @@ Es ist möglich, die Lautstärke für jeden Kanal individuell einzustellen und d
 
     ![BPX/WBPX: Kanallautstärke einstellen](../assets/images/bpx-use-volume-channel.svg){.img-center .width-60 inline=true}
 
-    Ein Green-GO Beltpack ermöglicht den direkten Zugriff auf die ersten 2 - 4 Kanäle des verknüpften Users, je nach dem konfigurierten [UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#ui-modes).
+    Ein Green-GO Beltpack ermöglicht den direkten Zugriff auf die ersten 2 - 4 Kanäle des verknüpften Users, je nach dem konfigurierten [UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#ui-modes "Weitere Informationen im offiziellen Green-GO Handbuch").
 
     Die Kanallautstärke kann einfach mit Hilfe der Kanaltaste und der Drehbewegung eines Enkoders reguliert werden.
 
@@ -177,13 +177,13 @@ Es ist möglich, die Lautstärke für jeden Kanal individuell einzustellen und d
         :material-alert-outline: **Achtung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
 
     !!! tip ""
-        :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) bedient und eingestellt werden.
+        :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view "Weitere Informationen im offiziellen Green-GO Handbuch") bedient und eingestellt werden.
 
 === "MCX & MCXD Sprechstellen"
 
     ![MCX/MCXD: Kanallautstärke einstellen](../assets/images/mcx-use-volume-channel.svg){.img-center .width-80 inline=true}
 
-    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
+    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
     
     Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
 
@@ -191,7 +191,7 @@ Es ist möglich, die Lautstärke für jeden Kanal individuell einzustellen und d
 
     ![MCX/MCXD: Kanallautstärke einstellen](../assets/images/wpx-functions-channel_level.svg){.img-center .width-80 inline=true}
 
-    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
+    Der [Listen-Screen-Modus](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") muss aktiviert sein, um die Lautstärke eines Kanals auf einer MCX- oder MCXD Sprechstelle zu regeln.
     
     Ist der Modus aktiviert, wird die Lautstärke des Kanals über den Touchscreen-Bereich des Kanals und die Drehung des Encoders erhöht oder verringert. Die aktuelle Kanallautstärke wird von der Pegelanzeige oberhalb des Kanalnamens angezeigt.
 
@@ -211,23 +211,23 @@ Die Lautstärkenanzeige oberhalb des [Kanalnamens](#benutzeroberfläche) wird ho
         :material-alert-outline: **Achtung:** Eine Änderung der Kanallautstärke über das Kanal-UI öffnet immer den Kanal für die Sprachkommunikation.
 
     !!! tip ""
-        :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) bedient und eingestellt werden.
+        :material-lightbulb-outline: **Tip:** Weitere Kanäle können über die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view "Weitere Informationen im offiziellen Green-GO Handbuch") bedient und eingestellt werden.
 
 === "MCX & MCXD Sprechstellen"
 
     ![MCX/MCXD: Kanal stumm schalten](../assets/images/mcx-functions-mode-listen.svg){.img-center .width-80 inline=true}
 
-    Um den Kanal stummzuschalten oder die Stummschaltung wieder aufzuheben, kann der Touchscreen-Bereich eines Kanals angetippt werden. Hierfür muss der [Screen-Mode "Listen"](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) aktiviert sein.
+    Um den Kanal stummzuschalten oder die Stummschaltung wieder aufzuheben, kann der Touchscreen-Bereich eines Kanals angetippt werden. Hierfür muss der [Screen-Mode "Listen"](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") aktiviert sein.
 
 === "WPX Wandsprechstellen"
 
     ![MCX/MCXD: Kanal stumm schalten](../assets/images/wpx-functions-channel_mute.svg){.img-center .width-80 inline=true}
 
-    Um den Kanal stummzuschalten oder die Stummschaltung wieder aufzuheben, kann der Touchscreen-Bereich eines Kanals angetippt werden. Hierfür muss der [Screen-Mode "Listen"](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) aktiviert sein.
+    Um den Kanal stummzuschalten oder die Stummschaltung wieder aufzuheben, kann der Touchscreen-Bereich eines Kanals angetippt werden. Hierfür muss der [Screen-Mode "Listen"](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") aktiviert sein.
 
 ### Kanal Rufen (Call)
 
-Green-GO unterstützt auf allen 32 Kanälen eines Users ein zweistufiges Rufzeichen mit einem [Alarmsignal](https://manual.greengoconnect.com/en/glossary/#alert-call). Jeder Kanal kann bedarfsgerecht konfiguriert werden, so dass das Senden und/oder Empfangen von Rufzeichen pro Kanal aktiviert bzw. deaktiviert werden kann.
+Green-GO unterstützt auf allen 32 Kanälen eines Users ein zweistufiges Rufzeichen mit einem [Alarmsignal](https://manual.greengoconnect.com/en/glossary/#alert-call "Weitere Informationen im offiziellen Green-GO Handbuch"). Jeder Kanal kann bedarfsgerecht konfiguriert werden, so dass das Senden und/oder Empfangen von Rufzeichen pro Kanal aktiviert bzw. deaktiviert werden kann.
 
 Wenn ein Kanal ein Rufzeichen empfängt oder sendet, wechselt der Status des Kanals auf <span class="status-dot red"></span> rot und nach kurzer Zeit auf <span class="status-dot blink__white-red"></span> rot und weiß blinkend, um den Alarmruf (2. Stufe) zu signalisieren.
 
@@ -240,31 +240,31 @@ Das Alarmsignal hat auch einen Alarmton, der standardmäßig _unabhängig_ von e
     | 2-Kanal Modus {: .three-col} | 3-Kanal Modus {: .three-col} | Erweiterte Kanalansicht {: .three-col} |
     |:-|:-|:-|
     | ![BPX:WBPX: Rufzeichen im 2-Kanal UI](../assets/images/bpx_call-2ch.svg){.img-center inline=true} | ![BPX:WBPX: Rufzeichen im 3-Kanal UI](../assets/images/bpx_call-3ch.svg){.img-center inline=true} | ![BPX:WBPX: Rufzeichen in der erweiterten Kanalansicht](../assets/images/bpx_call-ext.svg){.img-center inline=true} |
-    | Ein Beltpack im [2-Kanal UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#__tabbed_1_1) bietet direkten Zugriff auf die Rufzeichen der Kanäle 1 und 2 über die rechten Tasten 3 und 4. | Der [3-Kanal UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#__tabbed_1_2) ermöglicht den Zugriff auf die Rufzeichen mit Hilfe der Taste 4. Diese ändert Ihre Funktion sobald einer der drei ersten Kanäle geöffnet ist. | Die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view) ermöglicht den Zugriff auf alle 32 Benutzerkanäle. In dieser kann durch das Drücken der Taste 2 ein Rufzeichen an den ausgewählten Kanal gesendet werden. |
+    | Ein Beltpack im [2-Kanal UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#__tabbed_1_1 "Weitere Informationen im offiziellen Green-GO Handbuch") bietet direkten Zugriff auf die Rufzeichen der Kanäle 1 und 2 über die rechten Tasten 3 und 4. | Der [3-Kanal UI-Modus](https://manual.greengoconnect.com/en/devices/bpx/#__tabbed_1_2 "Weitere Informationen im offiziellen Green-GO Handbuch") ermöglicht den Zugriff auf die Rufzeichen mit Hilfe der Taste 4. Diese ändert Ihre Funktion sobald einer der drei ersten Kanäle geöffnet ist. | Die [erweiterte Kanalansicht](https://manual.greengoconnect.com/en/devices/bpx/#extended-channel-view "Weitere Informationen im offiziellen Green-GO Handbuch") ermöglicht den Zugriff auf alle 32 Benutzerkanäle. In dieser kann durch das Drücken der Taste 2 ein Rufzeichen an den ausgewählten Kanal gesendet werden. |
 
-    Um mehr über die verfügbaren Einstellungsmöglichkeiten der Benutzeroberfläche zu erfahren, kann das entsprechende [Gerätehandbuch](https://manual.greengoconnect.com/en/devices/) konsultiert werden.
+    Um mehr über die verfügbaren Einstellungsmöglichkeiten der Benutzeroberfläche zu erfahren, kann das entsprechende [Gerätehandbuch](https://manual.greengoconnect.com/en/devices/ "Weitere Informationen im offiziellen Green-GO Handbuch") konsultiert werden.
 
 === "MCX & MCXD Sprechstellen"
 
     ![MCX/MCXD: Rufzeichen versenden](../assets/images/mcx-functions-mode-call.svg){.img-center .width-80 inline=true}
 
-    Der [Screen-Mode für Rufzeichen](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2) muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung eines Touchscreen-Bereichs ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
+    Der [Screen-Mode für Rufzeichen](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2 "Weitere Informationen im offiziellen Green-GO Handbuch") muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung eines Touchscreen-Bereichs ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
 
     !!! tip ""
-        :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Rufzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button) bestimmt werden.
+        :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Rufzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button "Weitere Informationen im offiziellen Green-GO Handbuch") bestimmt werden.
         
-        Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) (Listen, Call, Cue).
+        Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") (Listen, Call, Cue).
 
 === "WPX Wandsprechstellen"
 
     ![MCX/MCXD: Rufzeichen versenden](../assets/images/wpx-functions-channel_call.svg){.img-center .width-80 inline=true}
 
-    Der [Screen-Mode für Rufzeichen](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2) muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung eines Touchscreen-Bereichs ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
+    Der [Screen-Mode für Rufzeichen](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_2 "Weitere Informationen im offiziellen Green-GO Handbuch") muss auf der Sprechstelle aktiviert sein, um das _Senden_ von Rufsignalen zu ermöglichen. Wenn aktiviert, sendet die Berührung eines Touchscreen-Bereichs ein Rufzeichen an das/die zugewiesene(n) Ziel(e).
 
     !!! tip ""
-        :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Rufzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button) bestimmt werden.
+        :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Rufzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button "Weitere Informationen im offiziellen Green-GO Handbuch") bestimmt werden.
         
-        Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) (Listen, Call, Cue).
+        Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") (Listen, Call, Cue).
 
 ### Lichtzeichen (Cue)
 
@@ -272,14 +272,14 @@ Das Alarmsignal hat auch einen Alarmton, der standardmäßig _unabhängig_ von e
 
 ![](../assets/images/mcx-functions-mode-cue.svg){.img-inline-right .width-60 inline=true}
 
-Ein Lichtzeichen kann standardmäßig entweder von einer [MCX oder MCXD Sprechstelle](../devices/index.md#mcx-rack---mcxd-tischstation){ data-preview } aus versendet werden. Bei benutzung des [Screen-Modus Cue](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_4) wird ein Lichtzeichen durch ein einfaches Antippen des des Kanal-Touchscreens gesendet:
+Ein Lichtzeichen kann standardmäßig entweder von einer [MCX oder MCXD Sprechstelle](../devices/index.md#mcx-rack---mcxd-tischstation){ data-preview } aus versendet werden. Bei benutzung des [Screen-Modus Cue](https://manual.greengoconnect.com/en/devices/mcx/#__tabbed_5_4 "Weitere Informationen im offiziellen Green-GO Handbuch") wird ein Lichtzeichen durch ein einfaches Antippen des des Kanal-Touchscreens gesendet:
 
-Das erste Antippen löst die erste Stufe eines Lichtzeichens aus (<span class="status-dot blink__red-yellow"></span> Attention). Ein zweites Antippen des Touchscreens sendet die dritte Stufe, das <span class="status-dot green"></span> GO-Signal und entfernt das Signal, nachdem der lokale [`Cue Timeout`](https://manual.greengoconnect.com/en/devices/mcx/#cue-timeout) abgelaufen ist.
+Das erste Antippen löst die erste Stufe eines Lichtzeichens aus (<span class="status-dot blink__red-yellow"></span> Attention). Ein zweites Antippen des Touchscreens sendet die dritte Stufe, das <span class="status-dot green"></span> GO-Signal und entfernt das Signal, nachdem der lokale [`Cue Timeout`](https://manual.greengoconnect.com/en/devices/mcx/#cue-timeout "Weitere Informationen im offiziellen Green-GO Handbuch") abgelaufen ist.
 
 !!! tip ""
-    :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Lichtzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button) bestimmt werden.
+    :material-lightbulb-outline: **Tip:** Es besteht die Möglichkeit, durch Drücken einer Kanaltaste ein Lichtzeichen zu senden. Die Funktion einer Taste kann mit Hilfe der Einstellung [`Button`](https://manual.greengoconnect.com/en/devices/mcx/#button "Weitere Informationen im offiziellen Green-GO Handbuch") bestimmt werden.
     
-    Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches) (Listen, Call, Cue).
+    Standardmäßig öffnet eine Taste immer einen Kanal für die Sprachkommunikation. Mit der Option `Mode` folgt die Tastenfunktion dem aktiven [Screen-Mode](https://manual.greengoconnect.com/en/devices/mcx/#screen-function-switches "Weitere Informationen im offiziellen Green-GO Handbuch") (Listen, Call, Cue).
 
 #### Lichtzeichen empfangen & beantworten
 
@@ -315,7 +315,7 @@ Eingehende Lichtzeichen können auf allen Green-GO Geräten empfangen werden und
 
 ## Setup Menü
 
-Über das Setup-Menü können dauerhafte Änderungen an der Geräte- und Benutzerkonfiguration direkt am Gerät vorgenommen werden. Diese Änderungen können mit Hilfe der Green-GO Control Software wieder mit der Systemkonfiguration [synchronisiert](https://manual.greengoconnect.com/en/software/tree/devices/#devices-out-of-sync) werden.
+Über das Setup-Menü können dauerhafte Änderungen an der Geräte- und Benutzerkonfiguration direkt am Gerät vorgenommen werden. Diese Änderungen können mit Hilfe der Green-GO Control Software wieder mit der Systemkonfiguration [synchronisiert](https://manual.greengoconnect.com/en/software/tree/devices/#devices-out-of-sync "Weitere Informationen im offiziellen Green-GO Handbuch") werden.
 
 Das Setup-Menü kann auf jedem Gerät aufgerufen werden und bietet Zugang zu fast allen Einstellungen und Optionen.
 
@@ -354,13 +354,13 @@ Das Setup-Menü kann auf jedem Gerät aufgerufen werden und bietet Zugang zu fas
 
     ![](../assets/images/interface_tft-setup.svg){.img-inline .width-50 inline=true}
 
-    Auf allen Green-GO 19"-Rack Interfaces wie dem [Audio InterfaceX](https://manual.greengoconnect.com/en/devices/interfacex/), dem [Q4WR](https://manual.greengoconnect.com/en/devices/q4wr/) 4-Draht-Interface und vielen anderen wird das Setup-Menü durch einen einfachen Druck des Enkoders geöffnet. Die Navigation im Setup-Menü erfolgt durch ein Klicken oder Scrollen mit dem Enkoder.
+    Auf allen Green-GO 19"-Rack Interfaces wie dem [Audio InterfaceX](https://manual.greengoconnect.com/en/devices/interfacex/ "Weitere Informationen im offiziellen Green-GO Handbuch"), dem [Q4WR](https://manual.greengoconnect.com/en/devices/q4wr/ "Weitere Informationen im offiziellen Green-GO Handbuch") 4-Draht-Interface und vielen anderen wird das Setup-Menü durch einen einfachen Druck des Enkoders geöffnet. Die Navigation im Setup-Menü erfolgt durch ein Klicken oder Scrollen mit dem Enkoder.
 
 === "1CH Interfaces"
 
     ![](../assets/images/1ch_setup.svg){.img-inline .width-50 inline=true}
      
-    Durch gleichzeitiges Drücken von Taste 1 und 2 wird bei einkanaligen Schnittstellen wie dem [RDX](https://manual.greengoconnect.com/en/devices/rdx/) oder der 4-Draht Interface [Si4WR](https://manual.greengoconnect.com/en/devices/si4wr/) das Setup-Menü aufgerufen.
+    Durch gleichzeitiges Drücken von Taste 1 und 2 wird bei einkanaligen Schnittstellen wie dem [RDX](https://manual.greengoconnect.com/en/devices/rdx/ "Weitere Informationen im offiziellen Green-GO Handbuch") oder der 4-Draht Interface [Si4WR](https://manual.greengoconnect.com/en/devices/si4wr/ "Weitere Informationen im offiziellen Green-GO Handbuch") das Setup-Menü aufgerufen.
 
     Im Setup-Menü kann mit den Tasten 3 und 4 nach oben und unten navigiert werden. Taste 1 bestätigt eine Auswahl, und Taste 2 verlässt das aktuelle Menü oder die Auswahl.
 
@@ -368,4 +368,4 @@ Das Setup-Menü kann auf jedem Gerät aufgerufen werden und bietet Zugang zu fas
 
 Die limitierte Benutzeroberfläche beim Zubehör, wie z.B. der WAA-Antenne oder der BCN-Signalleuchte, lässt nur einen geringen Funktionsumfang zu.
 
-Eine vollständige Beschreibung der bereitgestellten Funktionen findet sich in der [Dokumentation der Geräte.](https://manual.greengoconnect.com/en/devices/#accessories)
+Eine vollständige Beschreibung der bereitgestellten Funktionen findet sich in der [Dokumentation der Geräte.](https://manual.greengoconnect.com/en/devices/#accessories "Weitere Informationen im offiziellen Green-GO Handbuch")

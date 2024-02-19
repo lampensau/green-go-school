@@ -7,8 +7,8 @@ icon: material/application
 
 ## Installation
 
-- [Software Installation (EN)](https://manual.greengoconnect.com/en/getting-started/upgrade/#software-installation)
-- [Firmware Upgrade (EN)](https://manual.greengoconnect.com/en/getting-started/upgrade/#upgrade-your-devices)
+- [Software Installation (EN)](https://manual.greengoconnect.com/en/getting-started/upgrade/#software-installation "Weitere Informationen im offiziellen Green-GO Handbuch")
+- [Firmware Upgrade (EN)](https://manual.greengoconnect.com/en/getting-started/upgrade/#upgrade-your-devices "Weitere Informationen im offiziellen Green-GO Handbuch")
 
 ## Ein Erster Überblick
 
@@ -53,9 +53,9 @@ Die neue Benutzeroberfläche vereint die Funktionen der einzelnen Green-GO v4 Pr
 
 ![Alt text](image-1.png)
 
-**Handbuch:** [Link](https://manual.greengoconnect.com/en/software/views/connection/)
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/software/views/connection/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 
-- [Firmware Updates von Geräten via Netzwerk oder USB](https://manual.greengoconnect.com/en/guides/firmware/)
+- [Firmware Updates von Geräten via Netzwerk oder USB](https://manual.greengoconnect.com/en/guides/firmware/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 - Änderung der Netzwerk- und Verbindungseinstellungen sind im `Network Tab` verfügbar
 - Änderung der Regionseinstellungen sind im `USB Tab` möglich
 - Anzeige von verbundenen Applikationen ist im `Application Tab` verfügbar

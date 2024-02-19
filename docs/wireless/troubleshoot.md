@@ -10,7 +10,7 @@ Sind die Pairing-Slots der Antenne voll belegt, zeigt die Status-LED dies wie fo
 
 ![WAA: Voller Pairing-Speicher](../assets/images/waa-led-pairing-full.svg){.img-center .width-90}
 
-In beiden Fällen sollten die [Pairings der Geräte zurückgesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations) werden (WAA und WBPX). Anschließend kann das Pairing erneut versucht werden.
+In beiden Fällen sollten die [Pairings der Geräte zurückgesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations "Weitere Informationen im offiziellen Green-GO Handbuch") werden (WAA und WBPX). Anschließend kann das Pairing erneut versucht werden.
 
 ### Ein X-Pool Pairing schlägt fehl
 
@@ -26,7 +26,7 @@ Ist dies der Fall, kann einfach der betroffene X-Pool in der "Wireless View" aus
 
 > Dies kann passieren, wenn die Programmierung nicht korrekt abgeschlossen wurde und die Pairinginformationen nicht korrekt gelesen werden können.
 
-Wurden die Geräte mit Hilfe eines OTA-Pairings verbunden, so müssen [alle Pairings zurückgesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations) werden (WAA und WBPX) und anschließend erneut programmiert werden.
+Wurden die Geräte mit Hilfe eines OTA-Pairings verbunden, so müssen [alle Pairings zurückgesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations "Weitere Informationen im offiziellen Green-GO Handbuch") werden (WAA und WBPX) und anschließend erneut programmiert werden.
 
 Wurde das X-Pool Pairing verwendet, kann das Pairing mit Hilfe der Software repariert werden:
 

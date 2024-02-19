@@ -60,6 +60,8 @@ plugins:
       assets: true
       assets_fetch: true
       assets_fetch_dir: assets/external
+      links_attr_map:
+        rel: external
   - optimize:
       enabled: !ENV [CI, false]
   - search:

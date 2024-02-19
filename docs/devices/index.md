@@ -13,25 +13,24 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 
 ### MCX Rack- & MCXD Tischstation
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/mcx/) - [:material-shopping: MCX](https://www.castinfo.de/greengo-mcx-32-kanal-19-rackstation-1he.html), [MCXD](https://www.castinfo.de/greengo-mcxd-32-kanal-tischstation.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/mcx/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: MCX](https://www.castinfo.de/greengo-mcx-32-kanal-19-rackstation-1he.html), [MCXD](https://www.castinfo.de/greengo-mcxd-32-kanal-tischstation.html)
 
 <figure markdown>
 ![MCX Rackstation](../assets/images/mcx-light.png#only-light)
 ![MCX Rackstation](../assets/images/mcx-dark.png#only-dark)
 </figure>
 
-- 18 frei konfigurierbare Tasten.
-- 18 frei konfigurierbare Touchscreen Sektionen verteilt über drei TFT-Touchscreens.
+- 18 frei konfigurierbare Tasten und Touchscreen-Sektionen.
 - Zweite Bedienebene bietet direkten zugriff 36 Schaltflächen für Kanäle oder Funktionen.
-- Kommunikation wahlweise via Headset, Mikrofon oder extern angeschlossenes Equipment.
-- Unabhängige XLR3 Line In & Out Anschlüsse ermöglichen integrationen wie z.B. einem Programmton.
+- Kommunikation wahlweise via Headset, Mikrofon oder extern angeschlossenem Equipment.
+- Unabhängige XLR3 Line-In/Out Anschlüsse ermöglichen Integrationen wie z.B. einem Programmton.
 - Spannungsversorgung für Headset (Headset XLR4: max. 2,5 V) und Mikrofon (FrontMic XLR3: max. 10 V) möglich.
 - GPIO Anschluss ermöglicht externe Integrationen über zwei Ein- und Ausgänge.
 - Kompakte Bauweise integriert sich problemlos und platzsparend in Kontrollräume oder Systemracks.
 
 ### MCX(D) Kanalerweiterung
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/mcxext/) - [:material-shopping: MCXEXT](https://www.castinfo.de/greengo-mcxext-24-kanal-19-erweiterung-fur-mcx.html), [MCXDEXT](https://www.castinfo.de/greengo-mcxdext-24-kanal-erweiterung-fur-mcxd.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/mcxext/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: MCXEXT](https://www.castinfo.de/greengo-mcxext-24-kanal-19-erweiterung-fur-mcx.html), [MCXDEXT](https://www.castinfo.de/greengo-mcxdext-24-kanal-erweiterung-fur-mcxd.html)
 
 <figure markdown>
 ![MCXD Tischstation & MCXDEXT Kanalerweiterung](../assets/images/mcxdext-light.png#only-light)
@@ -42,11 +41,12 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 - 24 Tasten und TFT-Touchscreen-Sektionen.
 - Bis zu 9 Kanalerweiterungen für bis zu 248 Kanäle sind möglich.
 - Formate können beliebig miteinander Verwendet werden.
+- Eine Kanalerweiterung wird immer über den "LAN2" Anschluss einer MCX Rack- oder MCXD Tischstation oder folgender Kanalerweiterungen angeschlossen.
 - Ermöglicht besonders komplexe Arbeitsplätze mit einem hohen Kanalbedarf.
 
 ### WPX Wandstation
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/wpx/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-wpx-wandstation.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/wpx/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: Shop](https://www.castinfo.de/green-go-wpx-wandstation.html)
 
 <figure markdown>
 ![WPX Wandstation](../assets/images/wpx-light.png#only-light)
@@ -65,7 +65,7 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 
 ### BPX Beltpack
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/bpx/) - [:material-shopping: BPX](https://www.castinfo.de/greengo-bpx-beltpack.html), [BPXSP](https://www.castinfo.de/green-go-bpxsp-beltpack-sport-version.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/bpx/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: BPX](https://www.castinfo.de/greengo-bpx-beltpack.html), [BPXSP](https://www.castinfo.de/green-go-bpxsp-beltpack-sport-version.html)
 
 <figure markdown>
 ![Green-GO BeltpackX](../assets/images/bpx-light.png#only-light)
@@ -82,7 +82,7 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 
 ### BCN Signalleuchte
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/bcn/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-beacon-signal-leuchte.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/bcn/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: Shop](https://www.castinfo.de/green-go-beacon-signal-leuchte.html)
 
 <figure markdown>
 ![Green-GO BCN Beacon Light](../assets/images/bcn-light.png#only-light)
@@ -96,7 +96,7 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 
 ## Green-GO Wireless
 
-[Handbuch](https://manual.greengoconnect.com/en/guides/wirelessx/)
+[Handbuch](https://manual.greengoconnect.com/en/guides/wirelessx/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 
 <figure markdown>
 ![Green-GO Wireless Geräte](../assets/images/waa-dynamic.png#only-light)
@@ -104,23 +104,28 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 </figure>
 
 - Basiert auf DECT. Die genutzten Frequenzen hängen von der aktiven Region ab:
-    - Europe: 1880 - 1900 MHz (10 Kanäle)
-    - Japan: 1893 - 1906 MHz (5 Kanäle)
-    - US: 1920 - 1930 MHz (5 Kanäle)
+    - Europe (EU-DECT): 1880 - 1900 MHz (10 Kanäle)
+    - Japan (J-DECT): 1893 - 1906 MHz (5 Kanäle)
+    - US (DECT 6.0): 1920 - 1930 MHz (5 Kanäle)
 - Reichweite von _bis zu_ 300 Metern.
 - Audioqualität wahlweise mit bis zu 7 kHz (G.722) oder 3,4 kHz (G.726).
+    - Wird über das [Audio-Codec](https://manual.greengoconnect.com/en/devices/wbpx/#codec "Weitere Informationen im offiziellen Green-GO Handbuch") in den DECT Einstellungen eines WBPX Beltpacks konfiguriert.
     - Diese Audioqualität ist _unabhängig_ von der konfigurierten System-Audioqualität.
-- 20 - 60 Teilnehmer möglich, abhängig von Audioqualität und lokalen Gegebenheiten.
+- 20 - 40 Teilnehmer möglich (Europa), abhängig vom genutzten [Audio-Codec](https://manual.greengoconnect.com/en/devices/wbpx/#codec "Weitere Informationen im offiziellen Green-GO Handbuch") und den lokalen Gegebenheiten.
 - Lizenzfrei und keine Anmeldung erforderlich (in Europa und vielen anderen Regionen).
 - Kompatibel zu den DECT "Standards":
     - EU-DECT (Australien, Belgien, Bulgarien, Dänemark, Deutschland, Estland, Finnland, Frankreich, Griechenland, Großbritannien, Hongkong, Irland, Israel, Italien, Jordanien, Kroatien, Lettland, Litauen, Luxemburg, Malaysia, Malta, Moldawien, Neuseeland, Niederlande, Norwegen, Österreich, Polen, Portugal, Rumänien, Russland, Schweden, Schweiz, Singapur, Slowakei, Slowenien, Spanien, Südafrika, Tschechien, Ungarn, Vereinigte Arabische Emirate, Zypern)
     - J-DECT (Japan)
     - DECT 6.0 (Kanada, USA)
 - Roaming mit bis zu 7 Antennen im X-Pool Modus möglich, allerdings nicht nahtlos (unterbrechungen von ca. 4 - 7 Sekunden).
+- Zwei Pairings-/Verbindungsmodi: "X-Pool" (Software ist erforderlich) und "OTA-Pool" (Konfiguration an den Geräten)
+    - Antennen oder Beltpacks können nur Mitglied in einem Pool sein.
+    - "OTA-Pools" funktionieren nach dem "one-shot" Prinzip. Nachträgliche Änderungen sind nicht möglich und die Software ermöglicht nur ein Monitoring.
+    - "X-Pools" ermöglichen Roaming und flexibles Management. Pairing ist nicht "over-the-air" möglich sondern erfordert eine USB-Verbindung.
 
 ### WBPX Beltpacks
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/wbpx/) - [:material-shopping: WBPX](https://www.castinfo.de/green-go-wbpx-wireless-beltpack.html), [WBPXSP](https://www.castinfo.de/green-go-wbpxsp-wireless-beltpack-sport-version.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/wbpx/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: WBPX](https://www.castinfo.de/green-go-wbpx-wireless-beltpack.html), [WBPXSP](https://www.castinfo.de/green-go-wbpxsp-wireless-beltpack-sport-version.html)
 
 - 1800 mAh Li-Ion Akku.
     - Reicht für eine Laufzeit von 7 - 9 Stunden, abhängig von der Konfiguration und durchschnittlichen Empfangsleistung.
@@ -130,7 +135,7 @@ Ein kurzer Überblick über verfügbare Sprechstellen in einem Green-GO System.
 
 ### WAA Antenne
 
-[Handbuch](https://manual.greengoconnect.com/en/devices/waa/) - [:material-shopping: Shop](https://www.castinfo.de/green-go-beacon-signal-leuchte.html)
+[Handbuch](https://manual.greengoconnect.com/en/devices/waa/ "Weitere Informationen im offiziellen Green-GO Handbuch") - [:material-shopping: Shop](https://www.castinfo.de/green-go-beacon-signal-leuchte.html)
 
 - Verbindet sich mit bis zu 4 Beltpacks.
 - Standalonebetrieb problemlos möglich.

@@ -10,7 +10,7 @@ Diese Seite dient als praktischer digitaler Leitfaden für die Green-GO School (
 
 Auf den folgenden Seiten finden sich weiterführende Informationen zu allen Themen welche in der Regel bei der eintägigen Einsteiger-Schulung behandelt werden.
 
-Obwohl diese Seite einiges an hilfreichen Informationen bereitstellt, so ist diese nicht als Ersatz für das [offizielle Handbuch](https://manual.greengoconnect.com) (in Englisch) von Green-GO gedacht.
+Obwohl diese Seite einiges an hilfreichen Informationen bereitstellt, so ist diese nicht als Ersatz für das [offizielle Handbuch](https://manual.greengoconnect.com "Weitere Informationen im offiziellen Green-GO Handbuch") (in Englisch) von Green-GO gedacht.
 
 ## Termine
 

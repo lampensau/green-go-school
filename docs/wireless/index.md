@@ -3,7 +3,7 @@ icon: material/wifi
 ---
 # Wireless mit Green-GO v5
 
-**Handbuch:** [Link](https://manual.greengoconnect.com/en/guides/wirelessx/)
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/guides/wirelessx/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 
 ## Allgemeines
 
@@ -78,8 +78,8 @@ Es gibt ein paar Punkte welche bei der Positionierung einer Antenne zu beachten 
 
 ### OTA-Pool Pairing
 
-- Der Pairing-Speicher von Antennen und Beltpacks sollte vor Beginn des Pairing-Setups [zurück gesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations) werden.
-- Das [Pairing-Setup](https://manual.greengoconnect.com/en/guides/wirelessx/#ad-hock-over-the-air-pairings) erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist für das Einrichten der Pairings notwendig.
+- Der Pairing-Speicher von Antennen und Beltpacks sollte vor Beginn des Pairing-Setups [zurück gesetzt](https://manual.greengoconnect.com/en/guides/wirelessx/#device-preparations "Weitere Informationen im offiziellen Green-GO Handbuch") werden.
+- Das [Pairing-Setup](https://manual.greengoconnect.com/en/guides/wirelessx/#ad-hock-over-the-air-pairings "Weitere Informationen im offiziellen Green-GO Handbuch") erfolgt direkt an den Geräten. Ein direkter Zugriff auf die Geräte ist für das Einrichten der Pairings notwendig.
 - Ein Bearbeiten der Pairings ist nicht möglich. Die Software ermöglicht nur das Monitoring.
 - Es gibt keine Möglichkeit des Roamings.
 
@@ -92,7 +92,7 @@ Als bald der Knopf gedrückt wird beginnt die Status-LED wie folgend dargestellt
 ![WAA Antenna Pairing Mode LED](../assets/images/waa-led-pairing-slots.svg){.img-center inline=true}
 
 <div class="annotate" markdown>
-Anschließend muss über das WBPX Beltpack der Pairing-Prozess initiiert werden. Dies erfolgt über das [Setup-Menü](https://manual.greengoconnect.com/en/getting-started/usage/#__tabbed_8_1) direkt am Gerät. (1)
+Anschließend muss über das WBPX Beltpack der Pairing-Prozess initiiert werden. Dies erfolgt über das [Setup-Menü](https://manual.greengoconnect.com/en/getting-started/usage/#__tabbed_8_1 "Weitere Informationen im offiziellen Green-GO Handbuch") direkt am Gerät. (1)
 </div>
 
 1. **Setup Menü Wegweiser:**<br><kbd>Setup Menü</kbd> --> <kbd>Dect</kbd> --> <kbd>Pair Antenna</kbd> --> <kbd>Start Pairing</kbd>

@@ -6,7 +6,7 @@ social:
 ---
 # Das Netzwerk Setup
 
-**Handbuch:** [Link](https://manual.greengoconnect.com/en/guides/network/)
+**Handbuch:** [Link](https://manual.greengoconnect.com/en/guides/network/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 
 ## Verkabelung
 
@@ -53,7 +53,7 @@ Green-GO ist kompatibel mit einem handelsüblichen Layer 3 Netzwerkswitch. Es gi
 - Die Statuskommunikation zwischen den Green-GO Geräten beträgt ca. `500 Bit/s` pro Gerät.
 - Die Statuskommunikation zwischen Green-GO Gerät und Software beträgt ca. `255 Bit/s` pro Gerät
 
-| Sample Rate | Bandbreite (pro [Engine](https://manual.greengoconnect.com/en/glossary/#green-go-engine)) | Aktive Streams (max) |
+| Sample Rate | Bandbreite (pro [Engine](https://manual.greengoconnect.com/en/glossary/#green-go-engine "Weitere Informationen im offiziellen Green-GO Handbuch")) | Aktive Streams (max) |
 | :-- | :-- | :-- |
 | 16 kHz | 319 KBit/s | ~ 300 Streams/Gerät |
 | 32 kHz | 636 KBit/s | ~ 150 Streams/Gerät |
@@ -90,7 +90,7 @@ In der Regel wird es bei Green-GO bei einem Jitter von über `5ms` problematisch
 - Switches sollten min. den IGMPv2 Standard unterstützen.
 - IGMP Snooping sollte auf allen Switches aktiviert sein.
 - Es sollte nicht mehr als einen IGMP Querier oder Router im Netzwerk oder VLAN geben.
-- Es gibt eine [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings) pro Green-GO Konfiguration/System.
+- Es gibt eine [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings "Weitere Informationen im offiziellen Green-GO Handbuch") pro Green-GO Konfiguration/System.
 
 ### QoS Konfiguration
 

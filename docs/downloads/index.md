@@ -6,7 +6,7 @@ icon: material/download
 ## Allgemein
 
 - **:material-factory: Hersteller:** [Link](https://greengodigital.com/)
-- **:material-book: Handbuch:** [Link](https://manual.greengoconnect.com/en/)
+- **:material-book: Handbuch:** [Link](https://manual.greengoconnect.com/en/ "Weitere Informationen im offiziellen Green-GO Handbuch")
 - **:material-forum: User Forum:** [Link](https://greengoconnect.com/)
 - **:material-shopping: Distributor:** [Link](https://castinfo.de)
 

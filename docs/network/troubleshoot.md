@@ -11,7 +11,7 @@ social:
 - [x] Es gibt keinen "Eingriff" in den Paketfluss (z.B. Firewalls, Gateways, Router)
 - [x] Es gibt kein Bandbreitenlimit oder Bottleneck im Netzwerk
 - [x] Green-GO Traffic ist isoliert von anderen Systemen (VLAN oder Physisch)
-- [x] Sollten mehrere Konfigurationen im gleichen Netzwerk aktiv sein, darf die [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings) nicht für mehrere Konfigurationen verwendet werden.
+- [x] Sollten mehrere Konfigurationen im gleichen Netzwerk aktiv sein, darf die [Multicast Adresse](https://manual.greengoconnect.com/en/software/views/config/#config-settings "Weitere Informationen im offiziellen Green-GO Handbuch") nicht für mehrere Konfigurationen verwendet werden.
 - [x] Bei hohem Paketvorkommen sollte QoS konfiguriert sein (DSCP: 46)
 - [x] Der Multicast Traffic des Green-GO Systems kommt überall ohne Jitter an ([Wireshark](#wireshark), [Multicast Tester](http://www.dqnetworks.ie/toolsinfo/mcasttest/), [GGO-MTA](#green-go-mta))
 
@@ -21,11 +21,11 @@ social:
 
 #### Geräte werden nicht automatisch in der Software angezeigt
 
-> Sollten Green-GO Geräte nicht automatisch in der [Connection View](https://manual.greengoconnect.com/en/software/views/connection/) der Software erscheinen kann ein [manueller Netzwerkscan](https://manual.greengoconnect.com/en/getting-started/upgrade/#scan-your-network) durchgeführt werden.
+> Sollten Green-GO Geräte nicht automatisch in der [Connection View](https://manual.greengoconnect.com/en/software/views/connection/ "Weitere Informationen im offiziellen Green-GO Handbuch") der Software erscheinen kann ein [manueller Netzwerkscan](https://manual.greengoconnect.com/en/getting-started/upgrade/#scan-your-network "Weitere Informationen im offiziellen Green-GO Handbuch") durchgeführt werden.
 
 Tauchen die Geräte nach diesem Scan mit dem Status <span class="status-dot purple"></span> `Boot Mode` oder <span class="status-dot orange"></span> `Unreachable` auf, sollte folgendes überprüft werden:
 
-- [x] Die betroffenen Green-GO Geräte benutzen eine [v5 Firmware](https://manual.greengoconnect.com/en/getting-started/upgrade/#upgrade-your-devices).
+- [x] Die betroffenen Green-GO Geräte benutzen eine [v5 Firmware](https://manual.greengoconnect.com/en/getting-started/upgrade/#upgrade-your-devices "Weitere Informationen im offiziellen Green-GO Handbuch").
 - [x] Netzwerkkonfiguration aller Geräte und Computer ist untereinander kompatibel und ermöglicht eine _lokale_ Kommunikation.
 - [x] Der Rechner ermpfängt Multicast Traffic auf UDP Port `5810`.<br>
 Dies kann u.a. mit Tools wie [Wireshark](#wireshark), dem [Multicast Tester](http://www.dqnetworks.ie/toolsinfo/mcasttest/) von DQ Networks, oder der Python Terminal Applikation [GGO-MTA](#green-go-mta) überprüft werden.
@@ -58,10 +58,10 @@ In einem solchen Fall kann folgender Workaround helfen:
 
 1. Das betroffene Gerät einfach mit Hilfe des <span class="button-outline">Remove Offline Devices</span> Buttons aus der Software entfernt werden.
 2. Anschließend muss ein _manueller Scan_ durch einen Klick auf den <span class="button-outline">Update</span> Button und die folgende `Scan` Option erfolgen.
-3. Das Gerät sollte nun mit dem Status <span class="status-dot purple"></span> `Boot Mode` erscheinen. Das Firmwareupdate läuft nun in der Regel problemlos [wie gewohnt](https://manual.greengoconnect.com/en/guides/firmware/#flash-the-firmware) durch.
+3. Das Gerät sollte nun mit dem Status <span class="status-dot purple"></span> `Boot Mode` erscheinen. Das Firmwareupdate läuft nun in der Regel problemlos [wie gewohnt](https://manual.greengoconnect.com/en/guides/firmware/#flash-the-firmware "Weitere Informationen im offiziellen Green-GO Handbuch") durch.
 
 ??? info "Nützliche Information"
-    Im Zweifel kann das Gerät für ein Firmwareupdate [manuell](https://manual.greengoconnect.com/en/glossary/?h=forced+boot#forced-boot-mode) in den `Boot Mode` gestartet werden. Dies verhindert den Timeout welcher durch den IP-Wechsel verursacht werden kann.
+    Im Zweifel kann das Gerät für ein Firmwareupdate [manuell](https://manual.greengoconnect.com/en/glossary/?h=forced+boot#forced-boot-mode "Weitere Informationen im offiziellen Green-GO Handbuch") in den `Boot Mode` gestartet werden. Dies verhindert den Timeout welcher durch den IP-Wechsel verursacht werden kann.
     
     Anschließend muss das Gerät durch einen manuellen Scan (Schritt 2) gefunden werden.
     
@@ -82,12 +82,12 @@ Eine häufige Ursache für einen "flackernden" Status ist ein Problem mit dem Em
 
 #### Statusindikatoren blinken rot/blau <span class="status-dot blink__blue-red"></span>
 
-> Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-red"></span> rot/blau blinken ist in der Regel kein weiteres Green-GO Gerät mit gleicher [Konfiguration](https://manual.greengoconnect.com/en/getting-started/software/#adopting-devices) im lokalen Netzwerk vorhanden. Alternativ ist es möglich, dass die Kommunikation zu anderen Green-GO Geräten durch die Netzwerkinfrastruktur blockiert ist.
+> Sollten die Statusindikatoren eines Geräts <span class="status-dot blink__blue-red"></span> rot/blau blinken ist in der Regel kein weiteres Green-GO Gerät mit gleicher [Konfiguration](https://manual.greengoconnect.com/en/getting-started/software/#adopting-devices "Weitere Informationen im offiziellen Green-GO Handbuch") im lokalen Netzwerk vorhanden. Alternativ ist es möglich, dass die Kommunikation zu anderen Green-GO Geräten durch die Netzwerkinfrastruktur blockiert ist.
 
 In einem solchen Falle sollte folgendes geprüft werden:
 
 - [x] Alle Geräte haben eine korrekte Netzwerkkonfiguration und kommunizieren im gleichen lokalen Netwerk.
-- [x] Alle Geräte benutzen eine Konfiguration mit [gleicher Konfigurations ID](https://manual.greengoconnect.com/en/software/views/config/#config-info).<br>
+- [x] Alle Geräte benutzen eine Konfiguration mit [gleicher Konfigurations ID](https://manual.greengoconnect.com/en/software/views/config/#config-info "Weitere Informationen im offiziellen Green-GO Handbuch").<br>
     (Setup Menü --> Info --> Config --> ID: XXXX)
 - [x] Die Geräte sind in der Lage sich gegenseitig zu Pingen<br>
     (Setup Menü --> Info --> IP --> Ping)
