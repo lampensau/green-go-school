@@ -1,0 +1,3144 @@
+{
+ "Settings":{
+  "Name":"School Resources",
+  "Description":"",
+  "configId":"e16429da-a70b45ec",
+  "ConfigPassword":"927fe7fc-94b2-4590-3185-5ac27746b5ca",
+  "ConfigPasswordSet":0,
+  "AdminPassword":"99404786-f8b0-eb5a-5c42-d6ce2973fb2c",
+  "AdminPasswordSet":0,
+  "SampleRate":32000,
+  "MulticastAddress":"239.1.146.217",
+  "Colors":{
+   "0":{
+    "Led":{
+     "C1":4,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "1":{
+    "Led":{
+     "C1":4,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "2":{
+    "Led":{
+     "C1":4,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "3":{
+    "Led":{
+     "C1":4,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "4":{
+    "Led":{
+     "C1":4,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "5":{
+    "Led":{
+     "C1":7,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "6":{
+    "Led":{
+     "C1":7,
+     "C2":4,
+     "Rate":5
+    }
+   },
+   "7":{
+    "Led":{
+     "C1":3,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "8":{
+    "Led":{
+     "C1":3,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "9":{
+    "Led":{
+     "C1":7,
+     "C2":0,
+     "Rate":3
+    }
+   },
+   "10":{
+    "Led":{
+     "C1":8,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "11":{
+    "Led":{
+     "C1":3,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "12":{
+    "Led":{
+     "C1":2,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "13":{
+    "Led":{
+     "C1":2,
+     "C2":0,
+     "Rate":0
+    }
+   },
+   "14":{
+    "Led":{
+     "C1":2,
+     "C2":1,
+     "Rate":3
+    }
+   },
+   "15":{
+    "Led":{
+     "C1":9,
+     "C2":0,
+     "Rate":0
+    }
+   }
+  },
+  "TechPincode":"0",
+  "createdAtTimestamp":"18-1-2022 19:19:00",
+  "savedAtTimestamp":"17-7-2022 22:43:19",
+  "binaryTimestamp":"17-7-2022 15:53:06"
+ },
+ "Monitor":{
+  "DeviceId":"",
+  "state":0
+ },
+ "Users":{
+  "keys":[
+"1"
+  ],
+  "badge":0,
+  "1":{
+   "myId":"1",
+   "Name":"Timo",
+   "DisplayName":"",
+   "Mode":0,
+   "badge":0,
+   "status":8,
+   "Description":"",
+   "Color":1,
+   "devices":[
+"01201CB6"
+   ],
+   "Channels":{
+    "1":{
+     "myId":"1",
+     "status":8,
+     "Assign":{"Type":2,"Id":1},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":2,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":2,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "2":{
+     "myId":"2",
+     "status":8,
+     "Assign":{"Type":2,"Id":2},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":2,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "3":{
+     "myId":"3",
+     "status":8,
+     "Assign":{"Type":2,"Id":3},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":2,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "4":{
+     "myId":"4",
+     "status":1,
+     "Assign":{"Type":2,"Id":399},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":7,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "5":{
+     "myId":"5",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "6":{
+     "myId":"6",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "7":{
+     "myId":"7",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "8":{
+     "myId":"8",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "9":{
+     "myId":"9",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "10":{
+     "myId":"10",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "11":{
+     "myId":"11",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "12":{
+     "myId":"12",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "13":{
+     "myId":"13",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "14":{
+     "myId":"14",
+     "status":1,
+     "Assign":{"Type":2,"Id":3},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "15":{
+     "myId":"15",
+     "status":1,
+     "Assign":{"Type":2,"Id":4},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "16":{
+     "myId":"16",
+     "status":1,
+     "Assign":{"Type":2,"Id":2},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "17":{
+     "myId":"17",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "18":{
+     "myId":"18",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "19":{
+     "myId":"19",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "20":{
+     "myId":"20",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "21":{
+     "myId":"21",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "22":{
+     "myId":"22",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "23":{
+     "myId":"23",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "24":{
+     "myId":"24",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "25":{
+     "myId":"25",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "26":{
+     "myId":"26",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "27":{
+     "myId":"27",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "28":{
+     "myId":"28",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "29":{
+     "myId":"29",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "30":{
+     "myId":"30",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "31":{
+     "myId":"31",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "32":{
+     "myId":"32",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    }
+   },
+   "SpecialChannels":{
+    "Program":{
+     "status":1,
+     "Assign":{"Type":2,"Id":400},
+     "Level":{"Value":-6, "min":-40, "max":12},
+     "Pan":0,
+     "memberState":0,
+     "Dim":-6
+    },
+    "Announce":{
+     "status":1,
+     "Assign":{"Type":2,"Id":399},
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Pan":0,
+     "memberState":0
+    },
+    "Emergency":{
+     "status":1,
+     "Assign":{"Type":0,"Id":0},
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Pan":0,
+     "memberState":0
+    },
+    "Direct":{
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Priority":0,
+     "CueMode":0,
+     "Pan":0
+    }
+   },
+   "DeviceProfiles":{
+    "BPX":{
+     "DeviceSettings":{
+      "UiMode":2,
+      "EncoderLeft":-1,
+      "EncoderRight":-2,
+"Extended":"--",
+"Flip":"--",
+"Buzzer":"--",
+"Vibrate":"--",
+"ScreenIntensity":"--",
+      "ScreenTime":0,
+      "LedIntensity":3,
+      "LedTime":0
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     },
+     "AudioProfile":{
+      "1":{
+       "Source":0,
+       "SideTone":{"Value":-99, "min":-40, "max":0},
+       "Gain":{"Value":50, "min":30, "max":60},
+       "Compressor":0,
+"GateThreshold":"--",
+       "GateHold":2,
+       "OutputLimiter":0,
+"HeadsetBias":"--",
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      }
+     },
+     "Dect":{
+"Codec":"--",
+"ForceReconnect":"--",
+"RoamingThreshold":"--"
+     }
+    },
+    "MCX":{
+     "DeviceSettings":{
+      "ButtonMode":0,
+      "ScreenMode":0,
+      "ScreenStartup":-1,
+      "SecondPage":1,
+"Page":"--",
+      "ScreenIntensity":4,
+      "ScreenTime":0,
+      "LedIntensity":3,
+      "LedTime":0,
+      "Buzzer":1
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     },
+     "ButtonFunctions":{
+      "1":{
+       "1":1,
+       "2":2,
+       "3":3,
+       "4":4,
+       "5":5,
+       "6":6,
+       "7":7,
+       "8":8,
+       "9":9,
+       "10":10,
+       "11":11,
+       "12":12,
+       "13":13,
+       "14":14,
+       "15":15,
+       "16":-7,
+       "17":-6,
+       "18":-5
+      },
+      "2":{
+       "1":16,
+       "2":17,
+       "3":18,
+       "4":19,
+       "5":20,
+       "6":21,
+       "7":22,
+       "8":23,
+       "9":24,
+       "10":25,
+       "11":26,
+       "12":27,
+       "13":28,
+       "14":29,
+       "15":30,
+       "16":31,
+       "17":32,
+       "18":-17
+      }
+     },
+     "AudioProfile":{
+      "1":{
+       "Source":0,
+"Active":"--",
+       "SideTone":{"Value":-99, "min":-40, "max":0},
+       "Gain":{"Value":50, "min":30, "max":60},
+       "Compressor":0,
+"GateThreshold":"--",
+       "GateHold":2,
+       "OutputLimiter":0,
+"HeadsetBias":"--",
+       "MicPower":0,
+       "SpeakerDim":0,
+       "LineOutLevel":{"Value":-99, "min":-40, "max":0},
+       "SpeakerLevel":{"Value":-99, "min":-40, "max":0},
+       "HeadsetLevel":{"Value":0, "min":-40, "max":0},
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      },
+      "2":{
+       "Source":1,
+"Active":"--",
+       "SideTone":{"Value":-99, "min":-40, "max":0},
+       "Gain":{"Value":30, "min":10, "max":60},
+       "Compressor":1,
+"GateThreshold":"--",
+       "GateHold":2,
+       "OutputLimiter":-6,
+"HeadsetBias":"--",
+       "MicPower":1,
+       "SpeakerDim":-12,
+       "LineOutLevel":{"Value":0, "min":-40, "max":0},
+       "SpeakerLevel":{"Value":0, "min":-40, "max":0},
+       "HeadsetLevel":{"Value":-99, "min":-40, "max":0},
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      }
+     },
+     "Gpio":{
+      "Input1":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Input2":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Output1":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Output2":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      }
+     },
+     "LineInOut":{
+      "Input":{
+       "Assign":{"Type":0,"Id":0},
+       "Gain":{"Value":0, "min":-6, "max":24},
+"Source":"--",
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--"
+      },
+      "Output":{
+       "Assign":{"Type":0,"Id":0},
+       "Level":{"Value":0, "min":-36, "max":12},
+"Limiter":"--",
+       "Loopback":{"Value":0, "min":-62, "max":0}
+      }
+     },
+     "buttonStatus":{
+      "1":{
+       "1":0,
+       "2":0,
+       "3":0,
+       "4":0,
+       "5":0,
+       "6":0,
+       "7":0,
+       "8":0,
+       "9":0,
+       "10":0,
+       "11":0,
+       "12":0,
+       "13":0,
+       "14":0,
+       "15":0,
+       "16":0,
+       "17":0,
+       "18":0
+      },
+      "2":{
+       "1":0,
+       "2":0,
+       "3":0,
+       "4":0,
+       "5":0,
+       "6":0,
+       "7":0,
+       "8":0,
+       "9":0,
+       "10":0,
+       "11":0,
+       "12":0,
+       "13":0,
+       "14":0,
+       "15":0,
+       "16":0,
+       "17":0,
+       "18":0
+      }
+     }
+    },
+    "MC":{
+     "DeviceSettings":{
+"ScreenMode":"--",
+"ScreenStartup":"--",
+"ScreenIntensity":"--",
+"ScreenTime":"--",
+"LedIntensity":"--",
+"LedTime":"--",
+"Buzzer":"--"
+     },
+     "ButtonFunctions":{
+      "MC":{
+       "Listen":{
+"1":"--",
+"2":"--",
+"3":"--"
+       },
+       "Call":{
+"1":"--",
+"2":"--",
+"3":"--"
+       },
+       "Cue":{
+"1":"--",
+"2":"--",
+"3":"--"
+       }
+      }
+     },
+     "AudioProfile":{
+      "1":{
+"Source":"--",
+"Active":"--",
+       "SideTone":{"Value":0, "min":-40, "max":0},
+       "Gain":{"Value":0, "min":0, "max":60},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+"OutputLimiter":"--",
+"HeadsetBias":"--",
+"MicPower":"--",
+"SpeakerDim":"--",
+       "LineOutLevel":{"Value":0, "min":-40, "max":0},
+       "SpeakerLevel":{"Value":0, "min":-40, "max":0},
+       "HeadsetLevel":{"Value":0, "min":-40, "max":0},
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      },
+      "2":{
+"Source":"--",
+"Active":"--",
+       "SideTone":{"Value":0, "min":-40, "max":0},
+       "Gain":{"Value":0, "min":0, "max":60},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+"OutputLimiter":"--",
+"HeadsetBias":"--",
+"MicPower":"--",
+"SpeakerDim":"--",
+       "LineOutLevel":{"Value":0, "min":-40, "max":0},
+       "SpeakerLevel":{"Value":0, "min":-40, "max":0},
+       "HeadsetLevel":{"Value":0, "min":-40, "max":0},
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      }
+     },
+     "Gpio":{
+      "Input1":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Input2":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Output1":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Output2":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      }
+     },
+     "LineInOut":{
+      "Input":{
+       "Assign":{"Type":0,"Id":0},
+       "Gain":{"Value":0, "min":-6, "max":24},
+"Source":"--",
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--"
+      },
+      "Output":{
+       "Assign":{"Type":0,"Id":0},
+       "Level":{"Value":0, "min":-36, "max":12},
+"Limiter":"--",
+       "Loopback":{"Value":0, "min":-62, "max":0}
+      }
+     }
+    },
+    "BP2":{
+     "DeviceSettings":{
+"Extended":"--",
+"Flip":"--",
+"Buzzer":"--",
+"ScreenTime":"--",
+"BacklightColor":"--"
+     },
+     "AudioProfile":{
+      "1":{
+"Source":"--",
+       "SideTone":{"Value":0, "min":-40, "max":0},
+       "Gain":{"Value":0, "min":0, "max":60},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+"OutputLimiter":"--",
+"HeadsetBias":"--",
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      }
+     }
+    },
+    "WPX":{
+     "DeviceSettings":{
+"Encoder":"--",
+"ButtonMode":"--",
+"ScreenMode":"--",
+"ScreenStartup":"--",
+"ScreenIntensity":"--",
+"ScreenTime":"--",
+"LedIntensity":"--",
+"LedTime":"--",
+"Buzzer":"--"
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     },
+     "ButtonFunctions":{
+      "1":{
+"1":"--",
+"2":"--",
+"3":"--",
+"4":"--",
+"5":"--",
+"6":"--"
+      }
+     },
+     "AudioProfile":{
+      "1":{
+"Source":"--",
+       "SideTone":{"Value":0, "min":-40, "max":0},
+       "Gain":{"Value":0, "min":0, "max":60},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+"OutputLimiter":"--",
+"HeadsetBias":"--",
+       "MainLevel":{"Value":0, "min":-40, "max":12},
+       "HeadsetLevel":{"Value":0, "min":-40, "max":0},
+       "SpeakerLevel":{"Value":0, "min":-40, "max":0},
+"SpeakerDim":"--"
+      }
+     },
+     "buttonStatus":{
+      "1":{
+       "1":0,
+       "2":0,
+       "3":0,
+       "4":0,
+       "5":0,
+       "6":0
+      }
+     }
+    },
+    "WP":{
+     "DeviceSettings":{
+"ScreenTime":"--",
+"BacklightColor":"--"
+     },
+     "AudioProfile":{
+      "1":{
+"Source":"--",
+       "SideTone":{"Value":0, "min":-40, "max":0},
+       "Gain":{"Value":0, "min":0, "max":60},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+"OutputLimiter":"--",
+"HeadsetBias":"--",
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      }
+     }
+    },
+    "BCN":{
+     "DeviceSettings":{
+"LedIntensity":"--",
+"BackLight":"--",
+"TalkLight":"--",
+"ChannelColor":"--"
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     }
+    },
+    "4WR":{
+     "AudioProfile":{
+      "1":{
+"Source":"--",
+       "SideTone":{"Value":0, "min":-40, "max":0},
+       "Gain":{"Value":0, "min":0, "max":60},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+"OutputLimiter":"--",
+       "MainLevel":{"Value":0, "min":-40, "max":12}
+      }
+     },
+     "Gpio":{
+      "Input1":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Input2":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Output1":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      },
+      "Output2":{
+"Function":"--",
+"Value":"--",
+"Nc":"--"
+      }
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     }
+    },
+    "2WR":{
+     "DeviceSettings":{
+     },
+     "TwoWirePort":{
+"TwoWirePreset":"--",
+"AutoNull":"--",
+"AutoNullBoot":"--",
+"CallMode":"--",
+      "FromTwoWireAdjust":{"Value":0, "min":-20, "max":20},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+      "ToTwoWireAdjust":{"Value":0, "min":-20, "max":20},
+"OutputLimiter":"--",
+"GateHold":"--",
+"GateHold":"--"
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     }
+    },
+    "RDX":{
+     "DeviceSettings":{
+     },
+     "RadioPort":{
+      "Gain":{"Value":0, "min":-6, "max":24},
+"Compressor":"--",
+"GateThreshold":"--",
+"GateHold":"--",
+      "OutputAdjust":{"Value":0, "min":-100, "max":12},
+"OutputLimiter":"--",
+"TxMode":"--"
+     },
+     "ScriptSettings":{
+"Id":"--",
+"status":"--"
+     }
+    }
+   },
+   "Settings":{
+    "ActiveTime":1,
+    "ToneLevel":-12,
+    "AlertTone":0,
+    "ReplyMode":2,
+    "PriorityDim":-6,
+    "PopupMode":3,
+    "CueTimeout":3,
+    "Isolate":0,
+    "RoomId":{"Type":3,"Id":1},
+    "RoomDim":-12,
+    "RoomPan":0
+   },
+   "Security":{
+    "Pincode":"",
+    "ChannelLevel":1,
+    "MenuAccess":1,
+    "ConfigClone":1,
+    "UserSelect":1,
+    "Channel":1,
+    "Special":1,
+    "UserSettings":1,
+    "Audio":1,
+    "Device":1
+   },
+   "FlexList":[
+{"Type":2,"Id":1},
+{"Type":2,"Id":3}
+   ]
+  }
+ },
+ "Groups":{
+  "keys":[
+"1","2","3","4","399","400"
+  ],
+  "badge":0,
+  "1":{
+   "myId":"1",
+   "Name":"Alle",
+   "badge":0,
+   "status":8,
+   "DisplayName":"",
+   "Description":"",
+   "Color":3,
+   "members":{
+    "0_1_1":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_1",
+     "channel":1,
+     "status":8,
+     "parent":"",
+     "children":[
+"1_01201CB6_1"]
+    },
+    "1_01201CB6_1":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_1",
+     "channel":1,
+     "status":8,
+     "parent":"0_1_1",
+     "children":[
+]
+    }
+   }
+  },
+  "2":{
+   "myId":"2",
+   "Name":"Team A",
+   "badge":0,
+   "status":8,
+   "DisplayName":"",
+   "Description":"",
+   "Color":0,
+   "members":{
+    "0_1_2":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_2",
+     "channel":2,
+     "status":8,
+     "parent":"",
+     "children":[
+"1_01201CB6_2"]
+    },
+    "0_1_16":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_16",
+     "channel":16,
+     "status":1,
+     "parent":"",
+     "children":[
+"1_01201CB6_16"]
+    },
+    "1_01201CB6_2":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_2",
+     "channel":2,
+     "status":8,
+     "parent":"0_1_2",
+     "children":[
+]
+    },
+    "1_01201CB6_16":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_16",
+     "channel":16,
+     "status":1,
+     "parent":"0_1_16",
+     "children":[
+]
+    }
+   }
+  },
+  "3":{
+   "myId":"3",
+   "Name":"Team B",
+   "badge":0,
+   "status":8,
+   "DisplayName":"",
+   "Description":"",
+   "Color":4,
+   "members":{
+    "0_1_3":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_3",
+     "channel":3,
+     "status":8,
+     "parent":"",
+     "children":[
+"1_01201CB6_3"]
+    },
+    "0_1_14":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_14",
+     "channel":14,
+     "status":1,
+     "parent":"",
+     "children":[
+"1_01201CB6_14"]
+    },
+    "1_01201CB6_3":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_3",
+     "channel":3,
+     "status":8,
+     "parent":"0_1_3",
+     "children":[
+]
+    },
+    "1_01201CB6_14":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_14",
+     "channel":14,
+     "status":1,
+     "parent":"0_1_14",
+     "children":[
+]
+    }
+   }
+  },
+  "4":{
+   "myId":"4",
+   "Name":"Group 4",
+   "badge":0,
+   "status":1,
+   "DisplayName":"",
+   "Description":"",
+   "Color":0,
+   "members":{
+    "0_1_15":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_15",
+     "channel":15,
+     "status":1,
+     "parent":"",
+     "children":[
+"1_01201CB6_15"]
+    },
+    "1_01201CB6_15":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_15",
+     "channel":15,
+     "status":1,
+     "parent":"0_1_15",
+     "children":[
+]
+    }
+   }
+  },
+  "399":{
+   "myId":"399",
+   "Name":"Announce",
+   "badge":0,
+   "status":1,
+   "DisplayName":"",
+   "Description":"",
+   "Color":9,
+   "members":{
+    "0_1_4":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_4",
+     "channel":4,
+     "status":1,
+     "parent":"",
+     "children":[
+"1_01201CB6_4"]
+    },
+    "1_01201CB6_4":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_4",
+     "channel":4,
+     "status":1,
+     "parent":"0_1_4",
+     "children":[
+]
+    }
+   }
+  },
+  "400":{
+   "myId":"400",
+   "Name":"PGM",
+   "badge":0,
+   "status":0,
+   "DisplayName":"",
+   "Description":"",
+   "Color":0,
+   "members":{
+   }
+  }
+ },
+ "Rooms":{
+  "keys":[
+"1"
+  ],
+  "badge":0,
+  "1":{
+   "myId":"1",
+   "Name":"Schulungsraum",
+   "badge":0,
+   "status":0,
+   "DisplayName":"",
+   "Description":"",
+   "Color":0,
+   "members":{
+    "0_1_0":{
+     "type":0,
+     "id":"1",
+     "myId":"0_1_0",
+     "channel":0,
+     "status":2,
+     "parent":"",
+     "children":[
+"1_01201CB6_0"]
+    },
+    "1_01201CB6_0":{
+     "type":1,
+     "id":"01201CB6",
+     "myId":"1_01201CB6_0",
+     "channel":0,
+     "status":2,
+     "parent":"0_1_0",
+     "children":[
+]
+    }
+   }
+  }
+ },
+ "Templates":{
+  "keys":[
+"1","2","3","4","5","6"
+  ],
+  "badge":0,
+  "1":{
+   "myId":"1",
+   "Name":"bpx-2ch",
+   "badge":0,
+   "items":[
+"template-AudioProfile","template-DeviceSettings"],
+   "AudioProfile":{
+    "SideTone":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "Gain":{
+     "Value":50,
+     "min":30,
+     "max":60
+    },
+    "Compressor":0,
+    "GateHold":2,
+    "OutputLimiter":0,
+    "Source":0,
+    "MainLevel":{
+     "Value":0,
+     "min":-40,
+     "max":12
+    }
+   },
+   "DeviceSettings":{
+    "UiMode":0,
+    "EncoderLeft":-1,
+    "EncoderRight":-2,
+    "ScreenTime":0,
+    "LedIntensity":3,
+    "LedTime":0
+   }
+  },
+  "2":{
+   "myId":"2",
+   "Name":"bpx-3ch",
+   "badge":0,
+   "items":[
+"template-AudioProfile","template-DeviceSettings"],
+   "AudioProfile":{
+    "SideTone":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "Gain":{
+     "Value":50,
+     "min":30,
+     "max":60
+    },
+    "Compressor":0,
+    "GateHold":2,
+    "OutputLimiter":0,
+    "Source":0,
+    "MainLevel":{
+     "Value":0,
+     "min":-40,
+     "max":12
+    }
+   },
+   "DeviceSettings":{
+    "UiMode":1,
+    "EncoderLeft":-1,
+    "EncoderRight":-2,
+    "Extended":1,
+    "ScreenTime":0,
+    "LedIntensity":3,
+    "LedTime":0
+   }
+  },
+  "3":{
+   "myId":"3",
+   "Name":"bpx-4ch",
+   "badge":0,
+   "items":[
+"template-AudioProfile","template-DeviceSettings"],
+   "AudioProfile":{
+    "SideTone":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "Gain":{
+     "Value":50,
+     "min":30,
+     "max":60
+    },
+    "Compressor":0,
+    "GateHold":2,
+    "OutputLimiter":0,
+    "Source":0,
+    "MainLevel":{
+     "Value":0,
+     "min":-40,
+     "max":12
+    }
+   },
+   "DeviceSettings":{
+    "UiMode":2,
+    "EncoderLeft":-1,
+    "EncoderRight":-2,
+    "ScreenTime":0,
+    "LedIntensity":3,
+    "LedTime":0
+   }
+  },
+  "4":{
+   "myId":"4",
+   "Name":"audio-headset",
+   "badge":0,
+   "items":[
+"template-AudioProfile"],
+   "AudioProfile":{
+    "SideTone":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "Gain":{
+     "Value":50,
+     "min":30,
+     "max":60
+    },
+    "Compressor":0,
+    "GateHold":2,
+    "OutputLimiter":0,
+    "Source":0,
+    "MicPower":0,
+    "SpeakerDim":0,
+    "LineOutLevel":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "SpeakerLevel":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "HeadsetLevel":{
+     "Value":0,
+     "min":-40,
+     "max":0
+    },
+    "MainLevel":{
+     "Value":0,
+     "min":-40,
+     "max":12
+    }
+   }
+  },
+  "5":{
+   "myId":"5",
+   "Name":"audio-front_mic",
+   "badge":0,
+   "items":[
+"template-AudioProfile"],
+   "AudioProfile":{
+    "SideTone":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "Gain":{
+     "Value":30,
+     "min":10,
+     "max":50
+    },
+    "Compressor":1,
+    "GateHold":2,
+    "OutputLimiter":-6,
+    "Source":1,
+    "MicPower":1,
+    "SpeakerDim":-12,
+    "SpeakerLevel":{
+     "Value":0,
+     "min":-40,
+     "max":0
+    },
+    "HeadsetLevel":{
+     "Value":-99,
+     "min":-40,
+     "max":0
+    },
+    "MainLevel":{
+     "Value":0,
+     "min":-40,
+     "max":12
+    }
+   }
+  },
+  "6":{
+   "myId":"6",
+   "Name":"mcx-default",
+   "badge":0,
+   "items":[
+"template-ButtonFunctions","template-DeviceSettings"],
+   "ButtonFunctions":{
+    "1":1,
+    "2":2,
+    "3":3,
+    "4":4,
+    "5":5,
+    "6":6,
+    "7":7,
+    "8":8,
+    "9":9,
+    "10":10,
+    "11":11,
+    "12":12,
+    "13":13,
+    "14":14,
+    "15":15,
+    "16":-7,
+    "17":-6,
+    "18":-5
+   },
+   "DeviceSettings":{
+    "ButtonMode":0,
+    "ScreenMode":0,
+    "ScreenStartup":-1,
+    "SecondPage":1,
+    "ScreenIntensity":4,
+    "ScreenTime":0,
+    "LedIntensity":3,
+    "LedTime":0,
+    "Buzzer":1
+   }
+  }
+ },
+ "Devices":{
+  "keys":[
+"01201CB6"
+  ],
+  "badge":0,
+  "01201CB6":{
+   "myId":"01201CB6",
+   "Name":"Beltpack X 7255",
+   "Mode":0,
+   "badge":1,
+   "status":8,
+   "deviceType":258,
+   "typeName":"Beltpack X",
+   "Identify":0,
+   "UserId":{"Type":1,"Id":1},
+   "Channels":{
+    "1":{
+     "myId":"1",
+     "status":8,
+     "Assign":{"Type":2,"Id":1},
+     "Override":{"Type":0,"Id":0},
+     "Talk":2,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":2,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":2,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "2":{
+     "myId":"2",
+     "status":8,
+     "Assign":{"Type":2,"Id":2},
+     "Override":{"Type":0,"Id":0},
+     "Talk":2,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":2,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "3":{
+     "myId":"3",
+     "status":8,
+     "Assign":{"Type":2,"Id":3},
+     "Override":{"Type":0,"Id":0},
+     "Talk":2,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":2,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "4":{
+     "myId":"4",
+     "status":1,
+     "Assign":{"Type":2,"Id":399},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":7,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "5":{
+     "myId":"5",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "6":{
+     "myId":"6",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "7":{
+     "myId":"7",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "8":{
+     "myId":"8",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "9":{
+     "myId":"9",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "10":{
+     "myId":"10",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "11":{
+     "myId":"11",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "12":{
+     "myId":"12",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "13":{
+     "myId":"13",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "14":{
+     "myId":"14",
+     "status":1,
+     "Assign":{"Type":2,"Id":3},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "15":{
+     "myId":"15",
+     "status":1,
+     "Assign":{"Type":2,"Id":4},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "16":{
+     "myId":"16",
+     "status":1,
+     "Assign":{"Type":2,"Id":2},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "17":{
+     "myId":"17",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "18":{
+     "myId":"18",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "19":{
+     "myId":"19",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "20":{
+     "myId":"20",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "21":{
+     "myId":"21",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "22":{
+     "myId":"22",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "23":{
+     "myId":"23",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "24":{
+     "myId":"24",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "25":{
+     "myId":"25",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "26":{
+     "myId":"26",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "27":{
+     "myId":"27",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "28":{
+     "myId":"28",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "29":{
+     "myId":"29",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "30":{
+     "myId":"30",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "31":{
+     "myId":"31",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    },
+    "32":{
+     "myId":"32",
+     "status":0,
+     "Assign":{"Type":0,"Id":0},
+     "Override":{"Type":0,"Id":0},
+     "Talk":0,
+     "TalkMode":3,
+     "ChannelMode":0,
+     "ListenMode":0,
+     "CallMode":3,
+     "CueMode":0,
+     "Priority":0,
+     "Pan":0,
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Listen":1,
+     "memberState":0,
+     "talkState":0,
+     "listenState":1,
+     "callState":0,
+     "cueState":0
+    }
+   },
+   "SpecialChannels":{
+    "Program":{
+     "status":1,
+     "Assign":{"Type":2,"Id":400},
+     "Level":{"Value":-6, "min":-40, "max":12},
+     "Pan":0,
+     "memberState":0,
+     "Dim":-6
+    },
+    "Announce":{
+     "status":1,
+     "Assign":{"Type":2,"Id":399},
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Pan":0,
+     "memberState":0
+    },
+    "Emergency":{
+     "status":1,
+     "Assign":{"Type":0,"Id":0},
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Pan":0,
+     "memberState":0
+    },
+    "Direct":{
+     "Level":{"Value":0, "min":-40, "max":12},
+     "Priority":0,
+     "CueMode":0,
+     "Pan":0
+    }
+   },
+   "Settings":{
+    "ActiveTime":1,
+    "ToneLevel":-12,
+    "AlertTone":0,
+    "ReplyMode":2,
+    "PriorityDim":-6,
+    "PopupMode":3,
+    "CueTimeout":3,
+    "Isolate":0,
+    "RoomId":{"Type":3,"Id":1},
+    "RoomDim":-12,
+    "RoomPan":0
+   },
+   "Security":{
+    "Pincode":"",
+    "ChannelLevel":1,
+    "MenuAccess":1,
+    "ConfigClone":1,
+    "UserSelect":1,
+    "Channel":1,
+    "Special":1,
+    "UserSettings":1,
+    "Audio":1,
+    "Device":1
+   },
+   "SyncToUser":0,
+   "FlexList":[
+{"Type":2,"Id":1},
+{"Type":2,"Id":3}
+   ],
+   "DeviceProfile":{
+    "DeviceSettings":{
+     "UiMode":2,
+     "EncoderLeft":-1,
+     "EncoderRight":-2,
+     "Extended":1,
+     "Flip":0,
+     "Buzzer":1,
+     "Vibrate":0,
+"ScreenIntensity":"--",
+     "ScreenTime":0,
+     "LedIntensity":3,
+     "LedTime":0
+    },
+    "ScriptSettings":{
+     "Id":13,
+     "status":5
+    },
+    "AudioProfile":{
+     "1":{
+      "Source":0,
+      "SideTone":{"Value":-99, "min":-40, "max":0},
+      "Gain":{"Value":50, "min":30, "max":60},
+      "Compressor":0,
+      "GateThreshold":-50,
+      "GateHold":2,
+      "OutputLimiter":0,
+      "HeadsetBias":0,
+      "MainLevel":{"Value":0, "min":-40, "max":12}
+     }
+    }
+   }
+  }
+ },
+ "OtherConfigs":{
+  "keys":[
+
+  ]
+ },
+ "Clients":{
+  "keys":[
+
+  ]
+ },
+ "Network":{
+  "keys":[
+"00-1F-80-22-02-F0","00-1F-80-20-1C-B6"
+  ],
+  "badge":0,
+  "00-1F-80-22-02-F0":{
+   "myId":"00-1F-80-22-02-F0",
+   "Name":"Papa",
+   "badge":0,
+   "deviceType":520,
+   "deviceName":"Multichannel X desk",
+   "macAddress":"00-1F-80-22-02-F0",
+   "serialNumber":752,
+   "firmwareName":"MCX 5.0.0.0194",
+   "IpAddress":"0.0.0.0",
+   "Netmask":"0.0.0.0",
+   "Gateway":"0.0.0.0",
+   "Dynamic":0,
+   "ConnectedServer":"0.0.0.0",
+   "status":-5,
+   "configName":"School Resources",
+   "configId":"e16429da-a70b45ec",
+   "Identify":0,
+   "diagnostics":{
+   },
+   "encryptionStatus":0,
+   "encryptionTimestamp":"",
+   "hasConfigPassword":0,
+   "hasAdminPassword":0,
+   "Ports":{
+   }
+  },
+  "00-1F-80-20-1C-B6":{
+   "myId":"00-1F-80-20-1C-B6",
+   "Name":"Beltpack X 7255",
+   "badge":0,
+   "deviceType":258,
+   "deviceName":"Beltpack X",
+   "macAddress":"00-1F-80-20-1C-B6",
+   "serialNumber":7255,
+   "firmwareName":"BPX 5.0.1.0230",
+   "IpAddress":"10.0.10.244",
+   "Netmask":"255.255.255.0",
+   "Gateway":"10.0.10.1",
+   "Dynamic":1,
+   "ConnectedServer":"0.0.0.0",
+   "status":-1,
+   "configName":"School Resources",
+   "configId":"e16429da-a70b45ec",
+   "Identify":0,
+   "diagnostics":{
+   },
+   "encryptionStatus":0,
+   "encryptionTimestamp":"",
+   "hasConfigPassword":0,
+   "hasAdminPassword":0,
+   "CloudSettings":{
+    "Mode":1,
+    "DnsName":"",
+    "Primary":"0.0.0.0",
+    "Secondary":"0.0.0.0"
+   },
+   "Ports":{
+    "1":{
+     "myId":"1",
+     "ConnectionMode":0,
+     "IpAddress":"0.0.0.0",
+     "UdpPort":0,
+     "CloudId":"",
+     "Password":"",
+     "SendBufferSize":0,
+     "ReceiveBufferSize":0
+    }
+   }
+  }
+ },
+ "Binary":"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",
+ "RemoteConnection":{
+  "hostname":"",
+  "Enable":0,
+  "status":0,
+  "connectionId":"",
+  "connectionPassword":"",
+  "RemoteClients":{
+  }
+ },
+ "State":{
+  "newBinary":1,
+  "configChanged":1,
+  "following":0
+ },
+ "VersionInfo":{
+  "Version":"5.0.1",
+  "Branch":"HEAD",
+  "Commit":"9eb0741",
+  "BuildNr":"4762"
+ },
+ "Dashboards":{
+  "keys":[
+"1"
+  ],
+  "1":{
+   "myId":"1",
+   "Name":"Home",
+   "Layout":{
+    "1":{
+     "1":{
+      "Type":2,
+      "Width":1,
+      "Height":3,
+      "Columns":{
+       "Status":{
+        "Enabled":1
+       },
+       "Id":{
+        "Enabled":0
+       },
+       "Name":{
+        "Enabled":1
+       },
+       "InputLevel":{
+        "Enabled":1
+       },
+       "ActiveChannels":{
+        "Enabled":0
+       }
+      },
+      "Name":"Users"
+     },
+     "2":{
+      "Type":4,
+      "Width":1,
+      "Height":3,
+      "Name":"Groups",
+      "Columns":{
+       "Status":{
+        "Enabled":1
+       },
+       "Id":{
+        "Enabled":0
+       },
+       "Name":{
+        "Enabled":1
+       },
+       "InputLevel":{
+        "Enabled":1
+       },
+       "ActiveMembers":{
+        "Enabled":0
+       }
+      }
+     },
+     "3":{
+      "Type":8,
+      "Width":1,
+      "Height":3,
+      "Name":"Device Graphics",
+      "Settings":{
+       "IconSize":1
+      },
+      "Columns":{
+       "Status":{
+        "Enabled":1
+       },
+       "Id":{
+        "Enabled":0
+       },
+       "Name":{
+        "Enabled":1
+       },
+       "InputLevel":{
+        "Enabled":1
+       },
+       "ActiveMembers":{
+        "Enabled":1
+       }
+      }
+     }
+    },
+    "2":{
+     "1":{
+      "Type":1
+     },
+     "2":{
+      "Type":1
+     },
+     "3":{
+      "Type":1
+     }
+    },
+    "3":{
+     "1":{
+      "Type":1
+     },
+     "2":{
+      "Type":1
+     },
+     "3":{
+      "Type":1
+     }
+    }
+   }
+  }
+ },
+ "Scripts":{
+  "keys":[
+"1","2","3","4","5","6","8","9","10","11","12","13","14"
+  ],
+  "badge":0,
+  "1":{
+   "myId":"1",
+   "badge":0,
+   "Name":"talk-duplicator",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAADMAAAAgAAAAAAAAALYhsJlAgkH1UXLJa9ISvv1yEgABcgIQ+LACAc4CENICEOzs",
+   "Text":"LyoNCkJhc2ljIHNjcmlwdCB0aGF0IGxvY2FsbHkgZHVwbGljYXRlcyB0aGUgdGFsayBzdGF0ZSBvZiBjaGFubmVsIDEgdG8gY2hhbm5lbCAyLg0KKi8NCg0KZXZlbnQgY2hhbm5lbC50YWxrWzFdDQogICAgY2hhbm5lbC50YWxrWzJdID0gY2hhbm5lbC50YWxrWzFdDQplbmQ=",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "2":{
+   "myId":"2",
+   "badge":0,
+   "Name":"channel-mute",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAFkAAAAgAAAAAAAAAA78wWDezFDM7XwguSpj6J2wAbEBcisAtQFyBhD4sMYGBafZ////9iMAxgUFANIDEO4qAMYFBQHSAxDstQF1AbkBtQGZIPUE9Ow=",
+   "Text":"LyoNClRoaXMgc2NyaXB0IG11dGVzIGEgY2hhbm5lbCBhcyBzb29uIGFzIGl0cyB2b2x1bWUgbGV2ZWwgcmVhY2hlcyAtMzlkQi4gVGhpcyBpcyBoZWxwZnVsDQppZiB5b3Ugd2FudCB0byBtdXRlIGEgY2hhbm5lbCBieSByb3RhdGluZyB0aGUgZGV2aWNlJ3MgZW5jb2Rlci4NCiovDQoNCmZvciBpID0gMSB0byAzMg0KICAgIGV2ZW50IGNoYW5uZWwubGV2ZWxbaV0NCiAgICAgICAgaWYgZXZlbnQudmFsdWUgPD0gLTM5DQogICAgICAgICAgICBjaGFubmVsLmxpc3RlbltldmVudC5pbmRleF0gPSBjaGFubmVsLmxpc3Rlbi5vZmYNCiAgICAgICAgZWxzZQ0KICAgICAgICAgICAgY2hhbm5lbC5saXN0ZW5bZXZlbnQuaW5kZXhdID0gY2hhbm5lbC5saXN0ZW4ub24NCiAgICAgICAgZW5kDQogICAgZW5kDQplbmQ=",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "3":{
+   "myId":"3",
+   "badge":0,
+   "Name":"osc-example",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAFYAAAAgAAAASQAAAN1O4Y+pu1TvJTPvMMWFU5SwckAf+iABcHIoAL0Acibs+LCwAfomAfYiAAEC0gIQ7icAAQDSAhDs7C9nZ28vY2hhbi8xLwA=",
+   "Text":"LyoNClRoaXMgc2NyaXB0IGxpc3RlbnMgdG8gT1NDIHBhY2tldHMgYXJyaXZpbmcgb24gVURQIHBvcnQgIjgwMDAiLiBJdCBhY3RzIG9uIHRoZSBkZWZpbmVkIHBhdGggDQoiL2dnby9jaGFuLzEiIGFuZCBsaXN0ZW5zIGZvciBpbnRlZ2VyIHZhbHVlcyAiMSIgYW5kICIwIiB0byBlbmFibGUgb3IgZGlzYWJsZSB0aGUgdGFsayBvbiANCnRoZSBkZWZpbmVkIGNoYW5uZWwgKDEpLg0KDQpFeGFtcGxlIHVzaW5nIHRoZSBiaW5hcnkgc2VuZG9zYzogDQpzZW5kb3NjIDxkZXZpY2VfaXA+IDgwMDAgaSAxIChlbmFibGUgdGFsaykNCnNlbmRvc2MgPGRldmljZV9pcD4gODAwMCBpIDAgKGRpc2FibGUgdGFsaykgDQoqLw0KDQpvc2Mub3Blbig4MDAwKQ0KZXZlbnQgb3NjLnJlY2VpdmVbIi9nZ28vY2hhbi8xLyJdDQogICAgaWYgb3NjLnJlYWQoMSkNCiAgICAgICAgY2hhbm5lbC50YWxrWzFdID0gY2hhbm5lbC50YWxrLm9uDQogICAgZWxzZQ0KICAgICAgICBjaGFubmVsLnRhbGtbMV0gPSBjaGFubmVsLnRhbGsub2ZmDQogICAgZW5kDQplbmQ=",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "4":{
+   "myId":"4",
+   "badge":0,
+   "Name":"gpioControl-example",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAEEAAAAgAAAAAAAAACoj3O0KxmdINcJpOVY7f3dyIAAgcgzA+LAgzgzAqQH2GgABAtICEO4fAAEA0gIQ7Ow=",
+   "Text":"LyoNClRoaXMgc2NyaXB0IGFsbG93cyBvcGVuaW5nIGEgZGVmaW5lZCBjaGFubmVsIChvcGVyYXRlZF9jaGFubmVsKSB1cG9uIHJlY2VpdmluZyBhIEdQSU8gY29udHJvbCBjb21tYW5kDQpvbiB0aGUgInJlbW90ZV9jaGFubmVsIi4gQXMgc29vbiBhcyBhbnkgZGV2aWNlIHNlbmRzIGEgR1BJTyBjb250cm9sIGNvbW1hbmQgdG8gdGhlIHRhcmdldCBkZWZpbmVkIGluDQp0aGUgInJlbW90ZV9jaGFubmVsIiwgdGhlICJvcGVyYXRlZF9jaGFubmVsIiB3aWxsIGJlIG9wZW5lZCBmb3Igdm9pY2UgY29tbXVuaWNhdGlvbi4NCiovDQoNCmRlZmluZSByZW1vdGVfY2hhbm5lbCAzMg0KZGVmaW5lIG9wZXJhdGVkX2NoYW5uZWwgMQ0KDQpldmVudCBjaGFubmVsLmlucHV0LmdwaW9bcmVtb3RlX2NoYW5uZWxdDQogICAgaWYgY2hhbm5lbC5pbnB1dC5ncGlvW3JlbW90ZV9jaGFubmVsXSA9PSBjaGFubmVsLmdwaW9jb250cm9sLm9uDQogICAgICAgIGNoYW5uZWwudGFsa1tvcGVyYXRlZF9jaGFubmVsXSA9IGNoYW5uZWwudGFsay5vbg0KICAgIGVsc2UNCiAgICAgICAgY2hhbm5lbC50YWxrW29wZXJhdGVkX2NoYW5uZWxdID0gY2hhbm5lbC50YWxrLm9mZg0KICAgIGVuZA0KZW5k",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "5":{
+   "myId":"5",
+   "badge":0,
+   "Name":"Moles v1",
+   "type":2,
+   "status":0,
+   "Binary":"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",
+   "Text":"LyoNCk9ubHkgY29tcGF0aWJsZSB3aXRoIE1DWCBhbmQgTUNYRCBkZXZpY2VzIGFuZCBjdXJyZW50bHkgb3B0aW1pemVkIHRvIHJ1biBvbiBhbiBNQ1hEIGV4Y2x1c2l2ZWx5Lg0KQWZ0ZXIgbG9hZGluZyB0aGUgc2NyaXB0LCBjaGFubmVsIDEzIHdpbGwgc2hvdyBhIGdyZWVuICJNT0xFUyEiIGJ1dHRvbiB0byB0cmlnZ2VyIHRoZSBzdGFydCBvZg0KeW91ciBodW50LiBBZnRlciBzdGFydGluZyB5b3UgbmVlZCB0byAiY2F0Y2giIGFzIG1hbnkgbW9sZXMgKHNtaWxleXMpIGFzIHlvdSBjYW4hDQoqLw0KZGVmaW5lIGNvdW50IDYwMA0KdmFyIGNvdW50ZXIgPSBjb3VudA0KdmFyIHRpYyA9IDENCnZhciBzY29yZTEgPSAwDQp2YXIgc2NvcmUyID0gMA0KdmFyIHNjb3JlMyA9IGNvdW50ZXINCnZhciBzY29yZTQgPSAwDQp2YXIgb24gPSAwDQp2YXIgYSA9IDMNCnZhciBiID0gMg0KdmFyIHggPSAxDQp2YXIgbnVtYmVyID0gMQ0KdmFyIGNoYW5uZWwgPSAwDQoNCnZhciBsb2dhID0gMA0KdmFyIGxvZ2IgPSAwDQp2YXIgbG9nYyA9IDANCnZhciBsb2dkID0gMA0KdmFyIGxvZ2UgPSAwDQp2YXIgbG9nZiA9IDANCnZhciBsb2dnID0gMA0KdmFyIGxvZ2ggPSAwDQp2YXIgbG9naSA9IDANCnZhciBsb2dqID0gMA0KdmFyIGxvZ2sgPSAwDQp2YXIgbG9nbCA9IDANCg0KLy8gInJhbmRvbSIgbnVtYmVyIGdlbmVyYXRpb24NCmZ1bmN0aW9uIG1hdGgoKQ0KICAgIG51bWJlciA9IG51bWJlciArIGEgLSBiDQogICAgYSA9IGEgKyAxDQogICAgaWYgbnVtYmVyID49IDEyDQogICAgICAgIG51bWJlciA9IHgNCiAgICBlbmQNCiAgICBpZiBudW1iZXIgPCAwDQogICAgICAgIG51bWJlciA9IHgNCiAgICBlbmQNCiAgICBpZiBhID4gMTENCiAgICAgICAgYSA9IDMNCiAgICBlbmQNCg0KICAgIGlmIG51bWJlciA9PSBsb2dhDQogICAgICAgIG51bWJlciA9IG51bWJlciArIDENCiAgICBlbmQNCiAgICBpZiBudW1iZXIgPT0gbG9nYg0KICAgICAgICBudW1iZXIgPSBudW1iZXIgKyAxDQogICAgZW5kDQogICAgaWYgbnVtYmVyID09IGxvZ2MNCiAgICAgICAgbnVtYmVyID0gbnVtYmVyICsgMQ0KICAgIGVuZA0KICAgIGlmIG51bWJlciA9PSBsb2dkDQogICAgICAgIG51bWJlciA9IG51bWJlciArIDENCiAgICBlbmQNCiAgICBpZiBudW1iZXIgPT0gbG9nZQ0KICAgICAgICBudW1iZXIgPSBudW1iZXIgKyAxDQogICAgZW5kDQogICAgaWYgbnVtYmVyID09IGxvZ2YNCiAgICAgICAgbnVtYmVyID0gbnVtYmVyICsgMQ0KICAgIGVuZA0KICAgIGlmIG51bWJlciA9PSBsb2dnDQogICAgICAgIG51bWJlciA9IG51bWJlciArIDENCiAgICBlbmQNCiAgICBpZiBudW1iZXIgPT0gbG9naA0KICAgICAgICBudW1iZXIgPSBudW1iZXIgKyAxDQogICAgZW5kDQogICAgaWYgbnVtYmVyID09IGxvZ2kNCiAgICAgICAgbnVtYmVyID0gbnVtYmVyICsgMQ0KICAgIGVuZA0KICAgIGlmIG51bWJlciA9PSBsb2dqDQogICAgICAgIG51bWJlciA9IG51bWJlciArIDENCiAgICBlbmQNCiAgICBpZiBudW1iZXIgPT0gbG9naw0KICAgICAgICBudW1iZXIgPSBudW1iZXIgKyAxDQogICAgZW5kDQogICAgaWYgbnVtYmVyID09IGxvZ2wNCiAgICAgICAgbnVtYmVyID0gbnVtYmVyICsgMQ0KICAgIGVuZA0KZW5kIA0KDQovLyBkcmF3L3VwZGF0ZSBzdGF0cyBhbmQgbW9sZSBpbiBsb2NhdGlvbg0KZnVuY3Rpb24gZHJhdygpDQogICAgZXZlbnQgdWkuZHJhd1sxM10NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiQ2xlYXIiLHVpLmNvbG9yLnJlZCwxKQ0KICAgIGVuZA0KICAgIGV2ZW50IHVpLmRyYXdbMTRdDQogICAgICAgIHVpLmNsZWFyKCkNCiAgICAgICAgdWkuZHJhdy50ZXh0LmF0KDEwLDAsIlRpbWVyOiAiLCBzY29yZTMpDQogICAgICAgIHVpLmRyYXcudGV4dC5hdCgxMCwyNSwiU2VsZWN0ZWQ6ICIsIGNoYW5uZWwpDQogICAgICAgIHVpLmRyYXcudGV4dC5hdCgxMCw1MCwiTW9sZSBsb2M6ICIsIG51bWJlcikNCiAgICBlbmQNCiAgICBldmVudCB1aS5kcmF3WzE1XQ0KICAgICAgICB1aS5jbGVhcigpDQogICAgICAgIHVpLmRyYXcudGV4dC5hdCgxMCwwLCJIaWdoc2NvcmU6ICIsIHNjb3JlMikNCiAgICAgICAgdWkuZHJhdy50ZXh0LmF0KDEwLDI1LCJTY29yZTogIiwgc2NvcmUxKQ0KICAgIGVuZA0KICAgIGV2ZW50IHVpLmRyYXdbbnVtYmVyXQ0KICAgICAgICB1aS5jbGVhcigpDQogICAgICAgIHVpLmRyYXcucmVjdGFuZ2xlKDYwLDIwLDE1LDE1KQ0KICAgICAgICB1aS5kcmF3LnJlY3RhbmdsZSg5NSwyMCwxNSwxNSkNCiAgICAgICAgdWkuZHJhdy5sZXZlbCg2MCw1MCkNCiAgICBlbmQNCmVuZA0KDQovLyBjaGVjayB3aGljaCBidXR0b24gaXMgY3VycmVudGx5IHByZXNzZWQNCmZ1bmN0aW9uIGNoZWNrZXIoKQ0KICAgIGV2ZW50IHVpLnRvdWNoWzFdDQogICAgICAgIGNoYW5uZWwgPSB1aS5ldmVudCA/IDEgOiAwDQogICAgZW5kDQogICAgZXZlbnQgdWkudG91Y2hbMl0NCiAgICAgICAgY2hhbm5lbCA9IHVpLmV2ZW50ID8gMiA6IDANCiAgICBlbmQNCiAgICBldmVudCB1aS50b3VjaFszXQ0KICAgICAgICBjaGFubmVsID0gdWkuZXZlbnQgPyAzIDogMA0KICAgIGVuZA0KICAgIGV2ZW50IHVpLnRvdWNoWzRdDQogICAgICAgIGNoYW5uZWwgPSB1aS5ldmVudCA/IDQgOiAwDQogICAgZW5kDQogICAgZXZlbnQgdWkudG91Y2hbNV0NCiAgICAgICAgY2hhbm5lbCA9IHVpLmV2ZW50ID8gNSA6IDANCiAgICBlbmQNCiAgICBldmVudCB1aS50b3VjaFs2XQ0KICAgICAgICBjaGFubmVsID0gdWkuZXZlbnQgPyA2IDogMA0KICAgIGVuZA0KICAgIGV2ZW50IHVpLnRvdWNoWzddDQogICAgICAgIGNoYW5uZWwgPSB1aS5ldmVudCA/IDcgOiAwDQogICAgZW5kDQogICAgZXZlbnQgdWkudG91Y2hbOF0NCiAgICAgICAgY2hhbm5lbCA9IHVpLmV2ZW50ID8gOCA6IDANCiAgICBlbmQNCiAgICBldmVudCB1aS50b3VjaFs5XQ0KICAgICAgICBjaGFubmVsID0gdWkuZXZlbnQgPyA5IDogMA0KICAgIGVuZA0KICAgIGV2ZW50IHVpLnRvdWNoWzEwXQ0KICAgICAgICBjaGFubmVsID0gdWkuZXZlbnQgPyAxMCA6IDANCiAgICBlbmQNCiAgICBldmVudCB1aS50b3VjaFsxMV0NCiAgICAgICAgY2hhbm5lbCA9IHVpLmV2ZW50ID8gMTEgOiAwDQogICAgZW5kDQogICAgZXZlbnQgdWkudG91Y2hbMTJdDQogICAgICAgIGNoYW5uZWwgPSB1aS5ldmVudCA/IDEyIDogMA0KICAgIGVuZA0KZW5kDQoNCi8vIGNsZWFyIGJ1dHRvbiBjaGVjaw0KZnVuY3Rpb24gY2hlY2tlcm9mZigpDQogICAgY2FuY2VsIHVpLnRvdWNoWzFdDQogICAgY2FuY2VsIHVpLnRvdWNoWzJdDQogICAgY2FuY2VsIHVpLnRvdWNoWzNdDQogICAgY2FuY2VsIHVpLnRvdWNoWzRdDQogICAgY2FuY2VsIHVpLnRvdWNoWzVdDQogICAgY2FuY2VsIHVpLnRvdWNoWzZdDQogICAgY2FuY2VsIHVpLnRvdWNoWzddDQogICAgY2FuY2VsIHVpLnRvdWNoWzhdDQogICAgY2FuY2VsIHVpLnRvdWNoWzldDQogICAgY2FuY2VsIHVpLnRvdWNoWzEwXQ0KICAgIGNhbmNlbCB1aS50b3VjaFsxMV0NCiAgICBjYW5jZWwgdWkudG91Y2hbMTJdDQoNCiAgICBjYW5jZWwgdWkuZHJhd1sxXQ0KICAgIGNhbmNlbCB1aS5kcmF3WzJdDQogICAgY2FuY2VsIHVpLmRyYXdbM10NCiAgICBjYW5jZWwgdWkuZHJhd1s0XQ0KICAgIGNhbmNlbCB1aS5kcmF3WzVdDQogICAgY2FuY2VsIHVpLmRyYXdbNl0NCiAgICBjYW5jZWwgdWkuZHJhd1s3XQ0KICAgIGNhbmNlbCB1aS5kcmF3WzhdDQogICAgY2FuY2VsIHVpLmRyYXdbOV0NCiAgICBjYW5jZWwgdWkuZHJhd1sxMF0NCiAgICBjYW5jZWwgdWkuZHJhd1sxMV0NCiAgICBjYW5jZWwgdWkuZHJhd1sxMl0NCiAgICBjYW5jZWwgdWkuZHJhd1sxNF0NCiAgICBjYW5jZWwgdWkuZHJhd1sxNV0NCg0KICAgIGxvZ2EgPSAwDQogICAgbG9nYiA9IDANCiAgICBsb2djID0gMA0KICAgIGxvZ2QgPSAwDQogICAgbG9nZSA9IDANCiAgICBsb2dmID0gMA0KICAgIGxvZ2cgPSAwDQogICAgbG9naCA9IDANCiAgICBsb2dpID0gMA0KICAgIGxvZ2ogPSAwDQogICAgbG9nayA9IDANCiAgICBsb2dsID0gMA0KZW5kDQoNCmZ1bmN0aW9uIGxvZygpDQogICAgaWYgbG9nYSA9PSAwDQogICAgICAgIGxvZ2EgPSBudW1iZXINCiAgICBlbHNlDQogICAgICAgIGlmIGxvZ2IgPT0gMA0KICAgICAgICAgICAgbG9nYiA9IG51bWJlcg0KICAgICAgICBlbHNlDQogICAgICAgICAgICBpZiBsb2djID09IDANCiAgICAgICAgICAgICAgICBsb2djID0gbnVtYmVyDQogICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgaWYgbG9nZCA9PSAwDQogICAgICAgICAgICAgICAgICAgIGxvZ2QgPSBudW1iZXINCiAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgIGlmIGxvZ2UgPT0gMA0KICAgICAgICAgICAgICAgICAgICAgICAgbG9nZSA9IG51bWJlcg0KICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICBpZiBsb2dmID09IDANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2dmID0gbnVtYmVyDQogICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgbG9nZyA9PSAwDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvZ2cgPSBudW1iZXINCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxvZ2ggPT0gMA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9naCA9IG51bWJlcg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBsb2dpID09IDANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2dpID0gbnVtYmVyDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgbG9naiA9PSAwDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvZ2ogPSBudW1iZXINCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxvZ2sgPT0gMA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9nayA9IG51bWJlcg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBsb2dsID09IDANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2dsID0gbnVtYmVyDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbmQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZW5kDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZW5kDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbmQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZW5kDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgZW5kDQogICAgICAgICAgICAgICAgICAgICAgICBlbmQNCiAgICAgICAgICAgICAgICAgICAgZW5kDQogICAgICAgICAgICAgICAgZW5kDQogICAgICAgICAgICBlbmQNCiAgICAgICAgZW5kDQogICAgZW5kDQoNCiAgICBldmVudCB1aS5kcmF3W251bWJlcl0NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiUE9XISIsdWkuY29sb3IucmVkLDEpDQogICAgZW5kDQoNCmVuZA0KDQpmdW5jdGlvbiB1cGRhdGUoKQ0KICAgIHRpbWVyWzJdID0gMTAwMA0KICAgIGV2ZW50IHRpbWVyWzJdDQogICAgICAgIGNhbmNlbCB1aS5kcmF3WzE2XQ0KICAgICAgICBjYW5jZWwgdWkuZHJhd1sxN10NCiAgICAgICAgY2FuY2VsIHVpLmRyYXdbMThdDQogICAgZW5kDQogICAgZXZlbnQgdWkuZHJhd1sxNl0NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiTkVXIix1aS5jb2xvci5ncmVlbiwwKQ0KICAgIGVuZA0KICAgIGV2ZW50IHVpLmRyYXdbMTddDQogICAgICAgIHVpLmNsZWFyKCkNCiAgICAgICAgdWkuZHJhdy5idXR0b24oIkhJR0giLHVpLmNvbG9yLmdyZWVuLDApDQogICAgZW5kDQogICAgZXZlbnQgdWkuZHJhd1sxOF0NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiU0NPUkUiLHVpLmNvbG9yLmdyZWVuLDApDQogICAgZW5kDQplbmQNCg0KLy8gZGVmYXVsdCBkZXZpY2UsIHVwZGF0ZSBIaWdoIHNjb3JlDQpmdW5jdGlvbiBzdGFydCgpDQogICAgb24gPSAwDQogICAgY2hlY2tlcm9mZigpDQogICAgY2FuY2VsIHVpLnRvdWNoDQogICAgaWYgc2NvcmUxID4gc2NvcmUyDQogICAgICAgIHNjb3JlMiA9IHNjb3JlMQ0KICAgICAgICB1cGRhdGUoKQ0KICAgIGVuZA0KICAgIGNhbmNlbCB0aW1lclsxXQ0KICAgIGNhbmNlbCB1aS50b3VjaFtudW1iZXJdDQogICAgY2FuY2VsIHVpLmRyYXdbbnVtYmVyXQ0KICAgIGNvdW50ZXIgPSBjb3VudA0KICAgIHRpbWVyWzFdID0gdGljDQogICAgZXZlbnQgdWkuZHJhd1sxM10NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiTU9MRVMhIix1aS5jb2xvci5ncmVlbiwxKQ0KICAgIGVuZA0KZW5kDQoNCi8vIGRyYXcgc3RhdHMgJiBtb2xlLCB3aGVuIG1vbGUgc2VsZWN0ZWQgY2xlYXIgYW5kIG1vdmUNCmZ1bmN0aW9uIGdhbWUoKQ0KICAgIG9uID0gMQ0KICAgIHNjb3JlMSA9IDANCiAgICBzY29yZTQgPSAwDQogICAgZHJhdygpDQogICAgY291bnRlciA9IGNvdW50DQogICAgZXZlbnQgdGltZXJbMV0NCiAgICAgICAgaWYgY291bnRlcg0KICAgICAgICAgICAgY291bnRlciA9IGNvdW50ZXIgLSAxDQogICAgICAgICAgICBzY29yZTMgPSAoY291bnRlciAvIDEwMCkNCiAgICAgICAgICAgIHRpbWVyWzFdID0gdGljDQogICAgICAgICAgICBjaGVja2VyKCkNCiAgICAgICAgICAgIGlmIGNoYW5uZWwgPT0gbnVtYmVyDQogICAgICAgICAgICAgICAgY2FuY2VsIHVpLnRvdWNoW251bWJlcl0NCiAgICAgICAgICAgICAgICBjYW5jZWwgdWkuZHJhd1tudW1iZXJdDQogICAgICAgICAgICAgICAgc2NvcmUxID0gc2NvcmUxICsgMQ0KICAgICAgICAgICAgICAgIHNjb3JlNCA9IHNjb3JlNCArIDENCiAgICAgICAgICAgICAgICBsb2coKQ0KICAgICAgICAgICAgICAgIG1hdGgoKQ0KICAgICAgICAgICAgICAgIGRyYXcoKQ0KICAgICAgICAgICAgZW5kDQogICAgICAgICAgICBpZiBzY29yZTQgPT0gNg0KICAgICAgICAgICAgICAgIHNjb3JlNCA9IDANCiAgICAgICAgICAgICAgICBjaGVja2Vyb2ZmKCkNCiAgICAgICAgICAgICAgICBjaGVja2VyKCkNCiAgICAgICAgICAgICAgICBkcmF3KCkNCiAgICAgICAgICAgIGVuZA0KICAgICAgICBlbHNlDQogICAgICAgIHN0YXJ0KCkNCiAgICAgICAgZW5kDQogICAgZW5kDQogICAgdGltZXJbMV0gPSB0aWMNCmVuZA0KDQovLyBzZXR1cCBzdGFydCBidXR0b24NCnN0YXJ0KCkNCmV2ZW50IHVpLnRvdWNoWzEzXSANCiAgICBpZiB1aS5ldmVudCA9PSB1aS5ldmVudC5wcmVzcw0KICAgICAgICBpZiBvbiA9PSAwDQogICAgICAgICAgICBnYW1lKCkNCiAgICAgICAgZWxzZQ0KICAgICAgICAgICAgc3RhcnQoKQ0KICAgICAgICBlbmQNCiAgICBlbmQNCmVuZA0K",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":1,
+   "usage":[
+
+   ]
+  },
+  "6":{
+   "myId":"6",
+   "badge":0,
+   "Name":"s2s-channel_duplicator",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAIwAAAAgAAAAAAAAAKxyCMb03IHcwnOaq37KNnuwAbEBcjUAtQFyAhD4sLDGBQX5NHCwxgUF+TBwxgUFzgIQqQL2LwCwAvkwcO40ALAA+TBw7LUBdQG5AbUBmSD1BPSwAbECcl4AtQJyEAX4sLD5MbEDtQOw+THSAhDstQJ1AbkCtQKZIPVG9Ow=",
+   "Text":"LyoNClRoaXMgc2NyaXB0IGR1cGxpY2F0ZXMgYSBjaGFubmVsIHRhbGsgc3RhdGUgYmV0d2VlbiBkZXZpY2VzIHJ1bm5pbmcgdGhpcyBzY3JpcHQuDQoqLw0KDQovLyBBIGZvciBsb29wIGl0ZXJhdGluZyB0aGUga2V5d29yZCAndGFyZ2V0JyBmcm9tICcxJyB0byAnMzInDQpmb3IgdGFyZ2V0ID0gMSB0byAzMg0KICAgIC8vIENyZWF0ZSBldmVudCBjaGFubmVsLnRhbGsgZm9yIGVhY2ggaXRlcmF0aW9uIG9mICd0YXJnZXQnDQogICAgZXZlbnQgY2hhbm5lbC50YWxrW3RhcmdldF0NCiAgICAgICAgLy8gVXNlIHRoZSBjdXJyZW50IHZhbHVlIG9mICd0YXJnZXQnIGJ5IHJlZmVyZW5jaW5nIGl0IGFzICdldmVudC5pbmRleCcNCiAgICAgICAgY29udHJvbC5kZXN0aW5hdGlvbihldmVudC5pbmRleCkNCiAgICAgICAgY29udHJvbC53cml0ZShldmVudC5pbmRleCkNCiAgICAgICAgaWYgY2hhbm5lbC50YWxrW2V2ZW50LmluZGV4XSA9PSBjaGFubmVsLnRhbGsub24NCiAgICAgICAgICAgIGNvbnRyb2wud3JpdGUoY2hhbm5lbC50YWxrLm9uKQ0KICAgICAgICBlbHNlDQogICAgICAgICAgICBjb250cm9sLndyaXRlKGNoYW5uZWwudGFsay5vZmYpDQogICAgICAgIGVuZA0KICAgIGVuZA0KZW5kDQoNCi8vIEEgZm9yIGxvb3AgaXRlcmF0aW5nIHRoZSBrZXl3b3JkICdzb3VyY2UnIGZyb20gJzEnIHRvICczMicNCmZvciBzb3VyY2UgPSAxIHRvIDMyDQogICAgLy8gQ3JlYXRlIGV2ZW50IGNvbnRyb2wucmVjZWl2ZSBmb3IgZWFjaCBpdGVyYXRpb24gb2YgJ3RhcmdldCcNCiAgICBldmVudCBjb250cm9sLnJlY2VpdmVbc291cmNlXQ0KICAgICAgICBsb2NhbCBjaGFubmVsID0gY29udHJvbC5yZWFkKCkNCiAgICAgICAgY2hhbm5lbC50YWxrW2NoYW5uZWxdID0gY29udHJvbC5yZWFkKCkNCiAgICBlbmQNCmVuZA==",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "8":{
+   "myId":"8",
+   "badge":0,
+   "Name":"osc_onAir-mcx",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAGcBAAAgAAAAOwEAAC/Ydo5PdJgsf6SVuZ+MPvRyaUKxAb0AsQK9FbEDALEE7jUAci0AtQVyAPD4sAC5BLD5gXCwvSUCAPmIcOy1BQTSAfAA8O5aAHJSALUFcgDw+LABuQSw+YFwsL0lAgH5iHDstQUC0gHwAPCwtQH6IAFw7nYAsLUG+iIBcLC1B7UI+iMBcADwcqMAtQJyJuz4sLAB+iYBqQL2kQCwA7EF8ThwsAH6JgGpAPaiALADsQXxE3Ds7uAAtQSpAfbHALC1BbEF8RNwsLUDsQa1ArEHALEI8WRw7t4AsLUFsQXxOHCwtQOxBrUCsQcCsQjxZHAA8HL6AANyAfD4sAPOAfCpAfb5ALADsQXxpnDschMBA3ID8PiwxgDxqQH2EgGwA7EF8aZw7LADsQXxE3DsL2dnby9zdHVkaW8vMS9vbmFpci8AMjU1LjI1NS4yNTUuMjU1AE9uIEFpcgA=",
+   "Text":"LyoNClNjcmlwdCB0byBhZGQgYW4gJ09uIEFpcicgYnV0dG9uIHRvIHRoZSBVSSBvZiBhbiBNQ1gsIE1DWEQsIG9yIFdQWCBkZXZpY2UuDQpUaGUgc2NyaXB0IHVzZXMgT1NDIHBhY2tldHMgdG8gY29tbXVuaWNhdGUgdG8gbXVsdGlwbGUgZGV2aWNlcyB2aWEgYnJvYWRjYXN0aW5nDQp0aGUgT1NDIHBhY2tldHMgKHRhcmdldDogMjU1LjI1NS4yNTUuMjU1KS4NCg0KVGhlIHNjcmlwdCBjb25zaXN0cyBvZiBtdWx0aXBsZSBwYXJ0cyBhbmQgaGFzIGluZGl2aWR1YWwgc2NyaXB0IGZpbGVzIGZvciBlYWNoDQpkZXZpY2UgKHVudGlsIGRldmljZSBpZGVudGlmaWNhdGlvbiBpcyBmdWxseSBpbXBsZW1lbnRlZCkuIEN1cnJlbnRseSBzdXBwb3J0ZWQNCmRldmljZXMgYXJlOiBCQ04gKHJlY2VpdmVyKSwgQlBYIChyZWNlaXZlciksIE1DWCAoc2VuZGVyL3JlY2VpdmVyKSwgTUNYRCANCihzZW5kZXIvcmVjZWl2ZXIpLCBXQlBYIChyZWNlaXZlciksIFdQWCAoc2VuZGVyL3JlY2VpdmVyKQ0KKi8NCg0KLy8gTG9jYXRpb24gb2YgdGhlIGJ1dHRvbg0KZGVmaW5lIG9uQWlyQnV0dG9uIDMNCg0KLy8gT1NDIHBhcmFtZXRlcnMNCnZhciBwb3J0T1NDID0gMTcwMDENCnZhciBwYXRoT1NDID0gIi9nZ28vc3R1ZGlvLzEvb25haXIvIg0KdmFyIHRhcmdldE9TQyA9ICIyNTUuMjU1LjI1NS4yNTUiDQoNCi8vIFZhcmlhYmxlIHRvIGRlZmluZSBjdXJyZW50IGJ1dHRvbiBzdGF0ZS4gU2V0IHRvICdkaXNhYmxlZCcgYnkgZGVmYXVsdC4NCnZhciBlbmFibGVkID0gMA0KDQovLyBGdW5jdGlvbiB0byBkcmF3IGRpc2FibGVkICdPbiBBaXInIGJ1dHRvbi4gVXNlIGtleSAnY2hhbm5lbCcgdG8gbW9kaWZ5IHRhcmdldA0KZnVuY3Rpb24gYnV0dG9uT2ZmQWlyKGNoYW5uZWwpDQogICAgZXZlbnQgdWkuZHJhd1tjaGFubmVsXQ0KICAgICAgICAvLyBTZXQgdmFyaWFibGUgJ2VuYWJsZWQnIHRvICcwJw0KICAgICAgICBlbmFibGVkID0gMA0KICAgICAgICAvLyBDbGVhciB0aGUgZXhpc3RpbmcgVUkNCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICAvLyBEcmF3IGEgbmV3IGZyYW1lZCBidXR0b24NCiAgICAgICAgdWkuZHJhdy5idXR0b24oIk9uIEFpciIsdWkuY29sb3IucmVkLDApDQogICAgZW5kDQogICAgLy8gQ2hhbmdlIGJ1dHRvbiBzdGF0dXMgY29sb3IgdG8gYmx1ZSAoaW5hY3RpdmUpDQogICAgdWkuYnV0dG9uW2NoYW5uZWxdID0gdWkuY29sb3IuYmx1ZQ0KZW5kDQoNCi8vIEZ1bmN0aW9uIHRvIGRyYXcgZW5hYmxlZCAnT24gQWlyJyBidXR0by4gVXNlIGtleSAnY2hhbm5lbCcgdG8gbW9kaWZ5IHRhcmdldA0KZnVuY3Rpb24gYnV0dG9uT25BaXIoY2hhbm5lbCkNCiAgICAvLyBFeGVjdXRpbmcgb24gdGhlIG5leHQgZGlzcGxheSByZWZyZXNoDQogICAgZXZlbnQgdWkuZHJhd1tjaGFubmVsXQ0KICAgICAgICAvLyBTZXQgdmFyaWFibGUgJ2VuYWJsZWQnIHRvICcxJw0KICAgICAgICBlbmFibGVkID0gMQ0KICAgICAgICAvLyBDbGVhciB0aGUgZXhpc3RpbmcgVUkNCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICAvLyBEcmF3IGEgbmV3IHNvbGlkIGJ1dHRvbg0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiT24gQWlyIix1aS5jb2xvci5yZWQsMSkNCiAgICBlbmQNCiAgICAvLyBDaGFuZ2UgYnV0dG9uIHN0YXR1cyBjb2xvciB0byByZWQgKGFjdGl2ZSkNCiAgICB1aS5idXR0b25bY2hhbm5lbF0gPSB1aS5jb2xvci5yZWQNCmVuZA0KDQovLyBPcGVuIFVEUCBwb3J0IGFuZCBzdGFydCBsaXN0ZW5pbmcgZm9yIHBhY2tldHMNCm9zYy5vcGVuKHBvcnRPU0MpDQoNCi8vIEZ1bmN0aW9uIHRvIHNlbmQgT1NDIHBhY2tldC4gUGFzc2luZyBrZXlzICdpcCcsICdwYXRoJywgYW5kICdjb2xvcicgdG8gbW9kaWZ5IHRhcmdldA0KZnVuY3Rpb24gc2VuZE9zY0FjdGlvbihpcCxwYXRoLGNvbG9yKQ0KICAgIG9zYy5kZXN0aW5hdGlvbihpcCkNCiAgICBvc2Muc2VuZChwYXRoLCBjb2xvcikNCmVuZA0KDQovLyBFdmVudCBleGVjdXRpbmcgd2hlbiByZWNlaXZpbmcgT1NDIHBhY2tldCBmb3IgJ3BhdGhPU0MnDQpldmVudCBvc2MucmVjZWl2ZVtwYXRoT1NDXQ0KICAgIC8vIEV4ZWN1dGUgaWYgT1NDIHBhY2tldCBpcyAnMicgKGludGVnZXIpDQogICAgaWYgb3NjLnJlYWQoMSkgPT0gdWkuY29sb3IucmVkDQogICAgICAgIC8vIENhbGwgZnVuY3Rpb24gJ2J1dHRvbk9uQWlyJw0KICAgICAgICBidXR0b25PbkFpcihvbkFpckJ1dHRvbikNCiAgICBlbmQNCiAgICAvLyBFeGVjdXRlIGlmIE9TQyBwYWNrZXQgaXMgJzAnIChpbnRlZ2VyKQ0KICAgIGlmIG9zYy5yZWFkKDEpID09IHVpLmNvbG9yLmJsYWNrDQogICAgICAgIC8vIENhbGwgZnVuY3Rpb24gJ2J1dHRvbk9mZkFpcicNCiAgICAgICAgYnV0dG9uT2ZmQWlyKG9uQWlyQnV0dG9uKQ0KICAgIGVuZA0KZW5kDQoNCi8vIEZ1bmN0aW9uIHRvIHRvZ2dsZSB0aGUgJ09uIEFpcicgYnV0dG9uIGJldHdlZW4gZW5hYmxlZCBhbmQgZGlzYWJsZWQuIFBhc3Npbmcga2V5ICdjaGFubmVsJyB0byBtb2RpZnkgdGFyZ2V0DQpmdW5jdGlvbiB0b2dnbGUoY2hhbm5lbCkNCiAgICAvLyBFeGVjdXRpbmcgaWYgdmFyaWFibGUgJ2VuYWJsZWQnIGlzIHNldCB0byAnMScNCiAgICBpZiBlbmFibGVkID09IDENCiAgICAgICAgLy8gQ2FsbGluZyBmdW5jdGlvbiAnYnV0dG9uT2ZmQWlyJyBhbmQgcGFzc2luZyB0aGUgdmFsdWUgb2YgJ2NoYW5uZWwnDQogICAgICAgIGJ1dHRvbk9mZkFpcihjaGFubmVsKQ0KICAgICAgICAvLyBDYWxsaW5nIGZ1bmN0aW9uICdzZW5kT3NjQWN0aW9uJyBhbmQgcGFzc2luZyB2YWx1ZXMgdG8gdGhlIGF2YWlsYWJsZSBrZXlzICgnaXAnLCAncGF0aCcsIGV0Yy4pDQogICAgICAgIHNlbmRPc2NBY3Rpb24odGFyZ2V0T1NDLHBhdGhPU0MsdWkuY29sb3IuYmxhY2spDQogICAgLy8gRXhlY3V0aW5nIGlmIHZhcmlhYmxlICdlbmFibGVkJyBpcyBub3Qgc2V0IHRvICcxJw0KICAgIGVsc2UNCiAgICAgICAgYnV0dG9uT25BaXIoY2hhbm5lbCkNCiAgICAgICAgc2VuZE9zY0FjdGlvbih0YXJnZXRPU0MscGF0aE9TQyx1aS5jb2xvci5yZWQpDQogICAgZW5kDQplbmQNCg0KLy8gRXhlY3V0ZSBvbiBidXR0b24gaW50ZXJhY3Rpb24gYW5kIHVzZSB0aGUgdmFyaWFibGUgJ29uQWlyQnV0dG9uJyBkZWZpbmVkIGFib3ZlDQpldmVudCB1aS5idXR0b25bb25BaXJCdXR0b25dDQogICAgLy8gT25seSBleGVjdXRlIHdoZW4gYnV0dG9uIHN0YXRlIGlzICd1aS5idXR0b24ucHJlc3NlZCcNCiAgICBpZiB1aS5idXR0b25bb25BaXJCdXR0b25dID09IHVpLmJ1dHRvbi5wcmVzc2VkDQogICAgICAgIC8vIENhbGxpbmcgdGhlIHRvZ2dsZSBmdW5jdGlvbg0KICAgICAgICB0b2dnbGUob25BaXJCdXR0b24pDQogICAgZW5kDQplbmQNCg0KLy8gRXhlY3V0ZSBvbiB0b3VjaHNjcmVlbiBpbnRlcmFjdGlvbiBhbmQgdXNlIHRoZSB2YXJpYWJsZSAnb25BaXJCdXR0b24nIGRlZmluZWQgYWJvdmUNCmV2ZW50IHVpLnRvdWNoW29uQWlyQnV0dG9uXQ0KICAgIC8vIE9ubHkgZXhlY3V0ZSB3aGVuIHRoZSB0b3VjaHNjcmVlbiBpcyBwcmVzc2VkDQogICAgaWYgdWkuZXZlbnQgPT0gdWkuZXZlbnQucHJlc3MNCiAgICAgICAgLy8gQ2FsbGluZyB0aGUgdG9nZ2xlIGZ1bmN0aW9uDQogICAgICAgIHRvZ2dsZShvbkFpckJ1dHRvbikNCiAgICBlbmQNCmVuZA0KDQovLyBTZXQgdGhlIGRlZmF1bHQgYWZ0ZXIgc2NyaXB0IGxvYWQgYnkgY2FsbGluZyB0aGUgJ2J1dHRvbk9mZkFpcicgZnVuY3Rpb24NCmJ1dHRvbk9mZkFpcihvbkFpckJ1dHRvbik=",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "9":{
+   "myId":"9",
+   "badge":0,
+   "Name":"osc_onAir-bpx",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAANsBAAAgAAAAugEAAKweLNSaDyCfx9wevWS1DlZyaUKxAb0AsQIAsQPuOwCwAPmBcLAFCmB5Cij5gHCwAfmBcAHKIfFyAArKIvECyiDxsAAAvRX5hnAA8O5lALBggQJ5D0CBAnkGHgz5gHCwAfmBcADKIvECyiDxsAJvvRz5hnAA8O6KAHKIAAByAPD4sLUDqQH2fACw8Q9wtQOpAvaHALDxPnDsAPDumQBylwAAcgDw+LDsAPCwtQH6IAFwcs0AtQJyJuz4sLAB+iYBqQL2uwABuQOw8WhwsAH6JgGpAPbMAAC5A7DxjXDscgABAnIB8PiwAs4B8KkB9v8AtQOdAfbpAAK5AwHOAhCpAPb6AAEC0gIQ7v8AAQDSAhDscjMBA3IB8PiwA84B8KkB9jIBtQOdAfYcAQK5AwLOAhCpAPYtAQIC0gIQ7jIBAgDSAhDscmYBBHIB8PiwBM4B8KkB9mUBtQOdAfZPAQK5AwPOAhCpAPZgAQMC0gIQ7mUBAwDSAhDscpkBBXIB8PiwBc4B8KkB9pgBtQOdAfaCAQK5AwTOAhCpAPaTAQQC0gIQ7pgBBADSAhDs7C9nZ28vc3R1ZGlvLzEvb25haXIvAE9uIEFpcgBMSVZFAA==",
+   "Text":"Ly8gT1NDIHBhcmFtZXRlcnMNCnZhciBwb3J0T1NDID0gMTcwMDENCnZhciBwYXRoT1NDID0gIi9nZ28vc3R1ZGlvLzEvb25haXIvIg0KDQovLyBWYXJpYWJsZSB1c2VkIHRvIGRldGVybWluZSBpZiBhbmQgd2hhdCB0byBkcmF3IG9uIHNjcmVlbg0KdmFyIGVuYWJsZWRPbkFpciA9IDANCg0KLy8gRnVuY3Rpb24gZHJhd2luZyBhIGZ1bGwtc2NyZWVuIGJhbm5lcg0KZnVuY3Rpb24gYmFubmVyT25BaXIoKQ0KICAgIC8vIENsZWFyaW5nIHRoZSBmdWxsIHNjcmVlbiBhbmQgZHJhd2luZyBhIGJsYWNrIGJhY2tncm91bmQNCiAgICB1aS5jbGVhcih1aS5jb2xvci5ibGFjaykNCiAgICAvLyBEcmF3IGEgbmV3IHdpbmRvdyAoeCx5LHcsaCkNCiAgICB1aS53aW5kb3coNSwgMTAsIHVpLmJweC5kaXNwbGF5LndpZHRoIC0gMTAsIDQwKQ0KICAgIC8vIENsZWFyIHRoZSB3aW5kb3cgYW5kIGRyYXcgYSB3aGl0ZSBiYWNrZ3JvdW5kDQogICAgdWkuY2xlYXIoMSkNCiAgICAvLyBTZXQgZm9udCB2YXJpYWJsZXMgJiBjb2xvcg0KICAgIHVpLmZvbnQgPSB1aS5mb250LmxhcmdlDQogICAgdWkuZm9udG1vZGUgPSB1aS5mb250bW9kZS5jZW50ZXINCiAgICB1aS5jb2xvciA9IHVpLmNvbG9yLnJlZA0KICAgIC8vIERyYXcgdGV4dCBhdCAoeCx5KQ0KICAgIHVpLmRyYXcudGV4dC5hdCgwLDAsIk9uIEFpciIpDQplbmQNCg0KLy8gRnVuY3Rpb24gZHJhd2luZyBsaXR0bGUgZmxhZyB3aGVuIGJhbm5lciBpcyBkaXNtaXNzZWQNCmZ1bmN0aW9uIHN0YXR1c09uQWlyKCkNCiAgICAvLyBEcmF3IGEgbmV3IHdpbmRvdyAoeCwgeSwgdywgaCkNCiAgICB1aS53aW5kb3codWkuYnB4LmRpc3BsYXkud2lkdGggLyAyIC0gMTUsIHVpLmJweC5kaXNwbGF5LmhlaWdodCAvIDIgLSA2LCAzMCwgMTIpDQogICAgLy8gQ2xlYXIgdGhlIHdpbmRvdyBhbmQgZHJhdyBhIHdoaXRlIGJhY2tncm91bmQNCiAgICB1aS5jbGVhcigxKQ0KICAgIC8vIFNldCBmb250IHZhcmlhYmxlcyAmIGNvbG9yDQogICAgdWkuZm9udG1vZGUgPSB1aS5mb250bW9kZS5sZWZ0DQogICAgdWkuY29sb3IgPSB1aS5jb2xvci5yZWQNCiAgICAvLyBEcmF3IHRleHQgYXQgKHgseSkNCiAgICB1aS5kcmF3LnRleHQuYXQoMiwtMSwiTElWRSIpDQplbmQNCg0KLy8gRnVuY3Rpb24gZGV0ZXJtaW5lcyB3aGF0IHRvIGRyYXcgb24gc2NyZWVuIGRlcGVuZGluZyBvbiB0aGUgdmFyaWFibGUgJ2VuYWJsZWRPbkFpcicNCmZ1bmN0aW9uIGRyYXdPbkFpcigpDQogICAgZXZlbnQgdWkuZHJhdw0KICAgICAgICAvLyBFeGVjdXRlIGlmICdlbmFibGVkT25BaXInIGlzICcxJyAoZW5hYmxlZCkNCiAgICAgICAgaWYgZW5hYmxlZE9uQWlyID09IDENCiAgICAgICAgICAgIGJhbm5lck9uQWlyKCkNCiAgICAgICAgZW5kDQogICAgICAgIC8vIEV4ZWN1dGUgaWYgJ2VuYWJsZWRPbkFpcicgaXMgJzInIChkaXNtaXNzZWQpDQogICAgICAgIGlmIGVuYWJsZWRPbkFpciA9PSAyDQogICAgICAgICAgICBzdGF0dXNPbkFpcigpDQogICAgICAgIGVuZA0KICAgIGVuZA0KZW5kDQoNCi8vIEZ1bmN0aW9uIHRvIGNsZWFyIG92ZXJyaWRlIGFueSB1aS5kcmF3IGFuZCBjbGVhciB0aGUgc2NyZWVuDQpmdW5jdGlvbiBkaXNhYmxlT25BaXIoKQ0KICAgIC8vIE5vdGU6IEVtcHR5IHVpLmRyYXcgZXZlbnQgbmVlZHMgYXQgbGVhc3Qgb25lIGVtcHR5IGxpbmUNCiAgICBldmVudCB1aS5kcmF3DQogICAgICAgIA0KICAgIGVuZA0KZW5kDQoNCi8vIE9wZW4gVURQIHBvcnQgYW5kIHN0YXJ0IGxpc3RlbmluZyBmb3IgcGFja2V0cw0Kb3NjLm9wZW4ocG9ydE9TQykNCg0KLy8gRXZlbnQgZXhlY3V0aW5nIHdoZW4gcmVjZWl2aW5nIE9TQyBwYWNrZXQgZm9yICdwYXRoT1NDJw0KZXZlbnQgb3NjLnJlY2VpdmVbcGF0aE9TQ10NCiAgICAvLyBFeGVjdXRlIGlmIE9TQyBwYWNrZXQgaXMgJzInIChpbnRlZ2VyKQ0KICAgIGlmIG9zYy5yZWFkKDEpID09IHVpLmNvbG9yLnJlZA0KICAgICAgICAvLyBTZXQgdmFyaWFibGUgJ2VuYWJsZWRPbkFpcicgdG8gJzEnIChlbmFibGVkKQ0KICAgICAgICBlbmFibGVkT25BaXIgPSAxDQogICAgICAgIC8vIENhbGwgZnVuY3Rpb24gJ2RyYXdPbkFpcicNCiAgICAgICAgZHJhd09uQWlyKCkNCiAgICBlbmQNCiAgICAvLyBFeGVjdXRlIGlmIE9TQyBwYWNrZXQgaXMgJzAnIChpbnRlZ2VyKQ0KICAgIGlmIG9zYy5yZWFkKDEpID09IHVpLmNvbG9yLmJsYWNrDQogICAgICAgIC8vIFNldCB2YXJpYWJsZSAnZW5hYmxlZE9uQWlyJyB0byAnMCcgKGRpc2FibGVkKQ0KICAgICAgICBlbmFibGVkT25BaXIgPSAwDQogICAgICAgIC8vIENhbGwgZnVuY3Rpb24gJ2Rpc2FibGVPbkFpcicNCiAgICAgICAgZGlzYWJsZU9uQWlyKCkNCiAgICBlbmQNCmVuZA0KDQpldmVudCB1aS5idXR0b25bdWkuYnB4LjFdDQogICAgaWYgdWkuYnV0dG9uW3VpLmJweC4xXSA9PSB1aS5idXR0b24ucHJlc3NlZA0KICAgICAgICBpZiBlbmFibGVkT25BaXIgPj0gMQ0KICAgICAgICAgICAgZW5hYmxlZE9uQWlyID0gMg0KICAgICAgICBlbmQNCiAgICAgICAgaWYgY2hhbm5lbC50YWxrWzFdID09IGNoYW5uZWwudGFsay5vZmYNCiAgICAgICAgICAgIGNoYW5uZWwudGFsa1sxXSA9IGNoYW5uZWwudGFsay5vbg0KICAgICAgICBlbHNlDQogICAgICAgICAgICBjaGFubmVsLnRhbGtbMV0gPSBjaGFubmVsLnRhbGsub2ZmDQogICAgICAgIGVuZA0KICAgIGVuZA0KZW5kDQpldmVudCB1aS5idXR0b25bdWkuYnB4LjJdDQogICAgaWYgdWkuYnV0dG9uW3VpLmJweC4yXSA9PSB1aS5idXR0b24ucHJlc3NlZA0KICAgICAgICBpZiBlbmFibGVkT25BaXIgPj0gMQ0KICAgICAgICAgICAgZW5hYmxlZE9uQWlyID0gMg0KICAgICAgICBlbmQNCiAgICAgICAgaWYgY2hhbm5lbC50YWxrWzJdID09IGNoYW5uZWwudGFsay5vZmYNCiAgICAgICAgICAgIGNoYW5uZWwudGFsa1syXSA9IGNoYW5uZWwudGFsay5vbg0KICAgICAgICBlbHNlDQogICAgICAgICAgICBjaGFubmVsLnRhbGtbMl0gPSBjaGFubmVsLnRhbGsub2ZmDQogICAgICAgIGVuZA0KICAgIGVuZA0KZW5kDQpldmVudCB1aS5idXR0b25bdWkuYnB4LjNdDQogICAgaWYgdWkuYnV0dG9uW3VpLmJweC4zXSA9PSB1aS5idXR0b24ucHJlc3NlZA0KICAgICAgICBpZiBlbmFibGVkT25BaXIgPj0gMQ0KICAgICAgICAgICAgZW5hYmxlZE9uQWlyID0gMg0KICAgICAgICBlbmQNCiAgICAgICAgaWYgY2hhbm5lbC50YWxrWzNdID09IGNoYW5uZWwudGFsay5vZmYNCiAgICAgICAgICAgIGNoYW5uZWwudGFsa1szXSA9IGNoYW5uZWwudGFsay5vbg0KICAgICAgICBlbHNlDQogICAgICAgICAgICBjaGFubmVsLnRhbGtbM10gPSBjaGFubmVsLnRhbGsub2ZmDQogICAgICAgIGVuZA0KICAgIGVuZA0KZW5kDQpldmVudCB1aS5idXR0b25bdWkuYnB4LjRdDQogICAgaWYgdWkuYnV0dG9uW3VpLmJweC40XSA9PSB1aS5idXR0b24ucHJlc3NlZA0KICAgICAgICBpZiBlbmFibGVkT25BaXIgPj0gMQ0KICAgICAgICAgICAgZW5hYmxlZE9uQWlyID0gMg0KICAgICAgICBlbmQNCiAgICAgICAgaWYgY2hhbm5lbC50YWxrWzRdID09IGNoYW5uZWwudGFsay5vZmYNCiAgICAgICAgICAgIGNoYW5uZWwudGFsa1s0XSA9IGNoYW5uZWwudGFsay5vbg0KICAgICAgICBlbHNlDQogICAgICAgICAgICBjaGFubmVsLnRhbGtbNF0gPSBjaGFubmVsLnRhbGsub2ZmDQogICAgICAgIGVuZA0KICAgIGVuZA0KZW5k",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":1,
+   "usage":[
+
+   ]
+  },
+  "10":{
+   "myId":"10",
+   "badge":0,
+   "Name":"osc_onAir-bcn",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAG8AAAAgAAAAWgAAAG0+qK8g+6Ww1IovRimXEBdyaUKxAb0AsQKwtQH6IAFwcjkAtQJyJuz4sLAB+iYBqQL2KQABAtIB8LAB+iYBqQD2OAABANIB8OzsL2dnby9zdHVkaW8vMS9vbmFpci8A",
+   "Text":"dmFyIHBvcnRPU0MgPSAxNzAwMQ0KdmFyIHBhdGhPU0MgPSAiL2dnby9zdHVkaW8vMS9vbmFpci8iDQoNCm9zYy5vcGVuKHBvcnRPU0MpDQoNCmV2ZW50IG9zYy5yZWNlaXZlW3BhdGhPU0NdDQogICAgaWYgb3NjLnJlYWQoMSkgPT0gdWkuY29sb3IucmVkDQogICAgICAgIHVpLmJ1dHRvblsxXSA9IHVpLmNvbG9yLnJlZA0KICAgIGVuZA0KICAgIGlmIG9zYy5yZWFkKDEpID09IHVpLmNvbG9yLmJsYWNrDQogICAgICAgIHVpLmJ1dHRvblsxXSA9IHVpLmNvbG9yLmJsYWNrDQogICAgZW5kDQplbmQ=",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":1,
+   "usage":[
+
+   ]
+  },
+  "11":{
+   "myId":"11",
+   "badge":0,
+   "Name":"GPO-Cue",
+   "type":2,
+   "status":0,
+   "Binary":"--",
+   "Text":"ZXZlbnQgY2hhbm5lbC5jdWVbMV0NCiAgICBpZiBjaGFubmVsLmN1ZSA9PSBjaGFubmVsLmN1ZS5hdHQgfCBjaGFubmVsLmN1ZS5nbw0KICAgICAgICBncGlvLm91dHB1dCA9IGdwaW8ub3V0cHV0Lm9uDQogICAgZWxzZQ0KICAgICAgICBncGlvLm91dHB1dCA9IGdwaW8ub3V0cHV0Lm9mZg0KICAgIGVuZA0KZW5k",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "12":{
+   "myId":"12",
+   "badge":0,
+   "Name":"cue_command",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAKIAAAAgAAAAAAAAAOffs5a8lyWJQ9NtPcmAeB/uFwC1Ac4FEKkAhQH2FQC1AQLSBRAA8O41ALUBzgUQqQL2LQC1AQTSBRDuMwC1AQHSBRAA8LABsQJyYgDGAfFyAfD4sMYB8c4B8KkB9mEAsMYB8bEB8RpwsMYB8bEB8QNw7HJ0ALUCcgPw+LDGAfEB0gUQ7LUCdQG5ArUCmQT1OfTs",
+   "Text":"LyoNClRoaXMgc2NyaXB0IGNoYW5nZXMgdGhlIGZ1bmN0aW9uIG9mIGEgYnV0dG9uIHByZXNzIHRvIHNlbmQgYSBjdWUgc2lnbmFsIHRvIHRoZSBkZWZpbmVkIGNoYW5uZWwgdGFyZ2V0Lg0KUHJlc3NpbmcgYSBtb2RpZmllZCBidXR0b24gd2lsbCBmaXJzdCBzZW5kIGFuICJBdHRlbnRpb24iIGN1ZSwgYSBzZWNvbmQgcHJlc3Mgd2lsbCBzZW5kIGEgIkdPIiBjdWUsIGFuZCBhIHRoaXJkIHByZXNzDQp3aWxsIGNsZWFyIHRoZSBjdWUgc2lnbmFsLiBJbiBhZGRpdGlvbiwgdGhlIHRvdWNoc2NyZWVuIGFsbG93cyB0byBhYm9ydCBvciBjbGVhciBhIGN1cnJlbnRseSBvbmdvaW5nIGN1ZSBzaWduYWwuDQoNCk5PVEU6IEkndmUgZm91bmQgYSBmZXcgcHJvYmxlbXMgd2l0aCBteSBpbXBsZW1lbnRhdGlvbiB0aGF0IEknbSBub3QgYWJsZSB0byBzb2x2ZSBhdCB0aGlzIHRpbWU6DQoxLiBFYWNoIGJ1dHRvbiBuZWVkcyB0byBiZSBkZWZpbmVkIGluZGl2aWR1YWxseS4gVXNpbmcgYSBmb3ItbG9vcCBpcyBub3QgcG9zc2libGUgYXMgImV2ZW50LmluZGV4IiBpc24ndCB3b3JraW5nIGFzDQogICBleHBlY3RlZCBpbnNpZGUgYW4gImV2ZW50IHVpLmJ1dHRvbiIgb3IgImV2ZW50IHVpLnRvdWNoIi4NCjIuIFRoZSBzY3JpcHQgY3VycmVudGx5IGJyZWFrcyBvbiBhbiBNQ1ggc2hpZnQgcGFnZSBhcyBJJ3ZlIGZvdW5kIG5vIHdheSB0byBjaGVjayBmb3IgdGhhdCBkZXZpY2UgY29uZGl0aW9uLiBCdXR0b25zDQogICBzZWVtIHRvIGJlIGlkZW50aWZpZWQgYnkgaW50ZWdlcnMgMSB0aHJvdWdoIDE4IHJlZ2FyZGxlc3Mgb2YgdGhlIGFjdGl2ZSBwYWdlLg0KKi8NCg0KZnVuY3Rpb24gY3VlQVRUKGNoKQ0KICAgIC8vIENoZWNraW5nIHdpdGggdGhlICJ8IiBvciBvcGVyYXRvciBkb2Vzbid0IHdvcmsgaGVyZSwgaG93ZXZlciB1c2luZyB0aGUgIiYiIG9wZXJhdG9yIHNlZW1zIHRvIHdvcmsNCiAgICBpZiBjaGFubmVsLmN1ZVtjaF0gPT0gY2hhbm5lbC5jdWUub2ZmDQogICAgICAgIGNoYW5uZWwuY3VlW2NoXSA9IGNoYW5uZWwuY3VlLmF0dA0KICAgIGVuZA0KZW5kDQpmdW5jdGlvbiBjdWVHTyhjaCkNCiAgICAvLyBDaGVja2luZyBmb3IgIiE9IGNoYW5uZWwuY3VlLmdvIiBmaXJzdCBicmVha3MNCiAgICBpZiBjaGFubmVsLmN1ZVtjaF0gPT0gY2hhbm5lbC5jdWUuYXR0DQogICAgICAgIGNoYW5uZWwuY3VlW2NoXSA9IGNoYW5uZWwuY3VlLmdvDQogICAgZWxzZSANCiAgICAgICAgY2hhbm5lbC5jdWVbY2hdID0gY2hhbm5lbC5jdWUub2ZmDQogICAgZW5kDQplbmQNCg0KLy8gQnV0dG9uICYgdG91Y2hzY3JlZW4gb3ZlcnJpZGVzDQovLyBDcmVhdGluZyBhIGZvci1sb29wIGZvciBhIGNvaGVyZW50IHJhbmdlIG9mIGJ1dHRvbnMgKGVnLCAxIC0gNCkuIA0KZm9yIGJ0biA9IDEgdG8gNA0KICAgIC8vIEV4ZWN1dGUgb24gdGhlIHByZXNzIG9mIGEgYnV0dG9uDQogICAgZXZlbnQgdWkuYnV0dG9uW3VpLmV2ZW50LmluZGV4XQ0KICAgICAgICAvLyBNYWtlIHN1cmUgd2UgZG9uJ3QgZXhlY3V0ZSBvbiBidXR0b24gcmVsZWFzZQ0KICAgICAgICBpZiB1aS5idXR0b25bdWkuZXZlbnQuaW5kZXhdID09IHVpLmJ1dHRvbi5wcmVzc2VkDQogICAgICAgICAgICAvLyBDYWxsIGZ1bmN0aW9uICdjdWVHTycgdG8gY2hlY2sgZm9yIG9uZ29pbmcgY3VlQVRUIGZpcnN0DQogICAgICAgICAgICBjdWVHTyh1aS5ldmVudC5pbmRleCkNCiAgICAgICAgICAgIC8vIENhbGwgZnVuY3Rpb24gJ2N1ZUFUVCcgaWYgDQogICAgICAgICAgICBjdWVBVFQodWkuZXZlbnQuaW5kZXgpDQogICAgICAgIGVuZA0KICAgIGVuZA0KICAgIGV2ZW50IHVpLnRvdWNoW2J0bl0NCiAgICAgICAgY2hhbm5lbC5jdWVbdWkuZXZlbnQuaW5kZXhdID0gY2hhbm5lbC5jdWUub2ZmDQogICAgZW5kDQplbmQ=",
+   "Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":0,
+   "usage":[
+
+   ]
+  },
+  "13":{
+   "myId":"13",
+   "badge":0,
+   "Name":"conference_signal-bcn",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAMcBAAAgAAAAsgEAAI56fE129e364R0cUJydJ3dyQB+xAb0AsQIAsQNyJAAAcgDw+LCw+YFwsAoevQ21A/mGcOzuOwCwtQS1BfoiAXCwtQa1B/ojAXAA8O5fALABsQi1CHIHBfy1CHUBuQi1CJkE9UL0AgbSAfAAuQMA8O6DALABsQi1CHIHBfy1CHUBuQi1CJkE9Wb0AgPSAfABuQMA8O7NAANyBwX8BHIHBfwCBdIB8AK5A3KuAAFyBwX4sAID0gHwAnL0AdIHBexyxAACcgcF+LACBdIB8AFy9AHSBwXsAXL0AdIHBQDw7hcBAXIHBfwCcgcF/AIC0gHwA7kDcvgAA3IHBfiwAgXSAfAEcvQB0gcF7HIOAQRyBwX4sAIC0gHwA3L0AdIHBewDcvQB0gcFAPDuPAGwAbEItQhyBwX8tQh1AbkItQiZBPYeAfQCAtIB8AS5AwDwsLUB+iABcHKNAbUCcibs+LCwAfomAbkDtQOpAPZfAbDxPnC1A6kB9moBsPFicLUDqQL2dQGw8YZwtQOpA/aAAbDx0HC1A6kE9owBsPIaAXDssPE+cOwvdGltZXIvcm9vbTEAc3RhdGU6IAA=",
+   "Text":"dmFyIHBvcnRPU0MgPSA4MDAwDQp2YXIgcGF0aE9TQyA9ICIvdGltZXIvcm9vbTEiDQoNCmRlZmluZSBzcGVha2VyU3RhdHVzLmlkbGUgMA0KZGVmaW5lIHNwZWFrZXJTdGF0dXMuZ28gMQ0KZGVmaW5lIHNwZWFrZXJTdGF0dXMuYXR0ZW50aW9uIDINCmRlZmluZSBzcGVha2VyU3RhdHVzLndhcm5pbmcgMw0KZGVmaW5lIHNwZWFrZXJTdGF0dXMuc3RvcCA0DQoNCnZhciBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5pZGxlDQoNCmV2ZW50IHVpLmRyYXcNCiAgICB1aS5jbGVhcigpDQogICAgdWkuZHJhdy50ZXh0LmF0KDEwLDMwLCJzdGF0ZTogIixzcGVha2VyU3RhdHVzKQ0KZW5kDQoNCmZ1bmN0aW9uIHNlbmRPc2NBY3Rpb24oaXAscG9ydCxwYXRoLHBheWxvYWQpDQogICAgb3NjLmRlc3RpbmF0aW9uKGlwLCBwb3J0KQ0KICAgIG9zYy5zZW5kKHBhdGgsIHBheWxvYWQpDQplbmQNCg0KZnVuY3Rpb24gc3BlYWtlcklkbGUoKQ0KICAgIGZvciBpID0gMSB0byA0DQogICAgICAgIGNhbmNlbCB0aW1lcltpXQ0KICAgIGVuZA0KICAgIHVpLmJ1dHRvblt1aS5icHguMV0gPSB1aS5jb2xvci5wdXJwbGUNCiAgICBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5pZGxlDQplbmQNCg0KZnVuY3Rpb24gc3BlYWtlckdvKCkNCiAgICBmb3IgaSA9IDEgdG8gNA0KICAgICAgICBjYW5jZWwgdGltZXJbaV0NCiAgICBlbmQNCiAgICB1aS5idXR0b25bdWkuYnB4LjFdID0gdWkuY29sb3IuZ3JlZW4NCiAgICBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5nbw0KZW5kDQoNCmZ1bmN0aW9uIHNwZWFrZXJBdHRlbnRpb24oKQ0KICAgIGNhbmNlbCB0aW1lclszXQ0KICAgIGNhbmNlbCB0aW1lcls0XQ0KICAgIHVpLmJ1dHRvblt1aS5icHguMV0gPSB1aS5jb2xvci5vcmFuZ2UNCiAgICBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5hdHRlbnRpb24NCiAgICBldmVudCB0aW1lclsxXQ0KICAgICAgICB1aS5idXR0b25bdWkuYnB4LjFdID0gdWkuY29sb3IuZ3JlZW4NCiAgICAgICAgdGltZXJbMl0gPSA1MDANCiAgICBlbmQNCiAgICBldmVudCB0aW1lclsyXQ0KICAgICAgICB1aS5idXR0b25bdWkuYnB4LjFdID0gdWkuY29sb3Iub3JhbmdlDQogICAgICAgIHRpbWVyWzFdID0gNTAwDQogICAgZW5kDQogICAgdGltZXJbMV0gPSA1MDANCmVuZA0KDQpmdW5jdGlvbiBzcGVha2VyV2FybmluZygpDQogICAgY2FuY2VsIHRpbWVyWzFdDQogICAgY2FuY2VsIHRpbWVyWzJdDQogICAgdWkuYnV0dG9uW3VpLmJweC4xXSA9IHVpLmNvbG9yLnJlZA0KICAgIHNwZWFrZXJTdGF0dXMgPSBzcGVha2VyU3RhdHVzLndhcm5pbmcNCiAgICBldmVudCB0aW1lclszXQ0KICAgICAgICB1aS5idXR0b25bdWkuYnB4LjFdID0gdWkuY29sb3Iub3JhbmdlDQogICAgICAgIHRpbWVyWzRdID0gNTAwDQogICAgZW5kDQogICAgZXZlbnQgdGltZXJbNF0NCiAgICAgICAgdWkuYnV0dG9uW3VpLmJweC4xXSA9IHVpLmNvbG9yLnJlZA0KICAgICAgICB0aW1lclszXSA9IDUwMA0KICAgIGVuZA0KICAgIHRpbWVyWzNdID0gNTAwDQplbmQNCg0KZnVuY3Rpb24gc3BlYWtlclN0b3AoKQ0KICAgIGZvciBpID0gMSB0byA0DQogICAgICAgIGNhbmNlbCB0aW1lcltpXQ0KICAgIGVuZA0KICAgIHVpLmJ1dHRvblt1aS5icHguMV0gPSB1aS5jb2xvci5yZWQNCiAgICBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5zdG9wDQplbmQNCg0Kb3NjLm9wZW4ocG9ydE9TQykNCg0KZXZlbnQgb3NjLnJlY2VpdmVbcGF0aE9TQ10NCiAgICBzcGVha2VyU3RhdHVzID0gb3NjLnJlYWQoMSkNCiAgICBpZiBzcGVha2VyU3RhdHVzID09IHNwZWFrZXJTdGF0dXMuaWRsZQ0KICAgICAgICBzcGVha2VySWRsZSgpDQogICAgZW5kDQogICAgaWYgc3BlYWtlclN0YXR1cyA9PSBzcGVha2VyU3RhdHVzLmdvDQogICAgICAgIHNwZWFrZXJHbygpDQogICAgZW5kDQogICAgaWYgc3BlYWtlclN0YXR1cyA9PSBzcGVha2VyU3RhdHVzLmF0dGVudGlvbg0KICAgICAgICBzcGVha2VyQXR0ZW50aW9uKCkNCiAgICBlbmQNCiAgICBpZiBzcGVha2VyU3RhdHVzID09IHNwZWFrZXJTdGF0dXMud2FybmluZw0KICAgICAgICBzcGVha2VyV2FybmluZygpDQogICAgZW5kDQogICAgaWYgc3BlYWtlclN0YXR1cyA9PSBzcGVha2VyU3RhdHVzLnN0b3ANCiAgICAgICAgc3BlYWtlclN0b3AoKQ0KICAgIGVuZA0KZW5kDQoNCnNwZWFrZXJJZGxlKCk=",
+"Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":1,
+   "usage":[
+"01201CB6"
+   ]
+  },
+  "14":{
+   "myId":"14",
+   "badge":0,
+   "Name":"conference_signal-mcx",
+   "type":2,
+   "status":0,
+   "Binary":"NBIAAP0AAAAgAAAA0QAAAF9W5sMXItK7lZxtvds3UJFyQB+xAb0AsQIAsQNyJAALcgDw+LCw+YFwsAoevQ21A/mGcOzuRwByPQABcgDw+LCw+YFwsL0VBAH5iHDsAQTSAfAAuQMA8O5qAHJgAAFyAPD4sLD5gXCwvRoDAfmIcOwBA9IB8AG5AwDw7o0AcoMAAXIA8PiwsPmBcLC9HwUB+Yhw7AEF0gHwArkDAPDusABypgABcgDw+LCw+YFwsL0nAgH5iHDsAQLSAfAEuQMA8OwvdGltZXIvcm9vbTEAc3RhdGU6IABJZGxlAFJlZGUAV2FybnVuZwBTdG9wAA==",
+   "Text":"dmFyIHBvcnRPU0MgPSA4MDAwDQp2YXIgcGF0aE9TQyA9ICIvdGltZXIvcm9vbTEiDQoNCg0KZGVmaW5lIHNwZWFrZXJCdG4gMQ0KDQpkZWZpbmUgc3BlYWtlclN0YXR1cy5pZGxlIDANCmRlZmluZSBzcGVha2VyU3RhdHVzLmdvIDENCmRlZmluZSBzcGVha2VyU3RhdHVzLmF0dGVudGlvbiAyDQpkZWZpbmUgc3BlYWtlclN0YXR1cy53YXJuaW5nIDMNCmRlZmluZSBzcGVha2VyU3RhdHVzLnN0b3AgNA0KDQp2YXIgc3BlYWtlclN0YXR1cyA9IHNwZWFrZXJTdGF0dXMuaWRsZQ0KDQpldmVudCB1aS5kcmF3WzExXQ0KICAgIHVpLmNsZWFyKCkNCiAgICB1aS5kcmF3LnRleHQuYXQoMTAsMzAsInN0YXRlOiAiLHNwZWFrZXJTdGF0dXMpDQplbmQNCg0KZnVuY3Rpb24gc3BlYWtlcklkbGUoKQ0KICAgIGV2ZW50IHVpLmRyYXdbc3BlYWtlckJ0bl0NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiSWRsZSIsdWkuY29sb3IuYmx1ZSwxKQ0KICAgIGVuZA0KICAgIHVpLmJ1dHRvbltzcGVha2VyQnRuXSA9IHVpLmNvbG9yLmJsdWUNCiAgICBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5pZGxlDQplbmQNCg0KZnVuY3Rpb24gc3BlYWtlckdvKCkNCiAgICBldmVudCB1aS5kcmF3W3NwZWFrZXJCdG5dDQogICAgICAgIHVpLmNsZWFyKCkNCiAgICAgICAgdWkuZHJhdy5idXR0b24oIlJlZGUiLHVpLmNvbG9yLmdyZWVuLDEpDQogICAgZW5kDQogICAgdWkuYnV0dG9uW3NwZWFrZXJCdG5dID0gdWkuY29sb3IuZ3JlZW4NCiAgICBzcGVha2VyU3RhdHVzID0gc3BlYWtlclN0YXR1cy5nbw0KZW5kDQoNCmZ1bmN0aW9uIHNwZWFrZXJBdHRlbnRpb24oKQ0KICAgIGV2ZW50IHVpLmRyYXdbc3BlYWtlckJ0bl0NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiV2FybnVuZyIsdWkuY29sb3Iub3JhbmdlLDEpDQogICAgZW5kDQogICAgdWkuYnV0dG9uW3NwZWFrZXJCdG5dID0gdWkuY29sb3Iub3JhbmdlDQogICAgc3BlYWtlclN0YXR1cyA9IHNwZWFrZXJTdGF0dXMuYXR0ZW50aW9uDQplbmQNCg0KZnVuY3Rpb24gc3BlYWtlclN0b3AoKQ0KICAgIGV2ZW50IHVpLmRyYXdbc3BlYWtlckJ0bl0NCiAgICAgICAgdWkuY2xlYXIoKQ0KICAgICAgICB1aS5kcmF3LmJ1dHRvbigiU3RvcCIsdWkuY29sb3IucmVkLDEpDQogICAgZW5kDQogICAgdWkuYnV0dG9uW3NwZWFrZXJCdG5dID0gdWkuY29sb3IucmVkDQogICAgc3BlYWtlclN0YXR1cyA9IHNwZWFrZXJTdGF0dXMuc3RvcA0KZW5k",
+"Blockly":"--",
+   "error":"",
+   "errorLine":0,
+   "Compile":0,
+   "compiled":1,
+   "usage":[
+
+   ]
+  }
+ },
+ "UsbDevices":{
+  "keys":[
+
+  ]
+ },
+ "WirelessPools":{
+  "keys":[
+
+  ]
+ },
+ "WirelessAccessPoints":{
+  "keys":[
+
+  ]
+ },
+ "WirelessClients":{
+  "keys":[
+
+  ]
+ },
+ "Footer":{
+  "Config":{
+   "badge":0,
+   "text":"Config: School Resources"
+  },
+  "Network":{
+   "badge":0,
+   "total":2,
+   "lost":2,
+   "notAdopted":0
+  },
+  "Wireless":{
+   "badge":0,
+   "total":0,
+   "lost":0
+  },
+  "Usb":{
+   "badge":0,
+   "total":0,
+   "lost":0
+  }
+ }
+}

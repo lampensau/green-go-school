@@ -1,0 +1,5 @@
+# This file was created by Wireshark. Edit with care.
+@Green-GO Config@data.data[2:1] == 60 || data.data[2:1] == 68@[65535,64250,27242][0,0,0]
+@Green-GO VOX Init@data.data[2:1] == 5f@[65535,44718,64507][0,0,0]
+@Green-GO VOX Config@len(data.data) >= 355@[31354,52428,27499][0,0,0]
+@Green-GO VOX@data.data[2:1] == 06 && data.data[6:1] != 00@[11308,40863,13107][65535,65535,65535]
