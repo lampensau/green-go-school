@@ -24,7 +24,7 @@ Die Green-GO School für Einsteiger richtet sich primär an Anwender mit geringe
 
 Das eintägige Seminar beginnt mit einem Überblick über das System, die verfügbaren Geräte und die sich daraus ergebenen Möglichkeiten. Der Fokus liegt primär auf der grundlegenden Bedienung von Gerät und Software, sowie auf der Einrichtung und dem Aufbau eines einfachen Green-GO Systems. Zielsetzung ist eine sichere erste Bedienung und Inbetriebnahme.
 
-#### :material-calendar: Hagen, 27.03.2025  :material-calendar-plus:
+#### :material-calendar: Hagen, 27.03.2025
 
 <div class="event_details" markdown>
 - **Ort:** cast C.Adolph & RST Distribution GmbH, Kabeler Str. 54A, DE-58099 Hagen [:material-map-search: ](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu "Navigiere zum Veranstaltungsort mit Google Maps")
@@ -32,10 +32,10 @@ Das eintägige Seminar beginnt mit einem Überblick über das System, die verfü
 - **Startzeit:** 10:00 Uhr
 - **Dauer:** ca. 7 Stunden
 - **Preis:** Kostenfrei
-- **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 11.04.2024 "Email Anmeldung")
+- **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 27.03.2025 "Email Anmeldung")
 </div>
 
-#### :material-calendar: Hagen, 24.06.2025  :material-calendar-plus:
+#### :material-calendar: Hagen, 24.06.2025
 
 <div class="event_details" markdown>
 - **Ort:** cast C.Adolph & RST Distribution GmbH, Kabeler Str. 54A, DE-58099 Hagen [:material-map-search: ](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu "Navigiere zum Veranstaltungsort mit Google Maps")
@@ -43,10 +43,10 @@ Das eintägige Seminar beginnt mit einem Überblick über das System, die verfü
 - **Startzeit:** 10:00 Uhr
 - **Dauer:** ca. 7 Stunden
 - **Preis:** Kostenfrei
-- **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 11.04.2024 "Email Anmeldung")
+- **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 24.06.2025 "Email Anmeldung")
 </div>
 
-#### :material-calendar: Hagen, 06.11.2025  :material-calendar-plus:
+#### :material-calendar: Hagen, 06.11.2025
 
 <div class="event_details" markdown>
 - **Ort:** cast C.Adolph & RST Distribution GmbH, Kabeler Str. 54A, DE-58099 Hagen [:material-map-search: ](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu "Navigiere zum Veranstaltungsort mit Google Maps")
@@ -54,7 +54,7 @@ Das eintägige Seminar beginnt mit einem Überblick über das System, die verfü
 - **Startzeit:** 10:00 Uhr
 - **Dauer:** ca. 7 Stunden
 - **Preis:** Kostenfrei
-- **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 11.04.2024 "Email Anmeldung")
+- **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 06.11.2025 "Email Anmeldung")
 </div>
 
 ### Green-GO School für  Fortgeschrittene
