@@ -46,7 +46,7 @@ Das eintägige Seminar beginnt mit einem Überblick über das System, die verfü
 - **Anmeldung:** [Link](mailto:mail@castinfo.de?subject=Green-GO School Anmeldung für Einsteiger am 24.06.2025 "Email Anmeldung")
 </div>
 
-#### :material-calendar: Hagen, 06.11.2025
+#### :material-calendar: Hagen, 19.11.2025
 
 <div class="event_details" markdown>
 - **Ort:** cast C.Adolph & RST Distribution GmbH, Kabeler Str. 54A, DE-58099 Hagen [:material-map-search: ](https://www.google.com/maps/dir//cast+C.+Adolph+%26+RST+Distribution+GmbH,+Kabeler+Str.+54A,+58099+Hagen/@51.4085821,7.47655,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47b93d04acb6eef5:0xe1c51087640a559!2m2!1d7.4792966!2d51.4086275?entry=ttu "Navigiere zum Veranstaltungsort mit Google Maps")
