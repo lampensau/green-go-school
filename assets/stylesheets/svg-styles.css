@@ -1,0 +1,45 @@
+.svg-fill-none {
+  fill: none;
+}
+.svg-stroke {
+  stroke: #1e1e1c;
+  stroke-miterlimit: 10;
+  stroke-width: 1.21px;
+}
+.svg-stroke-medium {
+  stroke-width: 2px;
+}
+.svg-stroke-wide {
+  stroke-width: 2.24px;
+}
+.svg-stroke-xwide {
+  stroke-width: 11.44px;
+}
+.svg-stroke-round {
+  stroke-linecap: round;
+}
+
+.svg-fill-green {
+  fill: #368a41;
+}
+.svg-fill-green--light {
+  fill: #43ad4c;
+}
+.svg-fill-black {
+  fill: #1e1e1c;
+}
+.svg-fill-white {
+  fill: #fff;
+}
+.svg-fill-blue--light {
+  fill: #29abe3;
+}
+.svg-fill-blue {
+  fill: #356cb4;
+}
+.svg-fill- {
+}
+.svg-fill- {
+}
+.svg-fill- {
+}Ja,
